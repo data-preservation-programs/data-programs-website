@@ -1,23 +1,20 @@
-# AU Nuxt Static Boilerplate
+## Data Programs Website
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 
-![Nuxt Static banner](https://raw.githubusercontent.com/agency-undone/nuxt-static/develop/static/images/open-graph.png)
-
 ## Overview
 
-This is the boilerplate repository for building static sites using Nuxt
+This is rhe repo for the Data Programs static microsite (available at [dataprograms.org](https://dataprograms.org))
 
 - This repo represents a static site which requires compilation, but can then be served as a static resource
 - This site can be hosted on any resource supporting static files, but may include some services that require a serverless node
-- When running in production, this repository is primarily tested against the Netlify ecosystem, including Netlify Functions for any dynamic functionality
 - The site itself is served statically, but internal navigation is virtualized in the browser: in other words, the site acts as an SPA when browsed on the client
 - While a static site, this app can be extended at any time to a full application by changing the `target` in settings
 
 
 ## Stack
 
-- Requires nodeJS and has been tested on node 16
+- Requires nodeJS and has been tested on node 16 (node 16.14+ required)
 - Uses a Vue framework, [nuxtJS 2](https://nuxtjs.org/), deployed in static mode
 - Styles are written in SCSS, and are concatenated and tree-shaken during compile-time
 
