@@ -2,6 +2,9 @@
   <div :class="[`page page-${tag}`]">
 
     <SiteHeader />
+
+    <DeckOfCards />
+
     <BlockBuilder :sections="sections" />
     <SiteFooter />
 
@@ -17,6 +20,7 @@ import IndexPageData from '@/content/core/index.json'
 import SiteHeader from '@/components/site-header'
 import SiteFooter from '@/components/site-footer'
 import BlockBuilder from '@/components/blocks/block-builder'
+import DeckOfCards from '@/components/deck-of-cards'
 
 export default {
   name: 'PageIndex',
@@ -24,7 +28,8 @@ export default {
   components: {
     SiteHeader,
     SiteFooter,
-    BlockBuilder
+    BlockBuilder,
+    DeckOfCards
   },
 
   data () {
