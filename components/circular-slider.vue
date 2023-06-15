@@ -19,7 +19,8 @@
                   v-for="(item, index) in collection"
                   :key="index"
                   :style="getSlideStyles(index)"
-                  :class="getSlideClasses(index)">
+                  :class="getSlideClasses(index)"
+                  @click="advanceSlide(index)">
 
                   <slot
                     :name="`column-${index}`"
@@ -138,7 +139,7 @@ export default {
       columnWidth: 0,
       resize: false,
       touchGesture: '',
-      direction: ''
+      direction: 'right'
     }
   },
 
@@ -197,7 +198,7 @@ export default {
   },
 
   methods: {
-    increment (val) {
+    increment (val, next) {
       const positions = this.positions
       if (val === -1) {
         positions.push(positions.shift())
@@ -205,6 +206,7 @@ export default {
         positions.unshift(positions.pop())
       }
       this.positions = positions
+      if (next) { next() }
     },
     cardPosition (slide) {
       return this.positions.indexOf(slide)
@@ -225,28 +227,45 @@ export default {
     },
     slotClasslist (index) {
       const position = this.cardPosition(index)
+      const hover = position === 4 ? 'centered' : ''
       if ((this.direction === 'left' && position >= 4) || (this.direction === 'right' && position <= 4)) {
-        return `animation-slot-${position < 8 ? position : '8-or-grt'} delay`
+        return `animation-slot-${position < 8 ? position : '8-or-grt'} delay ${hover}`
       }
       return `animation-slot-${position < 8 ? position : '8-or-grt'}`
     },
     onClick (direction) {
-      if (this.touchGesture) {
-        this.touchGesture = ''
-      }
       this.direction = direction === 1 ? 'right' : 'left'
       this.increment(direction)
     },
     onSwipe (e) {
       if (e.type === 'swipeleft') {
-        this.touchGesture = 'force-left'
         this.direction = 'left'
         this.increment(-1)
       }
       if (e.type === 'swiperight') {
-        this.touchGesture = 'force-right'
         this.direction = 'right'
         this.increment(1)
+      }
+    },
+    advanceSlide (index) {
+      const position = this.cardPosition(index)
+      switch (position) {
+        case 2:
+          this.direction = 'right'
+          this.increment(1, this.increment(1))
+          break
+        case 3:
+          this.direction = 'right'
+          this.increment(1)
+          break
+        case 5:
+          this.direction = 'left'
+          this.increment(-1)
+          break
+        case 6:
+          this.direction = 'left'
+          this.increment(-1, this.increment(-1))
+          break
       }
     }
   }

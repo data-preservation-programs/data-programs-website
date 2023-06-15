@@ -12,8 +12,11 @@
         #[getSlotName(i)]="{ classlist }">
         <div
           :key="`slide-${i}`"
-          :class="['slider-card', classlist]"
-          :style="{ 'background-color': slide.color }">
+          :class="['slider-card', classlist]">
+          <div
+            class="content"
+            :style="{ 'background-color': slide.color }">
+          </div>
         </div>
       </template>
 
@@ -95,8 +98,6 @@ export default {
   width: 280px;
   height: 420px;
   transform: translateX(-50%);
-  border: solid 1px black;
-  border-radius: 0.25rem;
   transition: transform 250ms ease;
   &.delay {
     transition: transform 250ms ease 250ms;
@@ -118,9 +119,27 @@ export default {
     transform: translateX(-50%) translateY(80px) rotate(10deg);
   }
   &.animation-slot-0,
+  &.animation-slot-1,
+  &.animation-slot-7,
   &.animation-slot-8-or-grt {
     opacity: 0;
   }
+  &.centered {
+    &:hover {
+      .content {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  border: solid 1px black;
+  border-radius: 0.25rem;
+  transform: scale(1);
+  transition: 250ms ease;
 }
 
 :deep(.panel-after) {
