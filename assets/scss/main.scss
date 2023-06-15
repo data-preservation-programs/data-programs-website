@@ -25,10 +25,7 @@ $fontAssetPath: '~assets/fonts';
 // ///////////////////////////////////////////////////////////////////// General
 // -----------------------------------------------------------------------------
 html, body {
-  @include fontWeight_Regular;
-  font-family: $font_Primary;
-  line-height: leading(28, 16);
-  font-size: 16px;
+  @include p2;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
@@ -136,12 +133,12 @@ h5, .h5 {
   @include h5;
 }
 
-h6, .h6 {
-  @include h6;
-}
+// h6, .h6 {
+//   @include h6;
+// }
 
 p {
-  @include p1;
+  @include p2;
   margin-bottom: 1rem;
 }
 
@@ -154,16 +151,16 @@ p {
 }
 
 a {
-  @include p1Link;
+  // @include p1Link;
 }
 
 strong {
   font-weight: 500;
 }
 
-caption {
-  @include caption;
-}
+// caption {
+//   @include caption;
+// }
 
 // ////////////////////////////////////////////////////////////////// Components
 // -----------------------------------------------------------------------------
