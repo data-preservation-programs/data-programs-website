@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 
 // -------------------------------------------------------------------- Families
-$font_Primary: Helvetica;
-$font_Secondary: 'EB Garamond';
+$font_Primary: 'Space Grotesk';
+$font_Secondary: 'Random Grotesque Standard';
 $font_Code: monospace;
 
 // --------------------------------------------------------------------- Leading
@@ -19,13 +19,14 @@ $letterSpacing_Large: 0.03em;
 // -----------------------------------------------------------------------------
 
 // ------------------------------------------------------ Typography | Font Size
+@mixin fontSize_Tiny { font-size: 0.75rem; } // fontSize_Mini | 12px
 @mixin fontSize_Mini { font-size: 0.875rem; } // fontSize_Mini | 14px
 @mixin fontSize_Small { font-size: 1rem; } // fontSize_Small | 16px
 @mixin fontSize_Regular { font-size: 1.125rem; } // fontSize_Regular | 18px
-@mixin fontSize_Medium { font-size: 1.5rem; } // fontSize_Medium | 24px
-@mixin fontSize_Large { font-size: 1.875rem; } // fontSize_Large | 30px
-@mixin fontSize_ExtraLarge { font-size: 2.8125rem; } // fontSize_ExtraLarge | 45px
-@mixin fontSize_Huge { font-size: 4.0625rem; } // fontSize_Huge | 65px
+@mixin fontSize_Medium { font-size: 1.25rem; } // fontSize_Medium | 20px
+@mixin fontSize_Large { font-size: 1.5rem; } // fontSize_Large | 24px
+@mixin fontSize_ExtraLarge { font-size: 1.875rem; } // fontSize_ExtraLarge | 30px
+@mixin fontSize_Huge { font-size: 2.25rem; } // fontSize_Huge | 36px
 
 
 // ---------------------------------------------------- Typography | Font Weight
@@ -36,87 +37,139 @@ $letterSpacing_Large: 0.03em;
 @mixin fontWeight_Bold { font-weight: 700 }
 
 // --------------------------------------------------------- Typography | Groups
-@mixin h1 {
-  @include fontSize_Huge; // 65px
-  @include fontWeight_Regular; // 400
+@mixin h1 { // footer CTA
+  @include fontSize_Huge; // 36px
+  @include fontWeight_Medium; // 500
   font-family: $font_Secondary;
-  line-height: leading(85, 65);
+  line-height: leading(52, 36);
 }
 
-@mixin h2 {
-  @include fontSize_ExtraLarge; // 45px
-  @include fontWeight_Regular; // 400
+@mixin h2 { // section titles
+  @include fontSize_ExtraLarge; // 30px
+  @include fontWeight_Bold; // 700
   font-family: $font_Secondary;
-  line-height: leading(60, 45);
+  line-height: leading(52, 30);
+  letter-spacing: 0.03em;
+  @include mini {
+    @include fontSize_Regular; // 18px;
+    line-height: leading(52, 18);
+  }
 }
 
-@mixin h3 {
-  @include fontSize_Large; // 30px
-  @include fontWeight_Regular; // 400
+@mixin h3 { // card titles, team member names/titles
+  @include fontSize_Large; // 24px
+  @include fontWeight_Bold; // 700
   font-family: $font_Secondary;
-  line-height: leading(42, 30);
+  line-height: leading(33, 24);
+  letter-spacing: 0.03em;
+  @include mini {
+    @include fontSize_Small;
+    line-height: leading(23, 16);
+  }
 }
 
-@mixin h4 {
-  @include fontSize_Medium; // 24px
-  @include fontWeight_Regular; // 400
+@mixin h4 { // banner text (section: what is data programs)
+  @include fontSize_Large; // 24px
+  @include fontWeight_Medium; // 500
   font-family: $font_Secondary;
   line-height: leading(36, 24);
+  letter-spacing: 0.04em;
+  @include mini {
+    @include fontSize_Small; // 16
+    line-height: leading(24, 16);
+  }
 }
 
-@mixin h5 {
-  @include fontSize_Medium; // 24px
-  @include fontWeight_Medium; // 500
-  font-family: $font_Primary;
-  line-height: leading(36, 24);
-}
-
-@mixin h6 {
-  @include fontSize_Regular; // 18px
-  @include fontWeight_Medium; // 500
-  font-family: $font_Primary;
-  line-height: leading(30, 18);
-}
-
-@mixin h7 {
-  @include fontSize_Small; // 16px
-  @include fontWeight_Medium; // 500
-  font-family: $font_Primary;
-  line-height: leading(26, 16);
-}
-
-@mixin p1 {
-  @include fontSize_Regular; // 18px
-  @include fontWeight_Regular; // 400
-  font-family: $font_Primary;
-  line-height: leading(30, 18);
-}
-
-@mixin p1Link{
-  @include fontSize_Regular; // 18px
-  @include fontWeight_Medium; // 500
-  font-family: $font_Primary;
-  line-height: leading(30, 18);
-  color: $color_Primary;
-}
-
-@mixin p2 {
-  @include fontSize_Small; // 16px
-  @include fontWeight_Regular; // 400
-  font-family: $font_Primary;
-  line-height: leading(28, 16);
-}
-
-@mixin p2Link{
-  @include fontSize_Small; // 16px
+@mixin h5 { // site header statement of intent
+  @include fontSize_Medium; // 20px
   @include fontWeight_Semibold; // 600
+  font-family: $font_Secondary;
+  line-height: leading(25, 20);
+  letter-spacing: 0.04em;
+  @include mini {
+    @include fontSize_Small; // 16
+    @include fontWeight_Semibold; // 600
+    line-height: leading(25, 16);
+    letter-spacing: 0.05em;
+  }
+}
+
+@mixin cta { // nav links, card ctas, footer links
+  @include fontSize_Regular; // 18px
+  @include fontWeight_Bold; // 700
+  font-family: $font_Secondary;
+  line-height: leading(33, 18);
+  letter-spacing: 0.03em;
+  @include mini {
+    @include fontSize_Small; // 16
+    @include fontWeight_Bold; // 700
+    line-height: leading(33, 16);
+    letter-spacing: 0.03em;
+  }
+}
+
+// @mixin h6 {
+//   @include fontSize_Regular; // 18px
+//   @include fontWeight_Medium; // 500
+//   font-family: $font_Primary;
+//   line-height: leading(30, 18);
+// }
+
+// @mixin h7 {
+//   @include fontSize_Small; // 16px
+//   @include fontWeight_Medium; // 500
+//   font-family: $font_Primary;
+//   line-height: leading(26, 16);
+// }
+
+@mixin p1 { // team member affiliations
+  @include fontSize_Regular; // 18px
+  @include fontWeight_Medium; // 500
+  font-family: $font_Secondary;
+  line-height: leading(24, 18);
+  letter-spacing: 0.03em;
+  @include mini {
+    @include fontSize_Mini; // 14px
+    line-height: leading(21, 14);
+  }
+}
+
+@mixin p2 { // card descriptions
+  @include fontSize_Small; // 16px
+  @include fontWeight_Regular; // 400
   font-family: $font_Primary;
   line-height: leading(24, 16);
+  @include mini {
+    @include fontSize_Mini; // 14px
+    line-height: leading(21, 14);
+  }
 }
 
-@mixin caption {
-  @include fontSize_Mini; // 14px
+@mixin p3 { // slider card descriptions mobile
+  @include fontSize_Tiny; // 12px
   @include fontWeight_Regular; // 400
   font-family: $font_Primary;
-  line-height: leading(21, 14);
+  line-height: leading(18, 12);
 }
+
+// @mixin p1Link{
+//   @include fontSize_Regular; // 18px
+//   @include fontWeight_Medium; // 500
+//   font-family: $font_Primary;
+//   line-height: leading(30, 18);
+//   color: $color_Primary;
+// }
+
+// @mixin p2Link{
+//   @include fontSize_Small; // 16px
+//   @include fontWeight_Semibold; // 600
+//   font-family: $font_Primary;
+//   line-height: leading(24, 16);
+// }
+
+// @mixin caption {
+//   @include fontSize_Mini; // 14px
+//   @include fontWeight_Regular; // 400
+//   font-family: $font_Primary;
+//   line-height: leading(21, 14);
+// }
