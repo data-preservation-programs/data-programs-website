@@ -11,6 +11,7 @@
   },
   "page_content": {
     "section-hero-header": {
+      "id": "hero-header",
       "off_grid": [
         {
           "name": "SectionHero"
@@ -24,10 +25,255 @@
           "num": "col-12",
           "push_left": "off-0",
           "push_right": "off-0"
-        }
+        },
+        "card_columns": "col-4",
+        "cards": [
+          {
+            "type": "project",
+            "logo": "/images/filecoin-plug-logo.svg",
+            "img": "/images/fil-plus-bricks.jpg",
+            "title": "FILPLUS.STORAGE",
+            "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "",
+            "img": "",
+            "title": "SINGULARITY",
+            "description": "Singularity is a general-purpose onboarding tool for Filecoin, which has also been able to leverage its modular design for purpose-built data preparation tooling",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "",
+            "img": "/images/spade-texture.jpg",
+            "title": "SPADE",
+            "description": "Building the latest deal engine to support at-scale data onboarding in the Filecoin network",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          [
+            {
+              "type": "project",
+              "title": "SP REPUTATION WG",
+              "description": "Measuring Storage Provider reputation and quality of service.",
+              "theme": "mini-card",
+              "ctas": [
+                {
+                  "type": "project-cta",
+                  "text": "LEARN MORE",
+                  "url": "https://example.com",
+                  "theme": "light"
+                }
+              ]
+            },
+            {
+              "type": "project",
+              "title": "METADATA WG",
+              "description": "Aligning the Filecoin ecosystem on metadata collection standards.",
+              "theme": "mini-card",
+              "ctas": [
+                {
+                  "type": "project-cta",
+                  "text": "LEARN MORE",
+                  "url": "https://example.com",
+                  "theme": "light"
+                }
+              ]
+            }
+          ],
+          {
+            "type": "project",
+            "logo": "/images/moonlanding-logo.svg",
+            "img": "/images/moon.jpg",
+            "title": "MOONLANDING",
+            "description": "Moon Landing is designed to ramp up storage providers in the Filecoin network by enabling them to serve verified deals at scale.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/slingshot-logo.svg",
+            "img": "/images/slingshot-warpspeed.jpg",
+            "title": "SLINGSHOT",
+            "description": "A community program for developers, data preparers, and storage providers for preserving open datasets on the decentralized web, forever.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/ground-control-logo.svg",
+            "img": "",
+            "title": "GROUND CONTROL",
+            "description": "Know Your Storage Provider automation for enabling client to SP matching for the Spade platform.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/deals-oracle-logo.svg",
+            "img": "",
+            "title": "DEALS ORACLE",
+            "description": "Tracking active Filecoin storage deals. Part of the overall Spade platform, but also supports several dashboards and enables data onboarding analysis.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/retrieval-bot-logo.svg",
+            "img": "",
+            "title": "RETRIEVAL BOT",
+            "description": "A scalable service to perform retrieval testing on data stored on the Filecoin network.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/cid-checker-logo.svg",
+            "img": "",
+            "title": "CID CHECKER",
+            "description": "Deal distribution analysis and reporting for data stored on Filecoin through the Filecoin Plus program.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/open-panda-logo.svg",
+            "img": "/images/open-panda-sanddunes.jpg",
+            "title": "OPEN PANDA",
+            "description": "Open Panda is a platform for data researchers, analysts, students and enthusiasts to interact with open datasets stored on Filecoin.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          }
+        ]
       }
     },
     "section_about": {
+      "id": "section-about",
+      "grid": ["middle"],
       "col_1": {
         "type": "text_block",
         "cols": {
@@ -35,7 +281,8 @@
           "push_left": "off-0",
           "push_right": "off-0"
         },
-        "heading": "WHAT IS DATA PROGRAMS"
+        "heading": "WHAT IS DATA PROGRAMS",
+        "theme": "section-heading"
       },
       "col_2": {
         "type": "image_block",
@@ -49,14 +296,16 @@
       "col_3": {
         "type": "text_block",
         "cols": {
-          "num": "col-7",
+          "num": "col-6",
           "push_left": "off-0",
-          "push_right": "off-0"
+          "push_right": "off-1"
         },
-        "description": "Design, develop, and operate programs, incentive mechanisms, and tools to accelerate data onboarding and Filecoin product market fit. The Network Growth org is focused on increasing the utilization and the usefulness of the Filecoin network. Other teams in our org are focused on individual stakeholders within the network, i.e., focus on the demand side or the supply side of the storage market.\n\nOur team is focused on the market itself - finding ways to drive market making, introducing new tools or programs that enable accelerating deal making and utilization of the network (and helping prove its usefulness / value proposition)."
+        "description": "Tools, products, and incentive programs designed to drive growth and make data storage on Filecoin more accessible.\n\nThe Network Growth org is focused on increasing the utilization and the usefulness of the Filecoin network. Other teams in our org are focused on individual stakeholders within the network, i.e., focus on the demand side or the supply side of the storage market.\n\nOur team is focused on the market itself - finding ways to drive market making, introducing new tools or programs that enable accelerating deal making and utilization of the network (and helping prove its usefulness / value proposition)."
       }
     },
     "section_articles": {
+      "id": "section-articles",
+      "grid": ["noBottom", "noGutter"],
       "col_1": {
         "type": "text_block",
         "cols": {
@@ -65,18 +314,173 @@
           "push_right": "off-0"
         },
         "heading": "ARTICLES",
+        "theme": "section-heading",
         "ctas": [
           {
+            "type": "text-only",
             "text": "All articles",
-            "url": "https://example.com"
+            "url": "https://example.com",
+            "theme": "regular"
           }
         ]
       },
-      "off_grid": [
-        {
-          "name": "DeckOfCardsSlider"
-        }
-      ]
+      "col_2": {
+        "type": "custom",
+        "cols": {
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "customizations": [
+          {
+            "name": "DeckOfCards",
+            "props": {
+              "cards": [
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     "section_people": {
       "col_1": {
@@ -86,7 +490,8 @@
           "push_left": "off-0",
           "push_right": "off-0"
         },
-        "heading": "OUR PEOPLE"
+        "heading": "OUR PEOPLE",
+        "theme": "section-heading"
       },
       "col_2": {
         "type": "card_list_block",
@@ -105,7 +510,8 @@
           "push_left": "off-0",
           "push_right": "off-0"
         },
-        "heading": "CONTRIBUTORS"
+        "heading": "CONTRIBUTORS",
+        "theme": "section-heading"
       },
       "col_2": {
         "type": "card_list_block",

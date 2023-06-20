@@ -4,32 +4,33 @@
     <CircularSlider
       :grid-cols="columns"
       :reverse-grid="true"
-      :collection="collection"
+      :collection="cards"
       :display-options="{ default: 5 }">
 
       <template
-        v-for="(slide, i) in collection"
+        v-for="(card, i) in cards"
         #[getSlotName(i)]="{ classlist }">
         <div
           :key="`slide-${i}`"
           :class="['slider-card', classlist]">
-          <div
+          <Card :card="card" class="slide-content" />
+          <!--           <div
             class="content"
-            :style="{ 'background-color': slide.color }">
-          </div>
+            :style="{ 'background-color': card.color }">
+          </div> -->
         </div>
       </template>
 
       <template #icon-previous>
-        <div class="slider-button previous">
-          prev
-        </div>
+        <Button
+          :button="previous"
+          class="slider-button previous" />
       </template>
 
       <template #icon-next>
-        <div class="slider-button next">
-          next
-        </div>
+        <Button
+          :button="next"
+          class="slider-button next" />
       </template>
 
     </CircularSlider>
@@ -40,39 +41,50 @@
 <script>
 // ====================================================================== Import
 import CircularSlider from '@/components/circular-slider'
+import Card from '@/components/card'
+import Button from '@/components/button'
 
 // ====================================================================== Export
 export default {
   name: 'DeckOfCards',
 
   components: {
-    CircularSlider
+    CircularSlider,
+    Card,
+    Button
+  },
+
+  props: {
+    cards: {
+      type: Array,
+      required: true,
+      default: () => []
+    }
   },
 
   data () {
     return {
-      collection: [
-        { content: 'content', color: '#C78283' },
-        { content: 'content', color: '#F3D9DC' },
-        { content: 'content', color: '#d17780' },
-        { content: 'content', color: '#68b097' },
-        { content: 'content', color: '#b88184' },
-        { content: 'content', color: '#845660' },
-        { content: 'content', color: '#e68781' },
-        { content: 'content', color: '#7ca1c4' },
-        { content: 'content', color: '#c47cbc' }
-      ],
       columns: {
         before: {
-          num: 'col-8',
-          push_left: 'off-2',
-          push_right: 'off-2'
+          num: 'col-12',
+          push_left: 'off-0',
+          push_right: 'off-0'
         },
         after: {
           num: 'col-4',
           push_left: 'off-4',
           push_right: 'off-4'
         }
+      },
+      previous: {
+        type: 'text-only',
+        text: 'PREVIOUS',
+        theme: 'strong'
+      },
+      next: {
+        type: 'text-only',
+        text: 'NEXT',
+        theme: 'strong'
       }
     }
   },
@@ -87,36 +99,32 @@ export default {
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
-.deck-of-cards-slider {
-  padding-bottom: 10rem;
-}
-
 .slider-card {
   position: absolute;
   left: 50%;
   top: 0;
-  width: 280px;
-  height: 420px;
+  width: toRem(440);
+  height: toRem(565);
   transform: translateX(-50%);
   transition: transform 250ms ease;
   &.delay {
     transition: transform 250ms ease 250ms;
   }
   &.animation-slot-3 {
-    transform: translateX(-50%) translateY(40px) rotate(-5deg);
+    transform: translateX(-50%) translateY(45px) rotate(-4deg);
   }
   &.animation-slot-5 {
-    transform: translateX(-50%) translateY(40px) rotate(5deg);
+    transform: translateX(-50%) translateY(45px) rotate(4deg);
   }
   &.animation-slot-0,
   &.animation-slot-1,
   &.animation-slot-2 {
-    transform: translateX(-50%) translateY(80px) rotate(-10deg);
+    transform: translateX(-50%) translateY(112px) rotate(-9.2deg);
   }
   &.animation-slot-6,
   &.animation-slot-7,
   &.animation-slot-8-or-grt {
-    transform: translateX(-50%) translateY(80px) rotate(10deg);
+    transform: translateX(-50%) translateY(112px) rotate(9.2deg);
   }
   &.animation-slot-0,
   &.animation-slot-1,
@@ -126,34 +134,34 @@ export default {
   }
   &.centered {
     &:hover {
-      .content {
+      .slide-content {
         transform: scale(1.1);
       }
     }
   }
 }
 
-.content {
+.slide-content {
   width: 100%;
   height: 100%;
-  border: solid 1px black;
-  border-radius: 0.25rem;
   transform: scale(1);
   transition: 250ms ease;
 }
 
 :deep(.panel-after) {
+  .title-matter {
+    display: none;
+  }
   .slide-selector {
     justify-content: space-between;
   }
   .slider-button {
-    padding: 0.25rem 2.5rem;
-    border-radius: 0.125rem;
-    border: solid 1px rgba(0, 0, 0, 0.1);
     transition: 200ms ease;
     &:hover {
       cursor: pointer;
-      border: solid 1px rgba(0, 0, 0, 1);
+    }
+    &.previous {
+      flex-direction: row-reverse;
     }
   }
 }

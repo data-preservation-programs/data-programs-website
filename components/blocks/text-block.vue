@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="['block text-block', `align__${block.align ? block.align : 'left'}`]">
+    :class="['block text-block', `align__${block.align ? block.align : 'left'}`, `theme__${block.theme}`]">
 
     <h5 v-if="block.label" class="label">
       <TriangleArrow v-if="block.showLabelIcon" class="icon" />
@@ -89,6 +89,19 @@ export default {
   }
   .button:only-child {
     margin-right: 0;
+  }
+}
+
+.theme__section-heading {
+  display: flex;
+  justify-content: space-between;
+  @include sectionDivider;
+  .heading {
+    @include h2;
+    margin-bottom: toRem(21);
+  }
+  .text-wrapper {
+    display: none;
   }
 }
 </style>

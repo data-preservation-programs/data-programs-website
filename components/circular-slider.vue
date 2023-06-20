@@ -275,7 +275,7 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 .panel-before {
-  height: 440px;
+  height: toRem(690);
 }
 
 img {

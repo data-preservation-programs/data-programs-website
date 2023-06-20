@@ -6,12 +6,7 @@
           <SiteLogo />
         </NuxtLink>
       </div>
-      <div class="col-4" data-push-right="off-1">
-        <div class="statement-of-intent">
-          {{ headerData.statement }}
-        </div>
-      </div>
-      <div class="col-5">
+      <div class="col-5" data-push-left="off-5">
         <div class="navigation">
           <nav>
             <div
@@ -33,6 +28,7 @@
 <script>
 // ====================================================================== Import
 import { mapGetters, mapActions } from 'vuex'
+
 import SiteLogo from '@/components/svgs/logo'
 import Button from '@/components/button'
 
@@ -80,16 +76,12 @@ export default {
 
 <style lang="scss" scoped>
 .site-header {
-  margin-bottom: toRem(100);
+  margin-bottom: 1.625rem;
   padding: toRem(30) 0;
 }
 
 .logo {
   display: block;
-}
-
-.statement-of-intent {
-  @include h5;
 }
 
 .nav-item {

@@ -2,9 +2,6 @@
   <div :class="[`page page-${tag}`]">
 
     <SiteHeader />
-
-    <DeckOfCards />
-
     <BlockBuilder :sections="sections" />
     <SiteFooter />
 
@@ -20,7 +17,6 @@ import IndexPageData from '@/content/core/index.json'
 import SiteHeader from '@/components/site-header'
 import SiteFooter from '@/components/site-footer'
 import BlockBuilder from '@/components/blocks/block-builder'
-import DeckOfCards from '@/components/deck-of-cards'
 
 export default {
   name: 'PageIndex',
@@ -28,8 +24,7 @@ export default {
   components: {
     SiteHeader,
     SiteFooter,
-    BlockBuilder,
-    DeckOfCards
+    BlockBuilder
   },
 
   data () {
@@ -66,5 +61,34 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// ///////////////////////////////////////////////////////////////////// General
+:deep(.hero-header) {
+  margin-bottom: toRem(276);
+}
 
+:deep(.section-about) {
+  margin-bottom: 4rem;
+  .text-block {
+    &.theme__section-heading {
+      margin-bottom: toRem(76);
+    }
+    .description {
+      p {
+        @include h4;
+        margin-bottom: toRem(28);
+        &:first-child {
+          @include fontWeight_Semibold;
+        }
+      }
+    }
+  }
+}
+
+:deep(.section-articles) {
+  .deck-of-cards-slider {
+    padding-top: toRem(90);
+    width: toRem(1572);
+    transform: translateX(calc(#{math.div($containerWidth, 2)} - 50vw - 66px));
+  }
+}
 </style>

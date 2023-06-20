@@ -69,6 +69,8 @@ import ImageBlock from '@/components/blocks/image-block'
 import MarkdownBlock from '@/components/blocks/markdown-block'
 import BlockBuilder from '@/components/blocks/block-builder'
 import SectionHero from '@/components/section-hero'
+import DeckOfCards from '@/components/deck-of-cards'
+import CardListBlock from '@/components/blocks/card-list-block'
 
 export default {
   name: 'BlockBuilder',
@@ -78,7 +80,9 @@ export default {
     ImageBlock,
     BlockBuilder,
     MarkdownBlock,
-    SectionHero
+    SectionHero,
+    DeckOfCards,
+    CardListBlock
   },
 
   props: {
@@ -112,6 +116,7 @@ export default {
         case 'text_block' : name = 'TextBlock'; break
         case 'image_block' : name = 'ImageBlock'; break
         case 'markdown_block': name = 'MarkdownBlock'; break
+        case 'card_list_block': name = 'CardListBlock'; break
         case 'custom' : name = block.component; break
       }
       return name
@@ -119,3 +124,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.section-background {
+  width: 100%;
+  height: 100%;
+}
+</style>

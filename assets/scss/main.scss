@@ -105,6 +105,7 @@ $fontAssetPath: '~assets/fonts';
 // -----------------------------------------------------------------------------
 html, body {
   @include p2;
+  background-color: $color_Primary;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
