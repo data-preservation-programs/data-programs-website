@@ -10,112 +10,127 @@
     "image": "/images/open-graph.png"
   },
   "page_content": {
-    "section_text_center": {
-      "grid": [
-        "middle",
-        "center",
-        "noGutter"
-      ],
+    "section-hero-header": {
+      "off_grid": [
+        {
+          "name": "SectionHero"
+        }
+      ]
+    },
+    "section_project_list": {
       "col_1": {
-        "type": "text_block",
-        "align": "center",
+        "type": "card_list_block",
         "cols": {
           "num": "col-12",
-          "push_left": "off-1_md-0",
-          "push_right": "off-1_md-0"
-        },
-        "heading": "Welcome to AU's Nuxt Static Boilerplate"
-      },
-      "hide": false
-    },
-    "section_basic_section_1": {
-      "grid": [
-        "middle",
-        "center"
-      ],
-      "col_1": {
-        "label": "Documentation",
-        "heading": "Storybook",
-        "description": "Storybook automatically deploys to [https://agency-undone.github.io/nuxt-static](https://agency-undone.github.io/nuxt-static) using Github pages when committing to develop",
-        "ctas": [
-          {
-            "type": "solid",
-            "text": "Storybook",
-            "url": "https://agency-undone.github.io/nuxt-static"
-          }
-        ],
-        "type": "text_block",
-        "cols": {
-          "num": "col-6_md-12",
-          "push_left": "",
-          "push_right": ""
-        }
-      },
-      "col_2": {
-        "src": "/images/open-graph.png",
-        "type": "image_block",
-        "cols": {
-          "num": "col-5_md-12_lg-last_md-first",
-          "push_left": "",
-          "push_right": ""
+          "push_left": "off-0",
+          "push_right": "off-0"
         }
       }
     },
-    "section_basic_section_2": {
-      "grid": [
-        "middle",
-        "center"
-      ],
+    "section_about": {
       "col_1": {
-        "heading": "Index Page",
-        "description": "Index page is being pulled from <code>/content/core/index.json</code>",
-        "ctas": [
-          {
-            "type": "solid",
-            "text": "Home",
-            "url": "/"
-          }
-        ],
         "type": "text_block",
         "cols": {
-          "num": "col-4_md-12",
-          "push_left": "",
-          "push_right": ""
-        }
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "heading": "WHAT IS DATA PROGRAMS"
       },
       "col_2": {
-        "heading": "Blog Template",
-        "description": "Blog posts are auto generated when md file is added to <code>/content/blog</code>. Url is under <code>/blog/[slug]</code>",
-        "ctas": [
-          {
-            "type": "solid",
-            "text": "Hello World",
-            "url": "/blog/hello-world"
-          }
-        ],
+        "type": "image_block",
+        "cols": {
+          "num": "col-3",
+          "push_left": "off-1",
+          "push_right": "off-1"
+        },
+        "src": "/images/warped-grid.svg"
+      },
+      "col_3": {
         "type": "text_block",
         "cols": {
-          "num": "col-4_md-12",
-          "push_left": "",
-          "push_right": ""
+          "num": "col-7",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "description": "Design, develop, and operate programs, incentive mechanisms, and tools to accelerate data onboarding and Filecoin product market fit. The Network Growth org is focused on increasing the utilization and the usefulness of the Filecoin network. Other teams in our org are focused on individual stakeholders within the network, i.e., focus on the demand side or the supply side of the storage market.\n\nOur team is focused on the market itself - finding ways to drive market making, introducing new tools or programs that enable accelerating deal making and utilization of the network (and helping prove its usefulness / value proposition)."
+      }
+    },
+    "section_articles": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "heading": "ARTICLES",
+        "ctas": [
+          {
+            "text": "All articles",
+            "url": "https://example.com"
+          }
+        ]
+      },
+      "off_grid": [
+        {
+          "name": "DeckOfCardsSlider"
+        }
+      ]
+    },
+    "section_people": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "heading": "OUR PEOPLE"
+      },
+      "col_2": {
+        "type": "card_list_block",
+        "cols": {
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        }
+      }
+    },
+    "section_contributors": {
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "heading": "CONTRIBUTORS"
+      },
+      "col_2": {
+        "type": "card_list_block",
+        "cols": {
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
         }
       },
       "col_3": {
-        "heading": "Page Template",
-        "description": "Pages are auto generated when json file is added to <code>/content/page</code>`. Only top level tier support at the moment",
-        "ctas": [
-          {
-            "type": "solid",
-            "text": "About",
-            "url": "/about"
-          }
-        ],
         "type": "text_block",
         "cols": {
-          "num": "col-4_md-12",
-          "push_left": "",
-          "push_right": ""
+          "num": "col-7",
+          "push_left": "off-0",
+          "push_right": "off-0"
         }
+      },
+      "col_4": {
+        "type": "image_block",
+        "cols": {
+          "num": "col-3",
+          "push_left": "off-2",
+          "push_right": "off-0"
+        },
+        "src": "/images/warped-cube.svg"
       }
     }
   }

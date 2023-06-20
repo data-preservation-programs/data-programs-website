@@ -17,11 +17,23 @@
         "url": "/blog/hello-world"
       }
     ],
+    "statement": "Design, develop, and operate programs, incentive mechanisms, and tools to accelerate data onboarding and Filecoin product market fit.",
     "nav": [
       {
-        "text": "Storybook",
-        "type": "underline",
-        "url": "https://au-nuxt-static.on.fleek.co"
+        "text": "PROJECTS",
+        "type": "nav-link"
+      },
+      {
+        "text": "ABOUT",
+        "type": "nav-link"
+      },
+      {
+        "text": "BLOG",
+        "type": "nav-link"
+      },
+      {
+        "text": "TEAM",
+        "type": "nav-link"
       }
     ]
   },

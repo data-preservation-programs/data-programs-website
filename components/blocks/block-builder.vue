@@ -68,6 +68,7 @@ import TextBlock from '@/components/blocks/text-block'
 import ImageBlock from '@/components/blocks/image-block'
 import MarkdownBlock from '@/components/blocks/markdown-block'
 import BlockBuilder from '@/components/blocks/block-builder'
+import SectionHero from '@/components/section-hero'
 
 export default {
   name: 'BlockBuilder',
@@ -76,7 +77,8 @@ export default {
     TextBlock,
     ImageBlock,
     BlockBuilder,
-    MarkdownBlock
+    MarkdownBlock,
+    SectionHero
   },
 
   props: {

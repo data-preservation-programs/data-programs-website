@@ -8,18 +8,97 @@ $fontAssetPath: '~assets/fonts';
 /////////////////////////////////////////////////////////////////// Custom Fonts
 // -----------------------------------------------------------------------------
 @font-face {
-  font-family: 'EB Garamond';
+  font-family: 'Random Grotesque';
   font-style: normal;
-  font-weight: 400 800;
+  font-weight: 400;
   font-display: swap;
-  src: url('#{$fontAssetPath}/eb-garamond/eb-garamond-variable.woff2') format('woff2');
+  src: url('#{$fontAssetPath}/RandomGrotesque/RG-StandardRegular.otf') format('opentype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardRegular.ttf') format('truetype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardRegular.woff') format('woff'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardRegular.woff2') format('woff2');
 }
+
 @font-face {
-  font-family: 'EB Garamond';
+  font-family: 'Random Grotesque';
   font-style: italic;
-  font-weight: 400 800;
+  font-weight: 400;
   font-display: swap;
-  src: url('#{$fontAssetPath}/eb-garamond/eb-garamond-i-variable.woff2') format('woff2');
+  src: url('#{$fontAssetPath}/RandomGrotesque/RG-StandardRegularIt.otf') format('opentype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardRegularIt.ttf') format('truetype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardRegularIt.woff') format('woff'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardRegularIt.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Random Grotesque';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('#{$fontAssetPath}/RandomGrotesque/RG-StandardMedium.otf') format('opentype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardMedium.ttf') format('truetype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardMedium.woff') format('woff'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardMedium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Random Grotesque';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('#{$fontAssetPath}/RandomGrotesque/RG-StandardMediumIt.otf') format('opentype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardMediumIt.ttf') format('truetype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardMediumIt.woff') format('woff'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardMediumIt.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Random Grotesque';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('#{$fontAssetPath}/RandomGrotesque/RG-StandardSemibold.otf') format('opentype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardSemibold.ttf') format('truetype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardSemibold.woff') format('woff'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardSemibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Random Grotesque';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('#{$fontAssetPath}/RandomGrotesque/RG-StandardSemiboldIt.otf') format('opentype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardSemiboldIt.ttf') format('truetype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardSemiboldIt.woff') format('woff'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardSemiboldIt.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Random Grotesque';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('#{$fontAssetPath}/RandomGrotesque/RG-StandardBold.otf') format('opentype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardBold.ttf') format('truetype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardBold.woff') format('woff'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Random Grotesque';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('#{$fontAssetPath}/RandomGrotesque/RG-StandardBoldIt.otf') format('opentype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardBoldIt.ttf') format('truetype'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardBoldIt.woff') format('woff'),
+       url('#{$fontAssetPath}/RandomGrotesque/RG-StandardBoldIt.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('#{$fontAssetPath}/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 700;
 }
 
 // ///////////////////////////////////////////////////////////////////// General

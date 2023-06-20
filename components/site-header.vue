@@ -1,9 +1,31 @@
 <template>
   <header class="site-header">
-    <div class="grid">
-      <NuxtLink to="/" class="logo">
-        <SiteLogo />
-      </NuxtLink>
+    <div class="grid-middle">
+      <div class="col-2">
+        <NuxtLink to="/" class="logo">
+          <SiteLogo />
+        </NuxtLink>
+      </div>
+      <div class="col-4" data-push-right="off-1">
+        <div class="statement-of-intent">
+          {{ headerData.statement }}
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="navigation">
+          <nav>
+            <div
+              v-for="link in navigation"
+              :key="`${link.text}`"
+              class="nav-item">
+              <Button
+                :button="link"
+                class="nav-link">
+              </Button>
+            </div>
+          </nav>
+        </div>
+      </div>
     </div>
   </header>
 </template>
@@ -12,13 +34,15 @@
 // ====================================================================== Import
 import { mapGetters, mapActions } from 'vuex'
 import SiteLogo from '@/components/svgs/logo'
+import Button from '@/components/button'
 
 // ====================================================================== Export
 export default {
   name: 'SiteHeader',
 
   components: {
-    SiteLogo
+    SiteLogo,
+    Button
   },
 
   props: {
@@ -40,6 +64,9 @@ export default {
     }),
     headerData () {
       return this.header ? this.header : this.siteContent.general.header
+    },
+    navigation () {
+      return this.headerData.nav
     }
   },
 
@@ -53,28 +80,26 @@ export default {
 
 <style lang="scss" scoped>
 .site-header {
-  background-color: $color_Primary;
   margin-bottom: toRem(100);
   padding: toRem(30) 0;
-  .grid {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    nav {
-      > * {
-        margin-right: 1rem;
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
-    a {
-      line-height: 1;
-    }
-    .logo {
-      width: toRem(60);
-      display: block;
-    }
+}
+
+.logo {
+  display: block;
+}
+
+.statement-of-intent {
+  @include h5;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+  &:not(:last-child) {
+    @include itemDivider;
+  }
+  &:last-child {
+    @include sectionDivider;
   }
 }
 </style>
