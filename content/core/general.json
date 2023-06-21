@@ -1,13 +1,13 @@
 {
   "seo": {
-    "title": "Nuxt Static Boilerplate",
-    "description": ""
+    "title": "Data Programs",
+    "description": "Learn about products, tools and incentive programs that drive and make data storage on Filecoin more accessible."
   },
   "og": {
-    "site_name": "Nuxt Static Boilerplate",
-    "url": "https://au-nuxt-static.on.fleek.co",
+    "site_name": "Data Programs",
+    "url": "https://data-programs.org",
     "type": "website",
-    "image": "/images/open-graph.png"
+    "image": "/images/data-programs-open-graph.png"
   },
   "header": {
     "ctas": [
