@@ -38,25 +38,33 @@
     ]
   },
   "footer": {
-    "copyright": "Made with ❤️ by AU",
-    "social": [
+    "links": [
       {
-        "id": "facebook",
-        "url": "https://www.facebook.com/"
+        "text": "ABOUT",
+        "type": "nav-link"
       },
       {
-        "id": "twitter",
-        "url": "https://twitter.com/"
+        "text": "PRODUCTS",
+        "type": "nav-link"
       },
       {
-        "id": "linkedin",
-        "url": "https://www.linkedin.com/company/"
-      },
-      {
-        "id": "youtube",
-        "url": "https://www.youtube.com/user/"
+        "text": "BLOG",
+        "type": "nav-link"
       }
-    ]
+    ],
+    "copyright": {
+      "before": "© All Rights Reserved",
+      "after": [
+        {
+          "text": "Terms",
+          "url": "https://example.com"
+        },
+        {
+          "text": "Privacy Policy",
+          "url": "https://example.com"
+        }
+      ]
+    }
   },
   "page_404": {
     "page_content": {

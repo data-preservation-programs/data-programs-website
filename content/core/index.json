@@ -483,6 +483,7 @@
       }
     },
     "section_people": {
+      "id": "section-people",
       "col_1": {
         "type": "text_block",
         "cols": {
@@ -490,7 +491,7 @@
           "push_left": "off-0",
           "push_right": "off-0"
         },
-        "heading": "OUR PEOPLE",
+        "heading": "WORKING GROUP",
         "theme": "section-heading"
       },
       "col_2": {
@@ -499,10 +500,111 @@
           "num": "col-12",
           "push_left": "off-0",
           "push_right": "off-0"
-        }
+        },
+        "card_grid": ["noGutter"],
+        "card_columns": "col-6",
+        "cards": [
+          {
+            "type": "person",
+            "title": "DEEP KAPUR",
+            "description": "TEAM LEAD",
+            "img": "/images/deep-kapur.jpg"
+          },
+          {
+            "type": "person",
+            "title": "PETER RABBITSON",
+            "description": "SPADE, MANY OTHERS",
+            "img": "/images/peter-rabbitson.jpg"
+          },
+          {
+            "type": "person",
+            "title": "RG",
+            "description": "FIL PLUS, T & T",
+            "img": "/images/rg.jpg"
+          },
+          {
+            "type": "person",
+            "title": "CARO",
+            "description": "SLINGSHOT, REPUTATION DAO, CID METADATA",
+            "img": "/images/caro.jpg"
+          },
+          {
+            "type": "person",
+            "title": "XINAN XU",
+            "description": "SINGULARITY, VALIDATIONBOT, CID CHECKER",
+            "img": "/images/xinan-xu.jpg"
+          },
+          {
+            "type": "person",
+            "title": "SIMON KIM",
+            "description": "FIL PLUS CLIENT PATH TO DATACAP",
+            "img": "/images/simon-kim.jpg"
+          },
+          {
+            "type": "person",
+            "title": "PHIL PANGESTU",
+            "description": "FIL PLUS NOTARY TOOLING AND INCENTIVES",
+            "img": "/images/phil-pangestu.jpg"
+          },
+          {
+            "type": "person",
+            "title": "KEVIN ZAKORCHEMNY",
+            "description": "FIL PLUS SUPPORT FOR PRIVATE AND ENTERPRISE DATA",
+            "img": "/images/kevin-zakorchemny.jpg"
+          },
+          {
+            "type": "person",
+            "title": "DIANA - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/diana.jpg"
+          },
+          {
+            "type": "person",
+            "title": "ORUN - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/orun.jpg"
+          },
+          {
+            "type": "person",
+            "title": "NAURAS - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/nauras.jpg"
+          },
+          {
+            "type": "person",
+            "title": "EMILY - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/emily.jpg"
+          },
+          {
+            "type": "person",
+            "title": "BEN - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/ben.jpg"
+          },
+          {
+            "type": "person",
+            "title": "THOMSON - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/thomson.jpg"
+          },
+          {
+            "type": "person",
+            "title": "KRITIKA - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/kritika.jpg"
+          },
+          {
+            "type": "person",
+            "title": "JAC - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/jac.jpg"
+          }
+        ]
       }
     },
     "section_contributors": {
+      "id": "section-contributors",
       "col_1": {
         "type": "text_block",
         "cols": {
@@ -514,29 +616,35 @@
         "theme": "section-heading"
       },
       "col_2": {
-        "type": "card_list_block",
+        "type": "custom",
         "cols": {
           "num": "col-12",
           "push_left": "off-0",
           "push_right": "off-0"
-        }
-      },
-      "col_3": {
-        "type": "text_block",
-        "cols": {
-          "num": "col-7",
-          "push_left": "off-0",
-          "push_right": "off-0"
-        }
-      },
-      "col_4": {
-        "type": "image_block",
-        "cols": {
-          "num": "col-3",
-          "push_left": "off-2",
-          "push_right": "off-0"
         },
-        "src": "/images/warped-cube.svg"
+        "customizations": [
+          {
+            "name": "SectionContributors",
+            "props": {
+              "logos": [
+                "/images/undone-ventures-logo.svg",
+                "/images/filecoin-foundation-logo.svg",
+                "/images/laudspeaker-logo.svg",
+                "/images/togggle-logo.svg",
+                "/images/daghouse-logo.svg"
+              ],
+              "imageblock": {
+                "type": "image_block",
+                "cols": {
+                  "num": "col-3",
+                  "push_left": "off-2",
+                  "push_right": "off-0"
+                },
+                "src": "/images/warped-cube.svg"
+              }
+            }
+          }
+        ]
       }
     }
   }

@@ -149,6 +149,7 @@ export default {
 }
 
 :deep(.panel-after) {
+  padding: 0 toRem(60);
   .title-matter {
     display: none;
   }
@@ -156,12 +157,31 @@ export default {
     justify-content: space-between;
   }
   .slider-button {
+    padding: 0.75rem 1rem;
     transition: 200ms ease;
     &:hover {
       cursor: pointer;
     }
+    &.next {
+      &:after {
+        transform: translateX(0.125rem);
+      }
+      &:hover {
+        &:after {
+          transform: translateX(0.875rem);
+        }
+      }
+    }
     &.previous {
       flex-direction: row-reverse;
+      &:after {
+        transform: rotate(180deg) translateX(0.25rem);
+      }
+      &:hover {
+        &:after {
+          transform: rotate(180deg) translateX(0.875rem);
+        }
+      }
     }
   }
 }

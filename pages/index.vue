@@ -85,10 +85,55 @@ export default {
 }
 
 :deep(.section-articles) {
+  .text-block {
+    .button-row {
+      display: flex;
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+      .button {
+        .text {
+          margin-right: toRem(11);
+        }
+        &:hover {
+          &:after {
+            transform: translateX(0.75rem);
+          }
+        }
+      }
+    }
+  }
+  div[data-block-id="col_2"] {
+    .column-content {
+      position: relative;
+      height: toRem(834);
+    }
+  }
   .deck-of-cards-slider {
+    position: absolute;
     padding-top: toRem(90);
     width: toRem(1572);
-    transform: translateX(calc(#{math.div($containerWidth, 2)} - 50vw - 66px));
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    // transform: translateX(calc(#{math.div($containerWidth, 2)} - 50vw - 66px));
   }
+}
+
+:deep(.section-people) {
+  margin-bottom: 1.875rem;
+  .card-list-block {
+    .col-6 {
+      &:nth-last-child(1),
+      &:nth-last-child(2) {
+        .card {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+:deep(.section-contributors) {
+  margin-bottom: 2.625rem;
 }
 </style>

@@ -69,6 +69,7 @@ import ImageBlock from '@/components/blocks/image-block'
 import MarkdownBlock from '@/components/blocks/markdown-block'
 import BlockBuilder from '@/components/blocks/block-builder'
 import SectionHero from '@/components/section-hero'
+import SectionContributors from '@/components/section-contributors'
 import DeckOfCards from '@/components/deck-of-cards'
 import CardListBlock from '@/components/blocks/card-list-block'
 
@@ -81,6 +82,7 @@ export default {
     BlockBuilder,
     MarkdownBlock,
     SectionHero,
+    SectionContributors,
     DeckOfCards,
     CardListBlock
   },

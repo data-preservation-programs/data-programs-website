@@ -100,14 +100,17 @@ export default {
 }
 
 .statement-of-intent {
+  position: relative;
   padding: toRem(30) 0;
   @include h5;
+  z-index: 2;
 }
 
 .typeface-container {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .data-programs-typeface {

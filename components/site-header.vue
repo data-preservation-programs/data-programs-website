@@ -82,6 +82,10 @@ export default {
 
 .logo {
   display: block;
+  transition: 250ms ease;
+  &:hover {
+    transform: scale(1.08);
+  }
 }
 
 .nav-item {
