@@ -52,7 +52,7 @@ $letterSpacing_Large: 0.03em;
   letter-spacing: 0.03em;
   @include mini {
     @include fontSize_Regular; // 18px;
-    line-height: leading(52, 18);
+    line-height: leading(27, 18);
   }
 }
 

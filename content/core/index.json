@@ -19,14 +19,15 @@
       ]
     },
     "section_project_list": {
+      "id": "section-projects",
       "col_1": {
         "type": "card_list_block",
         "cols": {
-          "num": "col-12",
-          "push_left": "off-0",
+          "num": "col-12_mi-10_ti-12",
+          "push_left": "off-0_mi-1_ti-0",
           "push_right": "off-0"
         },
-        "card_columns": "col-4",
+        "card_columns": "col-4_mi-12",
         "cards": [
           {
             "type": "project",
@@ -287,18 +288,18 @@
       "col_2": {
         "type": "image_block",
         "cols": {
-          "num": "col-3",
-          "push_left": "off-1",
-          "push_right": "off-1"
+          "num": "col-3_mi-6",
+          "push_left": "off-1_mi-3",
+          "push_right": "off-1_mi-3"
         },
         "src": "/images/warped-grid.svg"
       },
       "col_3": {
         "type": "text_block",
         "cols": {
-          "num": "col-6",
-          "push_left": "off-0",
-          "push_right": "off-1"
+          "num": "col-6_mi-10_ti-12",
+          "push_left": "off-0_mi-1_ti-0",
+          "push_right": "off-1_mi-1_ti-0"
         },
         "description": "Tools, products, and incentive programs designed to drive growth and make data storage on Filecoin more accessible.\n\nThe Network Growth org is focused on increasing the utilization and the usefulness of the Filecoin network. Other teams in our org are focused on individual stakeholders within the network, i.e., focus on the demand side or the supply side of the storage market.\n\nOur team is focused on the market itself - finding ways to drive market making, introducing new tools or programs that enable accelerating deal making and utilization of the network (and helping prove its usefulness / value proposition)."
       }
@@ -501,7 +502,7 @@
           "push_left": "off-0",
           "push_right": "off-0"
         },
-        "card_grid": ["noGutter"],
+        "card_grid": ["noGutter", "equalHeight"],
         "card_columns": "col-6",
         "cards": [
           {
@@ -634,12 +635,6 @@
                 "/images/daghouse-logo.svg"
               ],
               "imageblock": {
-                "type": "image_block",
-                "cols": {
-                  "num": "col-3",
-                  "push_left": "off-2",
-                  "push_right": "off-0"
-                },
                 "src": "/images/warped-cube.svg"
               }
             }

@@ -40,16 +40,32 @@
   "footer": {
     "links": [
       {
-        "text": "ABOUT",
+        "text": "PRODUCTS",
         "type": "nav-link"
       },
       {
-        "text": "PRODUCTS",
+        "text": "ABOUT",
         "type": "nav-link"
       },
       {
         "text": "BLOG",
         "type": "nav-link"
+      },
+      {
+        "text": "TEAM",
+        "type": "nav-link"
+      },
+      {
+        "socials": [
+          {
+            "icon": "slack",
+            "url": "https://example.com"
+          },
+          {
+            "icon": "github",
+            "url": "https://example.com"
+          }
+        ]
       }
     ],
     "copyright": {

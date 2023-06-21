@@ -126,6 +126,9 @@ export default {
   line-height: leading(33, 29);
   letter-spacing: 0.1em;
   font-size: toRem(29);
+  @include mini {
+    font-size: toRem(22);
+  }
 }
 
 .sidebar-image,
@@ -141,16 +144,29 @@ export default {
   border-radius: 0.625rem;
   background-color: $color_Primary;
   overflow: hidden;
+  @include mini {
+    border: solid 1.5px $color_Accent;
+  }
   .sidebar {
     padding: toRem(14) toRem(17);
     width: toRem(70);
     height: calc(100% + 2px);
     border-right: solid 2px $color_Accent;
+    @include mini {
+      border-right: solid 1.5px $color_Accent;
+    }
+    @include mini {
+      width: toRem(53);
+      padding: toRem(14) toRem(12);
+    }
   }
   .card-content {
     display: flex;
     flex-direction: column;
     width: calc(100% - 70px);
+    @include mini {
+      width: calc(100% - 48px);
+    }
   }
   .button-row {
     flex-grow: 1;
@@ -160,6 +176,9 @@ export default {
 }
 // ////////////////////////////////////////////////////////////// Type [Project]
 .card.type__project {
+  @include mini {
+    height: toRem(330);
+  }
   .sidebar {
     background-color: $color_Secondary;
   }
@@ -176,6 +195,12 @@ export default {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      @include mini {
+        width: toRem(26);
+        height: toRem(26);
+        left: 0.875rem;
+        bottom: 0.875rem;
+      }
     }
   }
   .card-content {
@@ -185,6 +210,9 @@ export default {
     width: toRem(130);
     height: toRem(77);
     margin-bottom: toRem(58);
+    @include mini {
+      margin-bottom: toRem(21);
+    }
   }
   .logo {
     width: unset;
@@ -199,14 +227,32 @@ export default {
   .title {
     @include h3;
     margin-bottom: toRem(15);
+    @include mini {
+      margin-bottom: 0.375rem;
+    }
   }
   .description {
     @include p2;
+  }
+  .button-row {
+    :deep(.button) {
+      @include mini {
+        .text {
+          @include fontSize_Mini;
+        }
+      }
+    }
   }
   &.theme__mini-card {
     height: toRem(200);
     &:not(:last-child) {
       margin-bottom: toRem(27);
+      @include mini {
+        margin-bottom: 1rem;
+      }
+    }
+    @include mini {
+      height: toRem(168);
     }
     .image {
       display: none;
@@ -223,16 +269,25 @@ export default {
   }
   .card-content {
     padding-bottom: toRem(17);
+    @include mini {
+      padding-bottom: toRem(5);
+    }
   }
   .image {
     width: calc(100% + 2px);
     height: toRem(195);
     margin-bottom: toRem(40);
+    @include mini {
+      margin-bottom: toRem(19);
+    }
   }
   .title,
   .description,
   .button-row {
     padding: 0 toRem(19);
+    @include mini {
+      padding: 0 0.75rem;
+    }
   }
   .title {
     @include fontSize_Large; // 24px
@@ -248,6 +303,14 @@ export default {
   }
   .description {
     @include p2;
+    @include mini {
+      @include fontSize_Tiny;
+    }
+  }
+  .button-row {
+    :deep(.button) {
+      padding-left: 0;
+    }
   }
 }
 // /////////////////////////////////////////////////////////////// Type [Person]
@@ -255,11 +318,17 @@ export default {
   height: unset;
   padding: toRem(49) 0;
   @include itemDivider;
+  @include mini {
+    flex-direction: column;
+  }
   .sidebar-image {
     width: toRem(75);
     height: toRem(75);
     border-radius: 50%;
     margin-right: toRem(37);
+    @include mini {
+      margin-bottom: toRem(13);
+    }
   }
   .card-content {
     display: flex;
@@ -269,9 +338,15 @@ export default {
   .title {
     @include h3;
     margin-bottom: toRem(3);
+    @include mini {
+      padding-right: 1rem;
+    }
   }
   .description {
     @include p1;
+    @include mini {
+      padding-right: 1rem;
+    }
   }
   .button-row {
     display: none;

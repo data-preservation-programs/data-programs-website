@@ -6,24 +6,37 @@
         <div class="divider"></div>
       </div>
 
-      <div class="col-4">
+      <div class="col-6_mi-12">
         <div class="site-footer-logo">
-          <NuxtLink to="/" class="logo">
+          <div class="statement-of-intent">
+            {{ headerData.statement.toUpperCase() }}
+          </div>
+          <NuxtLink to="/" class="nuxt-link">
             <SiteFooterLogo />
           </NuxtLink>
         </div>
       </div>
 
-      <div class="col-5" data-push-left="off-3">
+      <div class="col-5_mi-12" data-push-left="off-1_mi-0">
         <div class="footer-links">
           <div
             v-for="link in links"
             :key="`${link.text}`"
             class="footer-item">
             <Button
+              v-if="!link.hasOwnProperty('socials')"
               :button="link"
               class="link">
             </Button>
+            <template v-else>
+              <Button
+                v-for="social in link.socials"
+                :key="social.icon"
+                :button="{ url: social.url }"
+                class="link social">
+                <component :is="getSocialIcon(social.icon)" />
+              </Button>
+            </template>
           </div>
         </div>
       </div>
@@ -50,13 +63,17 @@
 import { mapGetters } from 'vuex'
 import SiteFooterLogo from '@/components/svgs/site-logo-footer'
 import Button from '@/components/button'
+import SlackIcon from '@/components/svgs/slack-icon'
+import GithubIcon from '@/components/svgs/github-icon'
 
 export default {
   name: 'SiteFooter',
 
   components: {
     Button,
-    SiteFooterLogo
+    SiteFooterLogo,
+    SlackIcon,
+    GithubIcon
   },
 
   props: {
@@ -79,6 +96,9 @@ export default {
     },
     copyright () {
       return this.footerData.copyright
+    },
+    headerData () {
+      return this.siteContent.general.header
     }
   },
 
@@ -105,6 +125,11 @@ export default {
     },
     getHref (url) {
       return url ? this.$GetTagBasedOnUrl(url) === 'a' ? url : false : false
+    },
+    getSocialIcon (icon) {
+      if (icon === 'slack') { return 'SlackIcon' }
+      if (icon === 'github') { return 'GithubIcon' }
+      return 'div'
     }
   }
 }
@@ -123,10 +148,33 @@ export default {
 }
 
 .site-footer-logo {
-  padding: 1.875rem 0;
-  transition: 250ms ease;
-  &:hover {
-    transform: scale(1.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  @include mini {
+    padding: toRem(19) 0;
+    @include sectionDivider;
+  }
+  .nuxt-link {
+    display: block;
+    width: fit-content;
+    transition: 250ms ease;
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+}
+
+.statement-of-intent {
+  padding: toRem(23) 0;
+  @include fontSize_Regular;
+  @include fontWeight_Semibold;
+  line-height: leading(27, 18);
+  letter-spacing: 0.05em;
+  @include mini {
+    padding: 0;
+    margin-bottom: toRem(53);
   }
 }
 
@@ -161,6 +209,13 @@ export default {
         line-height: leading(36, 16);
       }
     }
+  }
+}
+
+.link {
+  &.social {
+    padding: 0.75rem 0;
+    padding-left: 1.375rem;
   }
 }
 </style>

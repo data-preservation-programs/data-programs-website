@@ -99,6 +99,9 @@ export default {
   .heading {
     @include h2;
     margin-bottom: toRem(21);
+    @include mini {
+      margin-bottom: 0.75rem;
+    }
   }
   .text-wrapper {
     display: none;

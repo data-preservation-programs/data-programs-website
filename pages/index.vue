@@ -64,13 +64,39 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 :deep(.hero-header) {
   margin-bottom: toRem(276);
+  @include mini {
+    margin-bottom: toRem(146);
+  }
+}
+
+:deep(.section-projects) {
+  .card-list-block {
+    .card {
+      @include mini {
+        margin: 0 -0.5rem;
+        .logo {
+          &.filplus-storage {
+            height: toRem(59);
+          }
+        }
+      }
+    }
+  }
 }
 
 :deep(.section-about) {
   margin-bottom: 4rem;
+  div[data-block-id="col_1"] {
+    @include mini {
+      margin-bottom: 1.625rem !important;
+    }
+  }
   .text-block {
     &.theme__section-heading {
       margin-bottom: toRem(76);
+      @include mini {
+        margin-bottom: 0;
+      }
     }
     .description {
       p {
@@ -82,21 +108,49 @@ export default {
       }
     }
   }
+  .image-block {
+    @include mini {
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 :deep(.section-articles) {
+  @include mini {
+    margin-bottom: 0;
+  }
   .text-block {
+    @include mini {
+      align-items: center;
+    }
+    .heading {
+      @include mini {
+        margin-bottom: toRem(7);
+      }
+    }
     .button-row {
       display: flex;
       margin-top: 0;
       margin-bottom: 1.25rem;
+      @include mini {
+        margin-bottom: 0;
+      }
       .button {
         .text {
           margin-right: toRem(11);
+          @include mini {
+            @include fontSize_Mini;
+          }
         }
         &:hover {
           &:after {
             transform: translateX(0.75rem);
+          }
+        }
+        @include mini {
+          &:after {
+            width: 1rem;
+            height: 0.625rem;
           }
         }
       }
@@ -106,6 +160,9 @@ export default {
     .column-content {
       position: relative;
       height: toRem(834);
+      @include mini {
+        height: toRem(544);
+      }
     }
   }
   .deck-of-cards-slider {
@@ -115,7 +172,10 @@ export default {
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    // transform: translateX(calc(#{math.div($containerWidth, 2)} - 50vw - 66px));
+    @include mini {
+      padding-top: toRem(39);
+      width: toRem(1000);
+    }
   }
 }
 
@@ -135,5 +195,8 @@ export default {
 
 :deep(.section-contributors) {
   margin-bottom: 2.625rem;
+  @include mini {
+    margin-bottom: 0.5rem;
+  }
 }
 </style>

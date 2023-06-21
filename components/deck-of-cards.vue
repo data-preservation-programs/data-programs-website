@@ -107,24 +107,40 @@ export default {
   height: toRem(565);
   transform: translateX(-50%);
   transition: transform 250ms ease;
+  @include mini {
+    width: toRem(280);
+    height: toRem(358);
+  }
   &.delay {
     transition: transform 250ms ease 250ms;
   }
   &.animation-slot-3 {
     transform: translateX(-50%) translateY(45px) rotate(-4deg);
+    @include mini {
+      transform: translateX(-50%) translateY(35px) rotate(-4deg);
+    }
   }
   &.animation-slot-5 {
     transform: translateX(-50%) translateY(45px) rotate(4deg);
+    @include mini {
+      transform: translateX(-50%) translateY(35px) rotate(4deg);
+    }
   }
   &.animation-slot-0,
   &.animation-slot-1,
   &.animation-slot-2 {
     transform: translateX(-50%) translateY(112px) rotate(-9.2deg);
+    @include mini {
+      transform: translateX(-50%) translateY(86px) rotate(-9.2deg);
+    }
   }
   &.animation-slot-6,
   &.animation-slot-7,
   &.animation-slot-8-or-grt {
     transform: translateX(-50%) translateY(112px) rotate(9.2deg);
+    @include mini {
+      transform: translateX(-50%) translateY(86px) rotate(9.2deg);
+    }
   }
   &.animation-slot-0,
   &.animation-slot-1,
@@ -150,6 +166,9 @@ export default {
 
 :deep(.panel-after) {
   padding: 0 toRem(60);
+  @include mini {
+    padding: 0 1rem;
+  }
   .title-matter {
     display: none;
   }

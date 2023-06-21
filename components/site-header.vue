@@ -1,13 +1,13 @@
 <template>
   <header class="site-header">
     <div class="grid-middle">
-      <div class="col-2">
+      <div class="col-2_mi-3">
         <NuxtLink to="/" class="logo">
           <SiteLogo />
         </NuxtLink>
       </div>
-      <div class="col-5" data-push-left="off-5">
-        <div class="navigation">
+      <div class="col-5_mi-4" data-push-left="off-5">
+        <div class="navigation desktop">
           <nav>
             <div
               v-for="link in navigation"
@@ -78,6 +78,10 @@ export default {
 .site-header {
   margin-bottom: 1.625rem;
   padding: toRem(30) 0;
+  @include mini {
+    padding: toRem(19) 0;
+    margin-bottom: 0;
+  }
 }
 
 .logo {
@@ -85,6 +89,12 @@ export default {
   transition: 250ms ease;
   &:hover {
     transform: scale(1.08);
+  }
+  :deep(svg) {
+    @include mini {
+      width: toRem(75);
+      height: toRem(75);
+    }
   }
 }
 
@@ -96,6 +106,14 @@ export default {
   }
   &:last-child {
     @include sectionDivider;
+  }
+}
+
+.navigation {
+  &.desktop {
+    @include mini {
+      display: none;
+    }
   }
 }
 </style>
