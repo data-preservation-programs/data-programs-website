@@ -276,7 +276,7 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 .panel-before {
   height: toRem(690);
-  @include mini {
+  @include small {
     height: toRem(424);
   }
 }

@@ -111,7 +111,7 @@ export default {
 
 .navigation {
   &.desktop {
-    @include mini {
+    @include small {
       display: none;
     }
   }

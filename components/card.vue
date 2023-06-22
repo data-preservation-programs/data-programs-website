@@ -137,6 +137,20 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.theme__mini-card {
+  .description {
+    -webkit-line-clamp: 2;
+  }
+}
 // ////////////////////////////////////////////////////////////////////// Shared
 .card.type__project,
 .card.type__slider {
@@ -154,8 +168,6 @@ export default {
     border-right: solid 2px $color_Accent;
     @include mini {
       border-right: solid 1.5px $color_Accent;
-    }
-    @include mini {
       width: toRem(53);
       padding: toRem(14) toRem(12);
     }
@@ -236,7 +248,7 @@ export default {
   }
   .button-row {
     :deep(.button) {
-      @include mini {
+      @include medium {
         .text {
           @include fontSize_Mini;
         }
@@ -264,20 +276,32 @@ export default {
 .card.type__slider {
   width: 100%;
   height: 100%;
+  .sidebar {
+    @include small {
+      border-right: solid 1.5px $color_Accent;
+      width: toRem(53);
+      padding: toRem(14) toRem(12);
+    }
+  }
   .sidebar-text {
     @include textOutlineDark;
+    @include small {
+      font-size: toRem(22);
+    }
   }
   .card-content {
     padding-bottom: toRem(17);
-    @include mini {
+    @include small {
       padding-bottom: toRem(5);
+      width: calc(100% - 48px);
     }
   }
   .image {
     width: calc(100% + 2px);
     height: toRem(195);
     margin-bottom: toRem(40);
-    @include mini {
+    @include small {
+      height: toRem(125);
       margin-bottom: toRem(19);
     }
   }
@@ -285,7 +309,7 @@ export default {
   .description,
   .button-row {
     padding: 0 toRem(19);
-    @include mini {
+    @include small {
       padding: 0 0.75rem;
     }
   }
@@ -295,7 +319,7 @@ export default {
     font-family: $font_Primary;
     line-height: leading(36, 24);
     margin-bottom: 1.375rem;
-    @include mini {
+    @include small {
       @include fontSize_Mini; // 14px
       line-height: leading(23, 14);
       margin-bottom: 0.625rem;
@@ -303,13 +327,21 @@ export default {
   }
   .description {
     @include p2;
-    @include mini {
+    @include small {
       @include fontSize_Tiny;
     }
   }
   .button-row {
+    @include small {
+      margin-top: 0;
+    }
     :deep(.button) {
       padding-left: 0;
+      .text {
+        @include small {
+          @include fontSize_Tiny;
+        }
+      }
     }
   }
 }
@@ -318,7 +350,7 @@ export default {
   height: unset;
   padding: toRem(49) 0;
   @include itemDivider;
-  @include mini {
+  @include medium {
     flex-direction: column;
   }
   .sidebar-image {
@@ -326,7 +358,7 @@ export default {
     height: toRem(75);
     border-radius: 50%;
     margin-right: toRem(37);
-    @include mini {
+    @include medium {
       margin-bottom: toRem(13);
     }
   }
@@ -334,17 +366,18 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 75%;
   }
   .title {
     @include h3;
     margin-bottom: toRem(3);
-    @include mini {
+    @include medium {
       padding-right: 1rem;
     }
   }
   .description {
     @include p1;
-    @include mini {
+    @include medium {
       padding-right: 1rem;
     }
   }

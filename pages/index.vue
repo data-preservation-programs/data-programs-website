@@ -87,6 +87,9 @@ export default {
 :deep(.section-about) {
   margin-bottom: 4rem;
   div[data-block-id="col_1"] {
+    @include medium {
+      margin-bottom: 0 !important;
+    }
     @include mini {
       margin-bottom: 1.625rem !important;
     }
@@ -109,22 +112,22 @@ export default {
     }
   }
   .image-block {
-    @include mini {
+    @include medium {
       margin-bottom: 2rem;
     }
   }
 }
 
 :deep(.section-articles) {
-  @include mini {
+  @include small {
     margin-bottom: 0;
   }
   .text-block {
-    @include mini {
+    @include small {
       align-items: center;
     }
     .heading {
-      @include mini {
+      @include small {
         margin-bottom: toRem(7);
       }
     }
@@ -132,13 +135,13 @@ export default {
       display: flex;
       margin-top: 0;
       margin-bottom: 1.25rem;
-      @include mini {
+      @include small {
         margin-bottom: 0;
       }
       .button {
         .text {
           margin-right: toRem(11);
-          @include mini {
+          @include small {
             @include fontSize_Mini;
           }
         }
@@ -147,7 +150,7 @@ export default {
             transform: translateX(0.75rem);
           }
         }
-        @include mini {
+        @include small {
           &:after {
             width: 1rem;
             height: 0.625rem;
@@ -160,7 +163,7 @@ export default {
     .column-content {
       position: relative;
       height: toRem(834);
-      @include mini {
+      @include small {
         height: toRem(544);
       }
     }
@@ -172,7 +175,7 @@ export default {
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    @include mini {
+    @include small {
       padding-top: toRem(39);
       width: toRem(1000);
     }

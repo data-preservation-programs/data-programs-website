@@ -2,9 +2,10 @@
   <div class="section-hero-header">
 
     <div class="grid">
-      <div class="col-7_mi-8_ti-9">
-        <div class="statement-of-intent">
-          {{ headerData.statement.toUpperCase() }}
+      <div class="col-7_sm-8_ti-9">
+        <div
+          class="statement-of-intent"
+          v-html="headerData.statement.toUpperCase()">
         </div>
       </div>
     </div>
@@ -110,7 +111,14 @@ export default {
   padding: toRem(30) 0;
   @include h5;
   z-index: 2;
+  @include customMaxMQ ($containerWidth + 4rem) {
+    padding-top: 0;
+  }
+  @include medium {
+    @include fontSize_Medium; // 20
+  }
   @include mini {
+    @include fontSize_Small; // 16
     padding-top: 0.125rem;
     padding-right: 1.5rem;
   }

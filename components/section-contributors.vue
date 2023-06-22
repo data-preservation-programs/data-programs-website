@@ -16,7 +16,7 @@
 
     <div class="grid-equalHeight-noGutter">
 
-      <div class="col-7_mi-12">
+      <div class="col-7_md-8_sm-7_mi-12">
         <div class="cta-block">
 
           <div class="typeface">
@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <div class="col-3_mi-6" data-push-left="off-2_mi-6">
+      <div class="col-3_md-3_sm-3_mi-6" data-push-left="off-2_md-1_sm-2_mi-6">
         <ImageBlock :block="imageblock" />
       </div>
 
@@ -95,7 +95,7 @@ export default {
   align-items: center;
   padding-top: toRem(44);
   padding-bottom: toRem(120);
-  @include mini {
+  @include small {
     padding-bottom: toRem(44);
   }
 }
@@ -115,21 +115,24 @@ export default {
   border-radius: toRem(19);
   padding: toRem(30) toRem(38);
   overflow: hidden;
-  @include mini {
+  @include medium {
+    padding: toRem(30) toRem(30);
+  }
+  @include small {
     padding: toRem(27) toRem(19);
     padding-bottom: toRem(20);
   }
   .typeface {
     width: 100%;
     margin-top: 1.125rem;
-    @include mini {
+    @include small {
       margin-top: 0;
       margin-bottom: 1.875rem;
     }
     :deep(svg) {
       width: toRem(1103);
       transform: translateX(-138px);
-      @include mini {
+      @include small {
         width: toRem(477);
         transform: translateX(-50px);
         height: toRem(45);
@@ -140,7 +143,10 @@ export default {
   .cta {
     display: flex;
     justify-content: space-between;
-    @include mini {
+    @include large {
+      align-items: flex-end;
+    }
+    @include small {
       height: toRem(40);
     }
     .text {
@@ -148,7 +154,10 @@ export default {
       @include fontSize_Huge;
       line-height: leading(52, 36);
       color: $mercury;
-      @include mini {
+      @include large {
+        @include fontSize_Large;
+      }
+      @include small {
         @include fontSize_Small;
       }
       .strong {
@@ -165,8 +174,14 @@ export default {
       transform: scale(1.05);
     }
     :deep(.button) {
-      width: toRem(39);
-      height: toRem(39);
+      @include small {
+        width: toRem(39);
+        height: toRem(39);
+      }
+      svg {
+        width: toRem(39);
+        height: toRem(39);
+      }
     }
   }
 }

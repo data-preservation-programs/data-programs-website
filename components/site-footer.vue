@@ -6,7 +6,7 @@
         <div class="divider"></div>
       </div>
 
-      <div class="col-6_mi-12">
+      <div class="col-6_sm-12">
         <div class="site-footer-logo">
           <div class="statement-of-intent">
             {{ headerData.statement.toUpperCase() }}
@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      <div class="col-5_mi-12" data-push-left="off-1_mi-0">
+      <div class="col-5_sm-12" data-push-left="off-1_sm-0">
         <div class="footer-links">
           <div
             v-for="link in links"
@@ -152,7 +152,7 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  @include mini {
+  @include small {
     padding: toRem(19) 0;
     @include sectionDivider;
   }
@@ -172,7 +172,7 @@ export default {
   @include fontWeight_Semibold;
   line-height: leading(27, 18);
   letter-spacing: 0.05em;
-  @include mini {
+  @include small {
     padding: 0;
     margin-bottom: toRem(53);
   }

@@ -105,7 +105,7 @@ export default {
   padding: 0 toRem(13);
   border: solid 2px $color_Secondary;
   border-radius: 0.3125rem;
-  @include mini {
+  @include medium {
     border: solid 1.5px $color_Secondary;
   }
   .text {
