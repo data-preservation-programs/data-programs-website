@@ -2,9 +2,11 @@
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 
+![Data Programs graph image](static/images/data-programs-open-graph.png)
+
 ## Overview
 
-This is rhe repo for the Data Programs static microsite (available at [dataprograms.org](https://dataprograms.org))
+This is the repo for the Data Programs static microsite (available at [dataprograms.org](https://dataprograms.org))
 
 - This repo represents a static site which requires compilation, but can then be served as a static resource
 - This site can be hosted on any resource supporting static files, but may include some services that require a serverless node
