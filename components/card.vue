@@ -349,18 +349,13 @@ export default {
 .card.type__person {
   height: unset;
   padding: toRem(49) 0;
+  flex-direction: column;
   @include itemDivider;
-  @include medium {
-    flex-direction: column;
-  }
   .sidebar-image {
     width: toRem(75);
     height: toRem(75);
     border-radius: 50%;
-    margin-right: toRem(37);
-    @include medium {
-      margin-bottom: toRem(13);
-    }
+    margin-bottom: toRem(13);
   }
   .card-content {
     display: flex;

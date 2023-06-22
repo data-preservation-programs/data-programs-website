@@ -503,7 +503,7 @@
           "push_right": "off-0"
         },
         "card_grid": ["noGutter", "equalHeight"],
-        "card_columns": "col-6",
+        "card_columns": "col-4_md-6",
         "cards": [
           {
             "type": "person",
@@ -515,7 +515,13 @@
             "type": "person",
             "title": "PETER RABBITSON",
             "description": "SPADE, MANY OTHERS",
-            "img": "/images/peter-rabbitson.jpg"
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
           },
           {
             "type": "person",
@@ -531,6 +537,12 @@
           },
           {
             "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
             "title": "XINAN XU",
             "description": "SINGULARITY, VALIDATIONBOT, CID CHECKER",
             "img": "/images/xinan-xu.jpg"
@@ -540,6 +552,12 @@
             "title": "SIMON KIM",
             "description": "FIL PLUS CLIENT PATH TO DATACAP",
             "img": "/images/simon-kim.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
           },
           {
             "type": "person",
@@ -555,6 +573,12 @@
           },
           {
             "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
             "title": "DIANA - UNDONE VENTURES",
             "description": "LOREM IPSUM TEAM ROLE",
             "img": "/images/diana.jpg"
@@ -564,6 +588,12 @@
             "title": "ORUN - UNDONE VENTURES",
             "description": "LOREM IPSUM TEAM ROLE",
             "img": "/images/orun.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
           },
           {
             "type": "person",
@@ -579,6 +609,12 @@
           },
           {
             "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
             "title": "BEN - UNDONE VENTURES",
             "description": "LOREM IPSUM TEAM ROLE",
             "img": "/images/ben.jpg"
@@ -591,6 +627,12 @@
           },
           {
             "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
             "title": "KRITIKA - UNDONE VENTURES",
             "description": "LOREM IPSUM TEAM ROLE",
             "img": "/images/kritika.jpg"
@@ -600,6 +642,12 @@
             "title": "JAC - UNDONE VENTURES",
             "description": "LOREM IPSUM TEAM ROLE",
             "img": "/images/jac.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
           }
         ]
       }

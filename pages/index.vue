@@ -185,11 +185,19 @@ export default {
 :deep(.section-people) {
   margin-bottom: 1.875rem;
   .card-list-block {
-    .col-6 {
+    .col-4_md-6 {
       &:nth-last-child(1),
-      &:nth-last-child(2) {
+      &:nth-last-child(2),
+      &:nth-last-child(3) {
         .card {
           border-bottom: none;
+        }
+      }
+      &:nth-last-child(3) {
+        .card {
+          @include medium {
+            border-bottom: solid 0.125rem $color_Secondary;
+          }
         }
       }
     }

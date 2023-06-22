@@ -36,7 +36,7 @@
 
 <script>
 // ====================================================================== Import
-import CircularSlider from '@/components/circular-slider'
+import CircularSlider from '@/components/sliders/circular-slider-a'
 import Card from '@/components/card'
 import Button from '@/components/button'
 

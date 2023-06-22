@@ -4,12 +4,35 @@
     <div class="grid">
       <div class="col-12">
         <div class="contributor-logos">
-          <div
-            v-for="logo in logos"
-            :key="logo"
-            class="image-wrapper">
-            <img :src="logo" />
-          </div>
+          <CircularSlider
+            :grid-cols="sliderCols"
+            :reverse-grid="true"
+            :collection="contributors"
+            :display-options="{ default: 5, small: 3 }">
+
+            <template
+              v-for="(logo, i) in contributors"
+              #[`column-${i}`]>
+              <div
+                :key="logo"
+                class="image-wrapper">
+                <img :src="logo" />
+              </div>
+            </template>
+
+            <template #icon-previous>
+              <Button
+                :button="previous"
+                class="slider-button previous" />
+            </template>
+
+            <template #icon-next>
+              <Button
+                :button="next"
+                class="slider-button next" />
+            </template>
+
+          </CircularSlider>
         </div>
       </div>
     </div>
@@ -60,6 +83,7 @@ import Button from '@/components/button'
 import ImageBlock from '@/components/blocks/image-block'
 import ArrowUpRight from '@/components/svgs/arrow-up-right'
 import JoinUsTypeface from '@/components/svgs/join-us'
+import CircularSlider from '@/components/sliders/circular-slider-b'
 
 // ====================================================================== Export
 export default {
@@ -69,7 +93,8 @@ export default {
     Button,
     ImageBlock,
     ArrowUpRight,
-    JoinUsTypeface
+    JoinUsTypeface,
+    CircularSlider
   },
 
   props: {
@@ -83,6 +108,41 @@ export default {
       required: false,
       default: () => ({})
     }
+  },
+
+  data () {
+    return {
+      sliderCols: {
+        before: {
+          num: 'col-10_mi-12',
+          push_left: 'off-1_mi-0',
+          push_right: 'off-1_mi-0'
+        },
+        after: {
+          num: 'col-12',
+          push_left: 'off-0',
+          push_right: 'off-0'
+        }
+      },
+      previous: {
+        type: 'text-only',
+        text: '',
+        theme: 'strong'
+      },
+      next: {
+        type: 'text-only',
+        text: '',
+        theme: 'strong'
+      }
+    }
+  },
+
+  computed: {
+    contributors () {
+      const array = []
+      for (let i = 0; i < 3; i++) { array.push(this.logos) }
+      return array.flat()
+    }
   }
 }
 </script>
@@ -90,19 +150,105 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 .contributor-logos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: toRem(44);
-  padding-bottom: toRem(120);
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  padding-top: toRem(34);
+  padding-bottom: toRem(100);
   @include small {
     padding-bottom: toRem(44);
   }
+  @include mini {
+    padding: toRem(14) 0;
+  }
 }
 
-.image-wrapper {
-  width: 20%;
-  padding: 0 4%;
+:deep(.slider-container) {
+  [class~="grid"],
+  [class*="grid-"],
+  [class*="grid_"] {
+    position: relative;
+  }
+  .panel-before,
+  .panel-after {
+    height: toRem(150) !important;
+    @include mini {
+      height: toRem(68) !important;
+    }
+  }
+  .panel-before {
+    @include mini {
+      margin: 0 -1.5rem;
+      width: calc(100% + 3rem);
+    }
+    .slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 2.5rem;
+      @include medium {
+        padding: 0 1.5rem;
+      }
+      @include small {
+        padding: 0 2rem;
+      }
+      @include mini {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+  .panel-after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include mini {
+      position: relative;
+    }
+    .title-matter {
+      display: none;
+    }
+    .slide-selector {
+      position: relative;
+      justify-content: space-between;
+      padding: 0 1.875rem;
+      &:after {
+        display: none;
+        content: 'SEE MORE';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        @include fontSize_Small;
+        @include fontWeight_Bold;
+        line-height: leading(33, 16);
+        letter-spacing: 0.03em;
+        @include mini {
+          display: block;
+        }
+      }
+      @include small {
+        padding: 0;
+      }
+      @include mini {
+        padding: 0 1.5rem;
+      }
+    }
+    .slider-button {
+      &.previous {
+        padding-left: 0;
+        padding-right: 1rem;
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
+      &:after {
+        @include mini {
+          background-size: toRem(25) toRem(15);
+        }
+      }
+    }
+  }
 }
 
 .cta-block {
