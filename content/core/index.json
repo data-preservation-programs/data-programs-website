@@ -35,6 +35,7 @@
             "img": "/images/fil-plus-bricks.jpg",
             "title": "FILPLUS.STORAGE",
             "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+            "reverse_img": "/images/filplus-storage-screencap.jpg",
             "ctas": [
               {
                 "type": "project-cta",
@@ -127,6 +128,7 @@
             "logo": "/images/moonlanding-logo.svg",
             "img": "/images/moon.jpg",
             "title": "MOONLANDING",
+            "reverse_img": "/images/moonlanding-screencap.jpg",
             "description": "Moon Landing is designed to ramp up storage providers in the Filecoin network by enabling them to serve verified deals at scale.",
             "ctas": [
               {
@@ -148,6 +150,7 @@
             "logo": "/images/slingshot-logo.svg",
             "img": "/images/slingshot-warpspeed.jpg",
             "title": "SLINGSHOT",
+            "reverse_img": "/images/slingshot-screencap.jpg",
             "description": "A community program for developers, data preparers, and storage providers for preserving open datasets on the decentralized web, forever.",
             "ctas": [
               {
@@ -253,6 +256,7 @@
             "logo": "/images/open-panda-logo.svg",
             "img": "/images/open-panda-sanddunes.jpg",
             "title": "OPEN PANDA",
+            "reverse_img": "/images/open-panda-screencap.jpg",
             "description": "Open Panda is a platform for data researchers, analysts, students and enthusiasts to interact with open datasets stored on Filecoin.",
             "ctas": [
               {
