@@ -469,6 +469,9 @@ export default {
     height: toRem(75);
     border-radius: 50%;
     margin-bottom: toRem(13);
+    .sidebar-text {
+      display: none;
+    }
   }
   .card-content {
     display: flex;
@@ -516,15 +519,6 @@ export default {
   }
   100% {
     transform: scaleX(1);
-  }
-}
-
-@keyframes revealImage {
-  0% {
-    z-index: -1;
-  }
-  100% {
-    z-index: 10;
   }
 }
 </style>

@@ -139,7 +139,6 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 .site-footer {
   position: relative;
-  background-color: $color_Primary;
 }
 
 .divider {
