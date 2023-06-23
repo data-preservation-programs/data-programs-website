@@ -105,16 +105,45 @@ export default {
   padding: 0 toRem(13);
   border: solid 2px $color_Secondary;
   border-radius: 0.3125rem;
+  transition: 250ms ease;
   @include medium {
     border: solid 1.5px $color_Secondary;
   }
   .text {
     @include cta;
+    transition: 250ms ease;
   }
-  &.theme__dark {
+  &:hover {
     background-color: $color_Secondary;
     .text {
       color: $mercury;
+    }
+  }
+  &.theme__dark {
+    background-color: $color_Secondary;
+    &:before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: -5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      border-radius: toRem(7);
+      border: solid 1px $color_Secondary;
+      opacity: 0;
+      transition: inherit;
+    }
+    .text {
+      color: $mercury;
+    }
+    &:hover {
+      background-color: $color_Primary;
+      &:before {
+        opacity: 1;
+      }
+      .text {
+        color: $color_Secondary;
+      }
     }
   }
 }
