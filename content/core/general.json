@@ -17,34 +17,70 @@
         "url": "/blog/hello-world"
       }
     ],
+    "statement": "tools, products, & incentive programs designed to drive growth and make data storage on Filecoin more accessible",
     "nav": [
       {
-        "text": "Storybook",
-        "type": "underline",
-        "url": "https://au-nuxt-static.on.fleek.co"
+        "text": "PROJECTS",
+        "type": "nav-link"
+      },
+      {
+        "text": "ABOUT",
+        "type": "nav-link"
+      },
+      {
+        "text": "BLOG",
+        "type": "nav-link"
+      },
+      {
+        "text": "TEAM",
+        "type": "nav-link"
       }
     ]
   },
   "footer": {
-    "copyright": "Made with ❤️ by AU",
-    "social": [
+    "links": [
       {
-        "id": "facebook",
-        "url": "https://www.facebook.com/"
+        "text": "PRODUCTS",
+        "type": "nav-link"
       },
       {
-        "id": "twitter",
-        "url": "https://twitter.com/"
+        "text": "ABOUT",
+        "type": "nav-link"
       },
       {
-        "id": "linkedin",
-        "url": "https://www.linkedin.com/company/"
+        "text": "BLOG",
+        "type": "nav-link"
       },
       {
-        "id": "youtube",
-        "url": "https://www.youtube.com/user/"
+        "text": "TEAM",
+        "type": "nav-link"
+      },
+      {
+        "socials": [
+          {
+            "icon": "slack",
+            "url": "https://example.com"
+          },
+          {
+            "icon": "github",
+            "url": "https://example.com"
+          }
+        ]
       }
-    ]
+    ],
+    "copyright": {
+      "before": "© All Rights Reserved",
+      "after": [
+        {
+          "text": "Terms",
+          "url": "https://example.com"
+        },
+        {
+          "text": "Privacy Policy",
+          "url": "https://example.com"
+        }
+      ]
+    }
   },
   "page_404": {
     "page_content": {

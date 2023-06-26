@@ -83,6 +83,9 @@ $borderRadius_ExtraLarge: 0.875rem;
 
 @mixin sectionDivider {
   border-bottom: solid 0.625rem $color_Secondary;
+  @include mini {
+    border-bottom: solid 0.3125rem $color_Secondary;
+  }
 }
 
 @mixin itemDivider {

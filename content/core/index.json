@@ -10,112 +10,688 @@
     "image": "/images/data-programs-open-graph.png"
   },
   "page_content": {
-    "section_text_center": {
-      "grid": [
-        "middle",
-        "center",
-        "noGutter"
-      ],
-      "col_1": {
-        "type": "text_block",
-        "align": "center",
-        "cols": {
-          "num": "col-12",
-          "push_left": "off-1_md-0",
-          "push_right": "off-1_md-0"
-        },
-        "heading": "Welcome to AU's Nuxt Static Boilerplate"
-      },
-      "hide": false
+    "section-hero-header": {
+      "id": "hero-header",
+      "off_grid": [
+        {
+          "name": "SectionHero"
+        }
+      ]
     },
-    "section_basic_section_1": {
-      "grid": [
-        "middle",
-        "center"
-      ],
+    "section_project_list": {
+      "id": "section-projects",
       "col_1": {
-        "label": "Documentation",
-        "heading": "Storybook",
-        "description": "Storybook automatically deploys to [https://agency-undone.github.io/nuxt-static](https://agency-undone.github.io/nuxt-static) using Github pages when committing to develop",
-        "ctas": [
+        "type": "card_list_block",
+        "cols": {
+          "num": "col-12_sm-10_ti-12",
+          "push_left": "off-0_sm-1_ti-0",
+          "push_right": "off-0"
+        },
+        "card_columns": "col-4_lg-6_sm-12",
+        "cards": [
           {
-            "type": "solid",
-            "text": "Storybook",
-            "url": "https://agency-undone.github.io/nuxt-static"
+            "type": "project",
+            "logo": "/images/filecoin-plug-logo.svg",
+            "img": "/images/fil-plus-bricks.jpg",
+            "title": "FILPLUS.STORAGE",
+            "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+            "reverse_img": "/images/filplus-storage-screencap.jpg",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "",
+            "img": "",
+            "title": "SINGULARITY",
+            "description": "Singularity is a general-purpose onboarding tool for Filecoin, which has also been able to leverage its modular design for purpose-built data preparation tooling",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "",
+            "img": "/images/spade-texture.jpg",
+            "title": "SPADE",
+            "description": "Building the latest deal engine to support at-scale data onboarding in the Filecoin network",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          [
+            {
+              "type": "project",
+              "title": "SP REPUTATION WG",
+              "description": "Measuring Storage Provider reputation and quality of service.",
+              "theme": "mini-card",
+              "ctas": [
+                {
+                  "type": "project-cta",
+                  "text": "LEARN MORE",
+                  "url": "https://example.com",
+                  "theme": "light"
+                }
+              ]
+            },
+            {
+              "type": "project",
+              "title": "METADATA WG",
+              "description": "Aligning the Filecoin ecosystem on metadata collection standards.",
+              "theme": "mini-card",
+              "ctas": [
+                {
+                  "type": "project-cta",
+                  "text": "LEARN MORE",
+                  "url": "https://example.com",
+                  "theme": "light"
+                }
+              ]
+            }
+          ],
+          {
+            "type": "project",
+            "logo": "/images/moonlanding-logo.svg",
+            "img": "/images/moon.jpg",
+            "title": "MOONLANDING",
+            "reverse_img": "/images/moonlanding-screencap.jpg",
+            "description": "Moon Landing is designed to ramp up storage providers in the Filecoin network by enabling them to serve verified deals at scale.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/slingshot-logo.svg",
+            "img": "/images/slingshot-warpspeed.jpg",
+            "title": "SLINGSHOT",
+            "reverse_img": "/images/slingshot-screencap.jpg",
+            "description": "A community program for developers, data preparers, and storage providers for preserving open datasets on the decentralized web, forever.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/ground-control-logo.svg",
+            "img": "",
+            "title": "GROUND CONTROL",
+            "description": "Know Your Storage Provider automation for enabling client to SP matching for the Spade platform.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/deals-oracle-logo.svg",
+            "img": "",
+            "title": "DEALS ORACLE",
+            "description": "Tracking active Filecoin storage deals. Part of the overall Spade platform, but also supports several dashboards and enables data onboarding analysis.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/retrieval-bot-logo.svg",
+            "img": "",
+            "title": "RETRIEVAL BOT",
+            "description": "A scalable service to perform retrieval testing on data stored on the Filecoin network.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/cid-checker-logo.svg",
+            "img": "",
+            "title": "CID CHECKER",
+            "description": "Deal distribution analysis and reporting for data stored on Filecoin through the Filecoin Plus program.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/open-panda-logo.svg",
+            "img": "/images/open-panda-sanddunes.jpg",
+            "title": "OPEN PANDA",
+            "reverse_img": "/images/open-panda-screencap.jpg",
+            "description": "Open Panda is a platform for data researchers, analysts, students and enthusiasts to interact with open datasets stored on Filecoin.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "dark"
+              }
+            ]
           }
-        ],
-        "type": "text_block",
-        "cols": {
-          "num": "col-6_md-12",
-          "push_left": "",
-          "push_right": ""
-        }
-      },
-      "col_2": {
-        "src": "/images/open-graph.png",
-        "type": "image_block",
-        "cols": {
-          "num": "col-5_md-12_lg-last_md-first",
-          "push_left": "",
-          "push_right": ""
-        }
+        ]
       }
     },
-    "section_basic_section_2": {
-      "grid": [
-        "middle",
-        "center"
-      ],
+    "section_about": {
+      "id": "section-about",
+      "grid": ["middle"],
       "col_1": {
-        "heading": "Index Page",
-        "description": "Index page is being pulled from <code>/content/core/index.json</code>",
-        "ctas": [
-          {
-            "type": "solid",
-            "text": "Home",
-            "url": "/"
-          }
-        ],
         "type": "text_block",
         "cols": {
-          "num": "col-4_md-12",
-          "push_left": "",
-          "push_right": ""
-        }
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "heading": "WHAT IS DATA PROGRAMS",
+        "theme": "section-heading"
       },
       "col_2": {
-        "heading": "Blog Template",
-        "description": "Blog posts are auto generated when md file is added to <code>/content/blog</code>. Url is under <code>/blog/[slug]</code>",
-        "ctas": [
-          {
-            "type": "solid",
-            "text": "Hello World",
-            "url": "/blog/hello-world"
-          }
-        ],
-        "type": "text_block",
+        "type": "image_block",
         "cols": {
-          "num": "col-4_md-12",
-          "push_left": "",
-          "push_right": ""
-        }
+          "num": "col-3_md-6",
+          "push_left": "off-1_md-3",
+          "push_right": "off-1_md-3"
+        },
+        "src": "/images/warped-grid.svg"
       },
       "col_3": {
-        "heading": "Page Template",
-        "description": "Pages are auto generated when json file is added to <code>/content/page</code>`. Only top level tier support at the moment",
-        "ctas": [
-          {
-            "type": "solid",
-            "text": "About",
-            "url": "/about"
-          }
-        ],
         "type": "text_block",
         "cols": {
-          "num": "col-4_md-12",
-          "push_left": "",
-          "push_right": ""
-        }
+          "num": "col-6_md-10_ti-12",
+          "push_left": "off-0_md-1_ti-0",
+          "push_right": "off-1_md-1_ti-0"
+        },
+        "description": "Tools, products, and incentive programs designed to drive growth and make data storage on Filecoin more accessible.\n\nThe Network Growth org is focused on increasing the utilization and the usefulness of the Filecoin network. Other teams in our org are focused on individual stakeholders within the network, i.e., focus on the demand side or the supply side of the storage market.\n\nOur team is focused on the market itself - finding ways to drive market making, introducing new tools or programs that enable accelerating deal making and utilization of the network (and helping prove its usefulness / value proposition)."
+      }
+    },
+    "section_articles": {
+      "id": "section-articles",
+      "grid": ["noBottom", "noGutter"],
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "heading": "ARTICLES",
+        "theme": "section-heading",
+        "ctas": [
+          {
+            "type": "text-only",
+            "text": "All articles",
+            "url": "https://example.com",
+            "theme": "regular"
+          }
+        ]
+      },
+      "col_2": {
+        "type": "custom",
+        "cols": {
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "customizations": [
+          {
+            "name": "DeckOfCards",
+            "props": {
+              "cards": [
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
+                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://example.com",
+                      "theme": "strong"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "section_people": {
+      "id": "section-people",
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "heading": "WORKING GROUP",
+        "theme": "section-heading"
+      },
+      "col_2": {
+        "type": "card_list_block",
+        "cols": {
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "card_grid": ["noGutter", "equalHeight"],
+        "card_columns": "col-4_md-6",
+        "cards": [
+          {
+            "type": "person",
+            "title": "DEEP KAPUR",
+            "description": "TEAM LEAD",
+            "img": "/images/deep-kapur.jpg"
+          },
+          {
+            "type": "person",
+            "title": "PETER RABBITSON",
+            "description": "SPADE, MANY OTHERS",
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
+            "title": "RG",
+            "description": "FIL PLUS, T & T",
+            "img": "/images/rg.jpg"
+          },
+          {
+            "type": "person",
+            "title": "CARO",
+            "description": "SLINGSHOT, REPUTATION DAO, CID METADATA",
+            "img": "/images/caro.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
+            "title": "XINAN XU",
+            "description": "SINGULARITY, VALIDATIONBOT, CID CHECKER",
+            "img": "/images/xinan-xu.jpg"
+          },
+          {
+            "type": "person",
+            "title": "SIMON KIM",
+            "description": "FIL PLUS CLIENT PATH TO DATACAP",
+            "img": "/images/simon-kim.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
+            "title": "PHIL PANGESTU",
+            "description": "FIL PLUS NOTARY TOOLING AND INCENTIVES",
+            "img": "/images/phil-pangestu.jpg"
+          },
+          {
+            "type": "person",
+            "title": "KEVIN ZAKORCHEMNY",
+            "description": "FIL PLUS SUPPORT FOR PRIVATE AND ENTERPRISE DATA",
+            "img": "/images/kevin-zakorchemny.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
+            "title": "DIANA - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/diana.jpg"
+          },
+          {
+            "type": "person",
+            "title": "ORUN - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/orun.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
+            "title": "NAURAS - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/nauras.jpg"
+          },
+          {
+            "type": "person",
+            "title": "EMILY - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/emily.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
+            "title": "BEN - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/ben.jpg"
+          },
+          {
+            "type": "person",
+            "title": "THOMSON - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/thomson.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
+          },
+          {
+            "type": "person",
+            "title": "KRITIKA - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/kritika.jpg"
+          },
+          {
+            "type": "person",
+            "title": "JAC - UNDONE VENTURES",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/jac.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LOREM IPSUMSON",
+            "description": "LOREM IPSUM TEAM ROLE",
+            "img": "/images/lorem-ipsum.jpg"
+          }
+        ]
+      }
+    },
+    "section_contributors": {
+      "id": "section-contributors",
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "heading": "CONTRIBUTORS",
+        "theme": "section-heading"
+      },
+      "col_2": {
+        "type": "custom",
+        "cols": {
+          "num": "col-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "customizations": [
+          {
+            "name": "SectionContributors",
+            "props": {
+              "logos": [
+                "/images/undone-ventures-logo.svg",
+                "/images/filecoin-foundation-logo.svg",
+                "/images/laudspeaker-logo.svg",
+                "/images/togggle-logo.svg",
+                "/images/daghouse-logo.svg"
+              ],
+              "imageblock": {
+                "src": "/images/warped-cube.svg"
+              }
+            }
+          }
+        ]
       }
     }
   }

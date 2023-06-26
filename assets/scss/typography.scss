@@ -3,7 +3,7 @@
 
 // -------------------------------------------------------------------- Families
 $font_Primary: 'Space Grotesk';
-$font_Secondary: 'Random Grotesque Standard';
+$font_Secondary: 'Random Grotesque';
 $font_Code: monospace;
 
 // --------------------------------------------------------------------- Leading
@@ -52,7 +52,7 @@ $letterSpacing_Large: 0.03em;
   letter-spacing: 0.03em;
   @include mini {
     @include fontSize_Regular; // 18px;
-    line-height: leading(52, 18);
+    line-height: leading(27, 18);
   }
 }
 
@@ -81,11 +81,11 @@ $letterSpacing_Large: 0.03em;
 }
 
 @mixin h5 { // site header statement of intent
-  @include fontSize_Medium; // 20px
+  @include fontSize_Large; // 24px
   @include fontWeight_Semibold; // 600
   font-family: $font_Secondary;
-  line-height: leading(25, 20);
-  letter-spacing: 0.04em;
+  line-height: leading(45, 24);
+  letter-spacing: 0.05em;
   @include mini {
     @include fontSize_Small; // 16
     @include fontWeight_Semibold; // 600
