@@ -40,7 +40,7 @@
               {
                 "type": "project-cta",
                 "text": "LEARN MORE",
-                "url": "https://example.com",
+                "url": "https://filplus.storage/",
                 "theme": "light"
               },
               {
@@ -61,13 +61,13 @@
               {
                 "type": "project-cta",
                 "text": "LEARN MORE",
-                "url": "https://example.com",
+                "url": "https://singularity.storage/",
                 "theme": "light"
               },
               {
                 "type": "project-cta",
                 "text": "DASHBOARD",
-                "url": "https://example.com",
+                "url": "https://dataprograms.grafana.net/public-dashboards/d436fafb93b7437d87c3fa99acd4374f",
                 "theme": "dark"
               }
             ]
@@ -82,13 +82,13 @@
               {
                 "type": "project-cta",
                 "text": "LEARN MORE",
-                "url": "https://example.com",
+                "url": "https://ecosystem-wg.notion.site/Spade-efficient-data-onboarding-to-the-Filecoin-network-8e5dc48fd7c54e0e9385e445543a305a?pvs=4",
                 "theme": "light"
               },
               {
                 "type": "project-cta",
                 "text": "DASHBOARD",
-                "url": "https://example.com",
+                "url": "https://dataprograms.grafana.net/public-dashboards/5014f382fc8f4cddaf8990ae978f8332",
                 "theme": "dark"
               }
             ]
@@ -103,7 +103,7 @@
                 {
                   "type": "project-cta",
                   "text": "LEARN MORE",
-                  "url": "https://example.com",
+                  "url": "https://spreputation.super.site/",
                   "theme": "light"
                 }
               ]
@@ -117,7 +117,7 @@
                 {
                   "type": "project-cta",
                   "text": "LEARN MORE",
-                  "url": "https://example.com",
+                  "url": "https://filecoinproject.slack.com/archives/C051ZCWSLHE",
                   "theme": "light"
                 }
               ]
@@ -134,14 +134,8 @@
               {
                 "type": "project-cta",
                 "text": "LEARN MORE",
-                "url": "https://example.com",
+                "url": "https://moon-landing.io/",
                 "theme": "light"
-              },
-              {
-                "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://example.com",
-                "theme": "dark"
               }
             ]
           },
@@ -156,13 +150,13 @@
               {
                 "type": "project-cta",
                 "text": "LEARN MORE",
-                "url": "https://example.com",
+                "url": "https://slingshot.filecoin.io/",
                 "theme": "light"
               },
               {
                 "type": "project-cta",
                 "text": "DASHBOARD",
-                "url": "https://example.com",
+                "url": "https://datasets.filecoin.io/",
                 "theme": "dark"
               }
             ]
@@ -177,14 +171,8 @@
               {
                 "type": "project-cta",
                 "text": "LEARN MORE",
-                "url": "https://example.com",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSfr9R1rEffGojKcUUgIZWpNdv4GWE6-tgDw3TgI2DQ4JhdPSg/viewform",
                 "theme": "light"
-              },
-              {
-                "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://example.com",
-                "theme": "dark"
               }
             ]
           },
@@ -198,14 +186,8 @@
               {
                 "type": "project-cta",
                 "text": "LEARN MORE",
-                "url": "https://example.com",
+                "url": "https://github.com/ribasushi/fil-naive-marketwatch",
                 "theme": "light"
-              },
-              {
-                "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://example.com",
-                "theme": "dark"
               }
             ]
           },
@@ -219,14 +201,8 @@
               {
                 "type": "project-cta",
                 "text": "LEARN MORE",
-                "url": "https://example.com",
+                "url": "https://github.com/data-preservation-programs/RetrievalBot",
                 "theme": "light"
-              },
-              {
-                "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://example.com",
-                "theme": "dark"
               }
             ]
           },
@@ -240,14 +216,8 @@
               {
                 "type": "project-cta",
                 "text": "LEARN MORE",
-                "url": "https://example.com",
+                "url": "https://github.com/data-preservation-programs/filplus-checker",
                 "theme": "light"
-              },
-              {
-                "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://example.com",
-                "theme": "dark"
               }
             ]
           },
@@ -262,14 +232,8 @@
               {
                 "type": "project-cta",
                 "text": "LEARN MORE",
-                "url": "https://example.com",
+                "url": "https://openpanda.io/",
                 "theme": "light"
-              },
-              {
-                "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://example.com",
-                "theme": "dark"
               }
             ]
           }
@@ -305,7 +269,7 @@
           "push_left": "off-0_md-1_ti-0",
           "push_right": "off-1_md-1_ti-0"
         },
-        "description": "Tools, products, and incentive programs designed to drive growth and make data storage on Filecoin more accessible.\n\nThe Network Growth org is focused on increasing the utilization and the usefulness of the Filecoin network. Other teams in our org are focused on individual stakeholders within the network, i.e., focus on the demand side or the supply side of the storage market.\n\nOur team is focused on the market itself - finding ways to drive market making, introducing new tools or programs that enable accelerating deal making and utilization of the network (and helping prove its usefulness / value proposition)."
+        "description": "The Data Programs team is focused on growing the utilization of the Filecoin network, through the development of tools, products, and programs that make data storage on Filecoin more accessible.<br><br> Our team is a part of the Network Growth organization in Outercore, which focuses on ecosystem growth for the Filecoin and IPFS networks. We work closely with several other teams and individuals to form the broader working group. This WG supports several key initiatives in the Filecoin ecosystem.<br><br> In addition to developing and supporting tools and pipelines to onboard data to the network, we want to establish a high standard for how data should be onboarded to the decentralized web at scale. Everything we work on is designed to be open - join us in various Slack conversations, WG meetings, or contribute code to our repos."
       }
     },
     "section_articles": {
@@ -344,13 +308,13 @@
                 {
                   "type": "slider",
                   "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
-                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "title": "Implementation of a Third Party KYC (ID Check) for Fil+ Applicants",
+                  "description": "In the Fil+ application process, all application information is public in a GitHub issue in the Fil+ repo. Because all information is public, applicants are only required to use GitHub IDs as a personal identifier in an effort to keep personal information (name, email) from public view (and from potential abuse from scammers who scrape for ID info).",
                   "ctas": [
                     {
                       "type": "text-only",
                       "text": "READ MORE",
-                      "url": "https://example.com",
+                      "url": "https://medium.com/filecoin-plus/implementation-of-a-third-party-kyc-id-check-for-fil-applicants-e5e825b1484e",
                       "theme": "strong"
                     }
                   ]
@@ -358,13 +322,13 @@
                 {
                   "type": "slider",
                   "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
-                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "title": "Retrieval Bot is Live!",
+                  "description": "We are thrilled to announce the launch of our Retrieval Bot on DataCap applications which provides insight into historic retrievability of datasets stored by Fil+ clients.",
                   "ctas": [
                     {
                       "type": "text-only",
                       "text": "READ MORE",
-                      "url": "https://example.com",
+                      "url": "https://medium.com/filecoin-plus/retrieval-bot-is-live-ea577b61f7d3",
                       "theme": "strong"
                     }
                   ]
@@ -372,13 +336,13 @@
                 {
                   "type": "slider",
                   "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
-                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "title": "LDN Label Update — Part 1: Label Consolidation",
+                  "description": "GitHub issue labels have played an essential role in tracking and facilitating the distribution of DataCap for LDN applications in the Fil+ program.",
                   "ctas": [
                     {
                       "type": "text-only",
                       "text": "READ MORE",
-                      "url": "https://example.com",
+                      "url": "https://medium.com/filecoin-plus/ldn-label-update-part-1-label-consolidation-ae2691c78702",
                       "theme": "strong"
                     }
                   ]
@@ -386,13 +350,13 @@
                 {
                   "type": "slider",
                   "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
-                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "title": "Announcing the Quality Phase for Filecoin Plus",
+                  "description": "The Filecoin Plus program has been in operation for over 2 years now, and has recently crossed over 700PiB of data onboarded through verified deals, constituting approximately 5% of total network capacity!",
                   "ctas": [
                     {
                       "type": "text-only",
                       "text": "READ MORE",
-                      "url": "https://example.com",
+                      "url": "https://medium.com/filecoin-plus/announcing-the-quality-phase-for-filecoin-plus-2890a9797456",
                       "theme": "strong"
                     }
                   ]
@@ -400,55 +364,13 @@
                 {
                   "type": "slider",
                   "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
-                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "title": "Fil+ Notary App and GitHub Tooling Metrics Dashboard V0.1",
+                  "description": "I am thrilled to introduce the inaugural version of the Fil+ tooling metrics dashboard.",
                   "ctas": [
                     {
                       "type": "text-only",
                       "text": "READ MORE",
-                      "url": "https://example.com",
-                      "theme": "strong"
-                    }
-                  ]
-                },
-                {
-                  "type": "slider",
-                  "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
-                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
-                  "ctas": [
-                    {
-                      "type": "text-only",
-                      "text": "READ MORE",
-                      "url": "https://example.com",
-                      "theme": "strong"
-                    }
-                  ]
-                },
-                {
-                  "type": "slider",
-                  "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
-                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
-                  "ctas": [
-                    {
-                      "type": "text-only",
-                      "text": "READ MORE",
-                      "url": "https://example.com",
-                      "theme": "strong"
-                    }
-                  ]
-                },
-                {
-                  "type": "slider",
-                  "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
-                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
-                  "ctas": [
-                    {
-                      "type": "text-only",
-                      "text": "READ MORE",
-                      "url": "https://example.com",
+                      "url": "https://medium.com/filecoin-plus/fil-notary-app-and-github-tooling-metrics-dashboard-v0-1-2012a9ed961f",
                       "theme": "strong"
                     }
                   ]
@@ -523,8 +445,8 @@
           },
           {
             "type": "person",
-            "title": "LOREM IPSUMSON",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "CATALIN BARA",
+            "description": "DMOB",
             "img": "/images/lorem-ipsum.jpg"
           },
           {
@@ -541,8 +463,8 @@
           },
           {
             "type": "person",
-            "title": "LOREM IPSUMSON",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "RARES TARABEGA",
+            "description": "DMOB",
             "img": "/images/lorem-ipsum.jpg"
           },
           {
@@ -559,8 +481,8 @@
           },
           {
             "type": "person",
-            "title": "LOREM IPSUMSON",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "FABRIZIO GIANNITRAPANI",
+            "description": "KEYKO",
             "img": "/images/lorem-ipsum.jpg"
           },
           {
@@ -577,8 +499,8 @@
           },
           {
             "type": "person",
-            "title": "LOREM IPSUMSON",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "HÜSEYIN CAN SOYLU",
+            "description": "KEYKO",
             "img": "/images/lorem-ipsum.jpg"
           },
           {
@@ -595,8 +517,8 @@
           },
           {
             "type": "person",
-            "title": "LOREM IPSUMSON",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "ESRAA JBARA",
+            "description": "KEYKO",
             "img": "/images/lorem-ipsum.jpg"
           },
           {
@@ -680,11 +602,13 @@
             "name": "SectionContributors",
             "props": {
               "logos": [
-                "/images/undone-ventures-logo.svg",
                 "/images/filecoin-foundation-logo.svg",
+                "/images/daghouse-logo.svg",
                 "/images/laudspeaker-logo.svg",
-                "/images/togggle-logo.svg",
-                "/images/daghouse-logo.svg"
+                "/images/starboard-logo.svg",
+                "/images/undone-ventures-logo.svg",
+                "/images/elementus-logo.svg",
+                "/images/togggle-logo.svg"
               ],
               "imageblock": {
                 "src": "/images/warped-cube.svg"

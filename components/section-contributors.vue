@@ -58,7 +58,7 @@
             </div>
 
             <div class="button-wrapper">
-              <Button :button="{ url: 'https://example.com' }">
+              <Button :button="{ url: 'https://boards.greenhouse.io/protocollabs/jobs/4864599004' }">
                 <ArrowUpRight />
               </Button>
             </div>

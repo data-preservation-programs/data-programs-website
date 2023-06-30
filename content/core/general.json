@@ -59,11 +59,11 @@
         "socials": [
           {
             "icon": "slack",
-            "url": "https://example.com"
+            "url": "https://filecoinproject.slack.com/archives/C01DLAPKDGX"
           },
           {
             "icon": "github",
-            "url": "https://example.com"
+            "url": "https://github.com/data-preservation-programs"
           }
         ]
       }
