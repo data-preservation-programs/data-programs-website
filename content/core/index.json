@@ -136,12 +136,6 @@
                 "text": "LEARN MORE",
                 "url": "https://moon-landing.io/",
                 "theme": "light"
-              },
-              {
-                "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://example.com",
-                "theme": "dark"
               }
             ]
           },
@@ -179,12 +173,6 @@
                 "text": "LEARN MORE",
                 "url": "https://docs.google.com/forms/d/e/1FAIpQLSfr9R1rEffGojKcUUgIZWpNdv4GWE6-tgDw3TgI2DQ4JhdPSg/viewform",
                 "theme": "light"
-              },
-              {
-                "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://example.com",
-                "theme": "dark"
               }
             ]
           },
