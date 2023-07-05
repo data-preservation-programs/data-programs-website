@@ -87,7 +87,7 @@ export default {
   }
 }
 
-:deep(.section-projects) {
+:deep(#section-projects) {
   .card-list-block {
     .card {
       @include mini {
@@ -102,7 +102,7 @@ export default {
   }
 }
 
-:deep(.section-about) {
+:deep(#section-about) {
   margin-bottom: 4rem;
   div[data-block-id="col_1"] {
     @include medium {
@@ -136,7 +136,7 @@ export default {
   }
 }
 
-:deep(.section-articles) {
+:deep(#section-articles) {
   @include small {
     margin-bottom: 0;
   }
@@ -200,7 +200,7 @@ export default {
   }
 }
 
-:deep(.section-people) {
+:deep(#section-people) {
   margin-bottom: 1.875rem;
   .card-list-block {
     .col-4_md-6 {
@@ -222,7 +222,7 @@ export default {
   }
 }
 
-:deep(.section-contributors) {
+:deep(#section-contributors) {
   margin-bottom: 2.625rem;
   @include mini {
     margin-bottom: 0.5rem;

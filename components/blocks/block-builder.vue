@@ -5,7 +5,7 @@
       v-for="section in sections"
       :key="section.id">
 
-      <section v-if="!section.hide" :id="section.slug" :class="['sectional', section.id]">
+      <section v-if="!section.hide" :id="section.id" :class="['sectional', section.id]">
         <!-- ============================================ [Section] Off Grid -->
         <div
           v-if="section.off_grid"
