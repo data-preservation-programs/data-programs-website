@@ -4,7 +4,7 @@
       v-for="(row, i) in pattern"
       :key="`row-${i}`"
       :class="['data-programs-typeface', { reverse: row.reverse }, { large }, { mini }]"
-      :style="{ transform: `translateX(${row.offset}px)` }">
+      :style="{ transform: `translateX(${row.offset}%)` }">
 
       <DataTypeface
         :class="[
@@ -61,11 +61,16 @@ export default {
 
 <style lang="scss" scoped>
 .data-programs-typeface {
+  position: relative;
   display: flex;
-  width: toRem(1492);
+  // width: 100%;
+  width: 101.75vw;
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
+  :first-child {
+    margin-right: clamp(1.5rem, vw(40px), 2.5rem);
+  }
   &.large {
     @include mini {
       display: none;
@@ -73,6 +78,12 @@ export default {
   }
   &.reverse {
     flex-direction: row-reverse;
+    :last-child {
+      margin-right: clamp(1.5rem, vw(40px), 2.5rem);
+    }
+    :first-child {
+      margin-right: 0;
+    }
   }
   &:first-child {
     padding-top: 0;
@@ -101,6 +112,7 @@ export default {
 }
 
 .typeface {
+  height: clamp(toRem(55), vw(145px), toRem(145));
   :deep(path) {
     fill: transparent;
   }

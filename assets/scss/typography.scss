@@ -81,7 +81,8 @@ $letterSpacing_Large: 0.03em;
 }
 
 @mixin h5 { // site header statement of intent
-  @include fontSize_Large; // 24px
+  // @include fontSize_Large; // 24px
+  font-size: clamp(toRem(16), vw(24px), toRem(24));
   @include fontWeight_Semibold; // 600
   font-family: $font_Secondary;
   line-height: leading(45, 24);

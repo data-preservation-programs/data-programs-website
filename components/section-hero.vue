@@ -38,14 +38,14 @@ export default {
   data () {
     return {
       rows: [
-        { offset: -118, fill: ['data'], reverse: true, transparent: ['programs'] },
-        { offset: 40, fill: ['programs'], reverse: true },
-        { offset: -20 },
-        { offset: -107, reverse: true },
-        { offset: 40, reverse: true },
-        { offset: -20 },
-        { offset: -107, reverse: true },
-        { offset: 40, reverse: true }
+        { offset: -3, fill: ['data'], reverse: true, transparent: ['programs'] },
+        { offset: 3, fill: ['programs'], reverse: true },
+        { offset: -1 },
+        { offset: -7.5, reverse: true },
+        { offset: 4, reverse: true },
+        { offset: -1 },
+        { offset: -7.5, reverse: true },
+        { offset: 4, reverse: true }
       ],
       mini: [
         { offset: 14, reverse: true, transparent: ['programs'] },
@@ -92,11 +92,7 @@ export default {
   @include customMaxMQ ($containerWidth + 4rem) {
     padding-top: 0;
   }
-  @include medium {
-    @include fontSize_Medium; // 20
-  }
   @include mini {
-    @include fontSize_Small; // 16
     padding-top: 0.125rem;
     padding-right: 1.5rem;
   }
@@ -108,6 +104,12 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  @include small {
+    margin-top: 1rem;
+  }
+  @include mini {
+    margin-top: 0;
+  }
 }
 
 </style>

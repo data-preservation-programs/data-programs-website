@@ -74,14 +74,14 @@ export default {
   transform: translateX(-50%);
   width: 100%;
   height: 100%;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 2000 2000' width='2000' height='2000' opacity='1.0'%3e%3cdefs%3e%3cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3e%3cfeTurbulence type='fractalNoise' baseFrequency='0.1' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3e%3c/feTurbulence%3e%3cfeSpecularLighting surfaceScale='1' specularConstant='1.1' specularExponent='20' lighting-color='%23EEEEEE' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3e%3cfeDistantLight azimuth='3' elevation='79'%3e%3c/feDistantLight%3e%3c/feSpecularLighting%3e%3c/filter%3e%3c/defs%3e%3crect width='2000' height='2000' fill='%23d6d6d6'%3e%3c/rect%3e%3crect width='2000' height='2000' fill='%23eeeeee' filter='url(%23nnnoise-filter)'%3e%3c/rect%3e%3c/svg%3e");
+  // background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 2000 2000' width='2000' height='2000' opacity='1.0'%3e%3cdefs%3e%3cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3e%3cfeTurbulence type='fractalNoise' baseFrequency='0.1' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3e%3c/feTurbulence%3e%3cfeSpecularLighting surfaceScale='1' specularConstant='1.1' specularExponent='20' lighting-color='%23EEEEEE' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3e%3cfeDistantLight azimuth='3' elevation='79'%3e%3c/feDistantLight%3e%3c/feSpecularLighting%3e%3c/filter%3e%3c/defs%3e%3crect width='2000' height='2000' fill='%23d6d6d6'%3e%3c/rect%3e%3crect width='2000' height='2000' fill='%23eeeeee' filter='url(%23nnnoise-filter)'%3e%3c/rect%3e%3c/svg%3e");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
 }
 
 :deep(.hero-header) {
-  margin-bottom: toRem(276);
+  margin-bottom: clamp(toRem(100), vw(276px), toRem(276));
   @include mini {
     margin-bottom: toRem(146);
   }
