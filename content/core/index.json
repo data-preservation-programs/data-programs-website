@@ -284,14 +284,7 @@
         },
         "heading": "ARTICLES",
         "theme": "section-heading",
-        "ctas": [
-          {
-            "type": "text-only",
-            "text": "All articles",
-            "url": "https://example.com",
-            "theme": "regular"
-          }
-        ]
+        "ctas": []
       },
       "col_2": {
         "type": "custom",
