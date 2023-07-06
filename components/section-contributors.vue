@@ -23,12 +23,14 @@
             <template #icon-previous>
               <Button
                 :button="previous"
+                :tabindex="0"
                 class="slider-button previous" />
             </template>
 
             <template #icon-next>
               <Button
                 :button="next"
+                :tabindex="0"
                 class="slider-button next" />
             </template>
 
