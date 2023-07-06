@@ -47,11 +47,11 @@
           <div class="slider-controls">
             <div class="slide-selector">
 
-              <div @click="onClick(-1)">
+              <div @click="onClick(1)">
                 <slot name="icon-previous"></slot>
               </div>
 
-              <div @click="onClick(1)">
+              <div @click="onClick(-1)">
                 <slot name="icon-next"></slot>
               </div>
 
