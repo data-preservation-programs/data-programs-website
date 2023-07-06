@@ -17,6 +17,8 @@
         v-if="sidebarImage && reverseImg"
         :button="{ text: '' }"
         class="card-flip-button"
+        :tabindex="0"
+        @keyup.native.enter="flipCard"
         @click.native="flipCard">
         <div class="card-toggle">
           <FlipIcon />
