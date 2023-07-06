@@ -63,7 +63,6 @@ export default {
 .data-programs-typeface {
   position: relative;
   display: flex;
-  // width: 100%;
   width: 101.75vw;
   justify-content: space-between;
   padding-top: 1rem;
@@ -100,16 +99,6 @@ export default {
     padding: toRem(7) 0;
     @include tiny {
       display: flex;
-    }
-    .typeface {
-      &.data {
-        // width: toRem(178);
-        // height: toRem(62);
-      }
-      &.programs {
-        // width: toRem(365);
-        // height: toRem(62);
-      }
     }
   }
 }

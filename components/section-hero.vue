@@ -107,6 +107,9 @@ export default {
   @include small {
     margin-top: 1rem;
   }
+  @include customMaxMQ (toRem(507)) {
+    margin-top: 3rem;
+  }
   @include tiny  {
     margin-top: 0;
   }
