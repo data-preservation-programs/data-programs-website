@@ -12,10 +12,10 @@
 
     <div class="typeface-container">
       <TypefacePattern
-        v-for="(pattern, i) in [rows, mini]"
+        v-for="(pattern, i) in [rows, tiny]"
         :key="`pattern-${i}`"
         :pattern="pattern"
-        :mini="i === 1" />
+        :tiny="i === 1" />
     </div>
 
   </div>
@@ -47,21 +47,21 @@ export default {
         { offset: -7.5, reverse: true },
         { offset: 4, reverse: true }
       ],
-      mini: [
-        { offset: 14, reverse: true, transparent: ['programs'] },
-        { offset: 176, transparent: ['data'] },
-        { offset: -76, reverse: true, fill: ['data'] },
-        { offset: 83, reverse: true, fill: ['programs'] },
-        { offset: 56 },
-        { offset: -26, reverse: true },
-        { offset: 56 },
-        { offset: -26, reverse: true },
-        { offset: 56 },
-        { offset: -26, reverse: true },
-        { offset: 56 },
-        { offset: -26, reverse: true },
-        { offset: 56 },
-        { offset: -26, reverse: true }
+      tiny: [
+        { offset: 4, reverse: true, transparent: ['programs'] },
+        { offset: 36, transparent: ['data'] },
+        { offset: -12, reverse: true, fill: ['data'] },
+        { offset: 12, reverse: true, fill: ['programs'] },
+        { offset: 11, reverse: true },
+        { offset: -4.5, reverse: true },
+        { offset: 10, reverse: true },
+        { offset: -4.5, reverse: true },
+        { offset: 10 },
+        { offset: -4.5, reverse: true },
+        { offset: 10 },
+        { offset: -4.5, reverse: true },
+        { offset: 10 },
+        { offset: -4.5, reverse: true }
       ]
     }
   },
@@ -92,7 +92,7 @@ export default {
   @include customMaxMQ ($containerWidth + 4rem) {
     padding-top: 0;
   }
-  @include mini {
+  @include tiny {
     padding-top: 0.125rem;
     padding-right: 1.5rem;
   }
@@ -107,7 +107,7 @@ export default {
   @include small {
     margin-top: 1rem;
   }
-  @include mini {
+  @include tiny  {
     margin-top: 0;
   }
 }

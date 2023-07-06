@@ -81,13 +81,17 @@ export default {
 }
 
 :deep(.hero-header) {
-  margin-bottom: clamp(toRem(100), vw(276px), toRem(276));
+  margin-bottom: clamp(toRem(80), vw(225px), toRem(225));
   @include mini {
-    margin-bottom: toRem(146);
+    margin-bottom: clamp(3rem, 6vw, 6rem);
+  }
+  @include tiny {
+    margin-bottom: toRem(190);
   }
 }
 
 :deep(#section-projects) {
+  // opacity: 0;
   .card-list-block {
     .card {
       @include mini {
