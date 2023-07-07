@@ -611,7 +611,9 @@
             "description": "LOREM IPSUM TEAM ROLE",
             "img": "/images/lorem-ipsum.jpg"
           }
-        ]
+        ],
+        "alphabetize": true,
+        "sortKey": "title"
       }
     },
     "section_collaborators": {

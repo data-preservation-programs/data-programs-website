@@ -42,6 +42,14 @@ export default {
 
   computed: {
     cards () {
+      const sortKey = this.block.sortKey
+      if (this.block.alphabetize && sortKey) {
+        return [...this.block.cards].sort((a, b) => {
+          if (a[sortKey].toLowerCase() < b[sortKey].toLowerCase()) { return -1 }
+          if (a[sortKey].toLowerCase() > b[sortKey].toLowerCase()) { return 1 }
+          return 0
+        })
+      }
       return this.block.cards
     },
     grid () {
