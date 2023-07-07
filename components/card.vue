@@ -124,7 +124,9 @@ export default {
     },
     sidebarText () {
       if (this.card.sidebar_text) { return this.card.sidebar_text }
-      return Array(10).fill(this.title).join(' ')
+      const titleLength = this.title.length
+      const titleRepeats = Math.ceil(100 / (titleLength + 1))
+      return Array(titleRepeats).fill(this.title).join(' ')
     },
     headerImage () {
       return this.type === 'slider' ? { 'background-image': `url(${this.image})` } : null
@@ -216,6 +218,19 @@ export default {
       border-right: solid 1.5px $color_Accent;
       width: toRem(53);
       padding: toRem(14) toRem(12);
+    }
+    .sidebar-text {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      > span {
+        display: block;
+      }
+    }
+    &:hover {
+      .sidebar-text > span {
+        animation: sidebarTextScroll 7s linear infinite;
+      }
     }
   }
   .card-content {
@@ -536,4 +551,14 @@ export default {
     transform: scaleX(1);
   }
 }
+
+@keyframes sidebarTextScroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%)
+  }
+}
+
 </style>
