@@ -39,14 +39,14 @@
             "ctas": [
               {
                 "type": "project-cta",
-                "text": "LEARN MORE",
-                "url": "https://filplus.storage/",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
                 "theme": "light"
               },
               {
                 "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://example.com",
+                "text": "LEARN MORE",
+                "url": "https://filplus.storage/",
                 "theme": "dark"
               }
             ]
@@ -60,14 +60,14 @@
             "ctas": [
               {
                 "type": "project-cta",
-                "text": "LEARN MORE",
-                "url": "https://singularity.storage/",
+                "text": "DASHBOARD",
+                "url": "https://dataprograms.grafana.net/public-dashboards/d436fafb93b7437d87c3fa99acd4374f",
                 "theme": "light"
               },
               {
                 "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://dataprograms.grafana.net/public-dashboards/d436fafb93b7437d87c3fa99acd4374f",
+                "text": "LEARN MORE",
+                "url": "https://singularity.storage/",
                 "theme": "dark"
               }
             ]
@@ -81,14 +81,14 @@
             "ctas": [
               {
                 "type": "project-cta",
-                "text": "LEARN MORE",
-                "url": "https://ecosystem-wg.notion.site/Spade-efficient-data-onboarding-to-the-Filecoin-network-8e5dc48fd7c54e0e9385e445543a305a?pvs=4",
+                "text": "DASHBOARD",
+                "url": "https://dataprograms.grafana.net/public-dashboards/5014f382fc8f4cddaf8990ae978f8332",
                 "theme": "light"
               },
               {
                 "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://dataprograms.grafana.net/public-dashboards/5014f382fc8f4cddaf8990ae978f8332",
+                "text": "LEARN MORE",
+                "url": "https://ecosystem-wg.notion.site/Spade-efficient-data-onboarding-to-the-Filecoin-network-8e5dc48fd7c54e0e9385e445543a305a?pvs=4",
                 "theme": "dark"
               }
             ]
@@ -104,7 +104,7 @@
                   "type": "project-cta",
                   "text": "LEARN MORE",
                   "url": "https://spreputation.super.site/",
-                  "theme": "light"
+                  "theme": "dark"
                 }
               ]
             },
@@ -118,7 +118,7 @@
                   "type": "project-cta",
                   "text": "LEARN MORE",
                   "url": "https://filecoinproject.slack.com/archives/C051ZCWSLHE",
-                  "theme": "light"
+                  "theme": "dark"
                 }
               ]
             }
@@ -135,7 +135,7 @@
                 "type": "project-cta",
                 "text": "LEARN MORE",
                 "url": "https://moon-landing.io/",
-                "theme": "light"
+                "theme": "dark"
               }
             ]
           },
@@ -149,14 +149,14 @@
             "ctas": [
               {
                 "type": "project-cta",
-                "text": "LEARN MORE",
-                "url": "https://slingshot.filecoin.io/",
+                "text": "DASHBOARD",
+                "url": "https://datasets.filecoin.io/",
                 "theme": "light"
               },
               {
                 "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://datasets.filecoin.io/",
+                "text": "LEARN MORE",
+                "url": "https://slingshot.filecoin.io/",
                 "theme": "dark"
               }
             ]
@@ -172,7 +172,7 @@
                 "type": "project-cta",
                 "text": "LEARN MORE",
                 "url": "https://docs.google.com/forms/d/e/1FAIpQLSfr9R1rEffGojKcUUgIZWpNdv4GWE6-tgDw3TgI2DQ4JhdPSg/viewform",
-                "theme": "light"
+                "theme": "dark"
               }
             ]
           },
@@ -187,7 +187,7 @@
                 "type": "project-cta",
                 "text": "LEARN MORE",
                 "url": "https://github.com/ribasushi/fil-naive-marketwatch",
-                "theme": "light"
+                "theme": "dark"
               }
             ]
           },
@@ -202,7 +202,7 @@
                 "type": "project-cta",
                 "text": "LEARN MORE",
                 "url": "https://github.com/data-preservation-programs/RetrievalBot",
-                "theme": "light"
+                "theme": "dark"
               }
             ]
           },
@@ -217,7 +217,7 @@
                 "type": "project-cta",
                 "text": "LEARN MORE",
                 "url": "https://github.com/data-preservation-programs/filplus-checker",
-                "theme": "light"
+                "theme": "dark"
               }
             ]
           },
@@ -233,7 +233,7 @@
                 "type": "project-cta",
                 "text": "LEARN MORE",
                 "url": "https://openpanda.io/",
-                "theme": "light"
+                "theme": "dark"
               }
             ]
           }
