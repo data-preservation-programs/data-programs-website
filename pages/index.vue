@@ -223,7 +223,7 @@ export default {
   }
 }
 
-:deep(#section-contributors) {
+:deep(#section-collaborators) {
   margin-bottom: 2.625rem;
   @include mini {
     margin-bottom: 0.5rem;

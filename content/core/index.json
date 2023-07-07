@@ -614,8 +614,8 @@
         ]
       }
     },
-    "section_contributors": {
-      "id": "section-contributors",
+    "section_collaborators": {
+      "id": "section-collaborators",
       "col_1": {
         "type": "text_block",
         "cols": {
@@ -623,7 +623,7 @@
           "push_left": "off-0",
           "push_right": "off-0"
         },
-        "heading": "CONTRIBUTORS",
+        "heading": "COLLABORATORS",
         "theme": "section-heading"
       },
       "col_2": {
@@ -635,7 +635,7 @@
         },
         "customizations": [
           {
-            "name": "SectionContributors",
+            "name": "SectionCollaborators",
             "props": {
               "logos": [
                 "/images/filecoin-foundation-logo.svg",
