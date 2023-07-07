@@ -20,13 +20,15 @@
       <template #icon-previous>
         <Button
           :button="previous"
-          class="slider-button previous" />
+          class="slider-button previous"
+          :tabindex="0" />
       </template>
 
       <template #icon-next>
         <Button
           :button="next"
-          class="slider-button next" />
+          class="slider-button next"
+          :tabindex="0" />
       </template>
 
     </CircularSlider>
