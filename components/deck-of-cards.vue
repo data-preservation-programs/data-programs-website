@@ -9,11 +9,11 @@
 
       <template
         v-for="(card, i) in cards"
-        #[getSlotName(i)]="{ classlist }">
+        #[getSlotName(i)]="{ classlist, ctaTabIndex }">
         <div
           :key="`slide-${i}`"
           :class="['slider-card', classlist]">
-          <Card :card="card" class="slide-content" />
+          <Card :key="`slide-${i}`" :card="card" class="slide-content" :cta-tab-index="ctaTabIndex" />
         </div>
       </template>
 

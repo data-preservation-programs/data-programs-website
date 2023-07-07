@@ -57,6 +57,7 @@
         <Button
           v-for="cta in ctas"
           :key="cta.text"
+          :tabindex="ctaTabIndex"
           :button="cta">
         </Button>
       </div>
@@ -85,6 +86,11 @@ export default {
       type: Object,
       required: true,
       default: () => ({})
+    },
+    ctaTabIndex: {
+      type: Number,
+      required: false,
+      default: 0
     }
   },
 
