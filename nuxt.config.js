@@ -32,7 +32,8 @@ export default {
   head: {
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Data Programs' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon-96x96.png', sizes: '96x96' }
