@@ -205,14 +205,13 @@ export default {
   border: solid 2px $color_Accent;
   border-radius: 0.625rem;
   background-color: $color_Primary;
-  overflow: hidden;
+  z-index: 10;
   @include mini {
     border: solid 1.5px $color_Accent;
   }
   .sidebar {
     padding: toRem(14) toRem(17);
     width: toRem(70);
-    height: calc(100% + 2px);
     border-right: solid 2px $color_Accent;
     @include mini {
       border-right: solid 1.5px $color_Accent;
@@ -250,12 +249,16 @@ export default {
 // ////////////////////////////////////////////////////////////// Type [Project]
 .card.type__project {
   position: relative;
+  box-sizing: content-box;
+  // height: 100%;
   @include mini {
     height: toRem(330);
   }
   .sidebar {
     position: relative;
     background-color: $color_Secondary;
+    border-top-left-radius: toRem(8);
+    border-bottom-left-radius: toRem(8);
     &:before {
       content: '';
       position: absolute;
@@ -263,6 +266,8 @@ export default {
       height: 100%;
       top: 0;
       left: 0;
+      border-top-left-radius: toRem(8);
+      border-bottom-left-radius: toRem(8);
       opacity: 0;
       background-color: $color_Primary;
       transition: 1ms linear 350ms;
@@ -273,6 +278,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    height: 100%;
     .sidebar-text {
       transition: 1ms linear 350ms;
       height: calc(100% - 70px);
@@ -419,7 +425,9 @@ export default {
 .card.type__slider {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   .sidebar {
+    height: calc(100% + 2px);
     @include small {
       border-right: solid 1.5px $color_Accent;
       width: toRem(53);
