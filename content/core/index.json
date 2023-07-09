@@ -469,21 +469,21 @@
         "cards": [
           {
             "type": "person",
-            "title": "DEEP KAPUR",
+            "title": "DEEP",
             "description": "TEAM LEAD",
             "img": "/images/deep-kapur.jpg"
           },
           {
             "type": "person",
-            "title": "PETER RABBITSON",
+            "title": "PETER",
             "description": "SPADE, MANY OTHERS",
-            "img": "/images/lorem-ipsum.jpg"
+            "img": "/images/peter.jpg"
           },
           {
             "type": "person",
-            "title": "CATALIN BARA",
+            "title": "CATALIN",
             "description": "DMOB",
-            "img": "/images/lorem-ipsum.jpg"
+            "img": "/images/catalin.jpg"
           },
           {
             "type": "person",
@@ -499,117 +499,117 @@
           },
           {
             "type": "person",
-            "title": "RARES TARABEGA",
+            "title": "RARES",
             "description": "DMOB",
-            "img": "/images/lorem-ipsum.jpg"
+            "img": "/images/rares.jpg"
           },
           {
             "type": "person",
-            "title": "XINAN XU",
+            "title": "XINAN",
             "description": "SINGULARITY, VALIDATIONBOT, CID CHECKER",
             "img": "/images/xinan-xu.jpg"
           },
           {
             "type": "person",
-            "title": "SIMON KIM",
+            "title": "SIMON",
             "description": "FIL PLUS CLIENT PATH TO DATACAP",
             "img": "/images/simon-kim.jpg"
           },
           {
             "type": "person",
-            "title": "FABRIZIO GIANNITRAPANI",
+            "title": "FABRIZIO",
             "description": "KEYKO",
-            "img": "/images/lorem-ipsum.jpg"
+            "img": "/images/fabrizio.jpg"
           },
           {
             "type": "person",
-            "title": "PHIL PANGESTU",
+            "title": "PHIL",
             "description": "FIL PLUS NOTARY TOOLING AND INCENTIVES",
             "img": "/images/phil-pangestu.jpg"
           },
           {
             "type": "person",
-            "title": "KEVIN ZAKORCHEMNY",
+            "title": "KEVIN",
             "description": "FIL PLUS SUPPORT FOR PRIVATE AND ENTERPRISE DATA",
             "img": "/images/kevin-zakorchemny.jpg"
           },
           {
             "type": "person",
-            "title": "HÜSEYIN CAN SOYLU",
+            "title": "HÜSEYIN",
             "description": "KEYKO",
-            "img": "/images/lorem-ipsum.jpg"
+            "img": "/images/huseyin.jpg"
           },
           {
             "type": "person",
-            "title": "DIANA - UNDONE VENTURES",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "DIANA",
+            "description": "UNDONE VENTURES - FOUNDER, CXO",
             "img": "/images/diana.jpg"
           },
           {
             "type": "person",
-            "title": "ORUN - UNDONE VENTURES",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "ORUN",
+            "description": "UNDONE VENTURES - CIO, ENGINEER",
             "img": "/images/orun.jpg"
           },
           {
             "type": "person",
-            "title": "ESRAA JBARA",
+            "title": "ESRAA",
             "description": "KEYKO",
-            "img": "/images/lorem-ipsum.jpg"
+            "img": "/images/esraa.jpg"
           },
           {
             "type": "person",
-            "title": "NAURAS - UNDONE VENTURES",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "NAURAS",
+            "description": "UNDONE VENTURES - PARTNER, ENGINEER",
             "img": "/images/nauras.jpg"
           },
           {
             "type": "person",
-            "title": "EMILY - UNDONE VENTURES",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "EMILY",
+            "description": "UNDONE VENTURES - ART DIRECTOR",
             "img": "/images/emily.jpg"
           },
           {
             "type": "person",
-            "title": "LOREM IPSUMSON",
-            "description": "LOREM IPSUM TEAM ROLE",
-            "img": "/images/lorem-ipsum.jpg"
+            "title": "JOSEPH",
+            "description": "UNDONE VENTURES - UX PRODUCTION",
+            "img": "/images/joseph.jpg"
           },
           {
             "type": "person",
-            "title": "BEN - UNDONE VENTURES",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "BEN",
+            "description": "UNDONE VENTURES - ENGINEER",
             "img": "/images/ben.jpg"
           },
           {
             "type": "person",
-            "title": "THOMSON - UNDONE VENTURES",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "THOMSON",
+            "description": "UNDONE VENTURES - PROJECT MANAGER",
             "img": "/images/thomson.jpg"
           },
           {
             "type": "person",
-            "title": "LOREM IPSUMSON",
-            "description": "LOREM IPSUM TEAM ROLE",
-            "img": "/images/lorem-ipsum.jpg"
+            "title": "JO",
+            "description": "UNDONE VENTURES - ENGINEER",
+            "img": "/images/jo.jpg"
           },
           {
             "type": "person",
-            "title": "KRITIKA - UNDONE VENTURES",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "KRITIKA",
+            "description": "UNDONE VENTURES - ENGINEER",
             "img": "/images/kritika.jpg"
           },
           {
             "type": "person",
-            "title": "JAC - UNDONE VENTURES",
-            "description": "LOREM IPSUM TEAM ROLE",
+            "title": "JAC",
+            "description": "UNDONE VENTURES - QUALITY ASSURANCE",
             "img": "/images/jac.jpg"
           },
           {
             "type": "person",
-            "title": "LOREM IPSUMSON",
-            "description": "LOREM IPSUM TEAM ROLE",
-            "img": "/images/lorem-ipsum.jpg"
+            "title": "SARA",
+            "description": "UNDONE VENTURES - ENGINEER",
+            "img": "/images/sara.jpg"
           }
         ],
         "alphabetize": true,
