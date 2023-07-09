@@ -122,6 +122,10 @@ html, body {
   }
   * {
     box-sizing: border-box;
+    &:focus-visible {
+      outline: 3px solid $grenadier;
+      outline-offset: 2px;
+    }
     &:before,
     &:after {
       box-sizing: border-box;

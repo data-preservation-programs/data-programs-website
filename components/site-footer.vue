@@ -159,7 +159,8 @@ export default {
     display: block;
     width: fit-content;
     transition: 250ms ease;
-    &:hover {
+    &:hover,
+    &:focus-visible {
       transform: scale(1.08);
     }
   }
@@ -217,8 +218,8 @@ export default {
 
 .link {
   &.social {
-    padding: 0.75rem 0;
-    padding-left: 1.375rem;
+    margin: 0.75rem 0;
+    margin-left: 1.375rem;
   }
 }
 </style>

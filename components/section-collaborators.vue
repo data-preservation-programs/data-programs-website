@@ -238,11 +238,13 @@ export default {
     }
     .slider-button {
       &.previous {
-        padding-left: 0;
         padding-right: 1rem;
         &:after {
           transform: rotate(180deg);
         }
+      }
+      &.next {
+        padding-right: 1rem;
       }
       &:after {
         @include mini {
@@ -318,7 +320,8 @@ export default {
   }
   .button-wrapper {
     transition: 220ms ease;
-    &:hover {
+    &:hover,
+    &:focus-within {
       transform: scale(1.05);
     }
     :deep(.button) {
