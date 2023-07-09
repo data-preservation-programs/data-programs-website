@@ -9,8 +9,8 @@ export default {
     nodeEnv: process.env.NODE_ENV,
     serverEnv: process.env.SERVER_ENV,
     seo: {
-      siteName: 'AU Nuxt Static Boilerplate',
-      siteUrl: 'https://au-nuxt-static.on.fleek.co'
+      siteName: 'Data Programs',
+      siteUrl: 'https://data-programs.org'
     },
     redirects: []
   },
@@ -30,7 +30,6 @@ export default {
   // /////////////////////////////////////////////////////// Headers of the Page
   // ---------------------------------------------------------------------------
   head: {
-    title: 'Data Programs',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
