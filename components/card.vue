@@ -490,7 +490,6 @@ export default {
 }
 // /////////////////////////////////////////////////////////////// Type [Person]
 .card.type__person {
-  height: unset;
   padding: toRem(49) 0;
   flex-direction: column;
   @include itemDivider;
