@@ -640,13 +640,16 @@
             "name": "SectionCollaborators",
             "props": {
               "logos": [
+                "/images/digital-mob-logo.svg",
+                "/images/keyko-logo.svg",
                 "/images/filecoin-foundation-logo.svg",
                 "/images/daghouse-logo.svg",
-                "/images/laudspeaker-logo.svg",
-                "/images/starboard-logo.svg",
                 "/images/undone-ventures-logo.svg",
                 "/images/elementus-logo.svg",
-                "/images/togggle-logo.svg"
+                "/images/starboard-logo.svg",
+                "/images/togggle-logo.svg",
+                "/images/eqtylab-logo.svg",
+                "/images/laudspeaker-logo.svg"
               ],
               "imageblock": {
                 "src": "/images/warped-cube.svg"
