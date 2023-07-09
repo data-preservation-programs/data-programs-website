@@ -242,6 +242,19 @@ strong {
 //   @include caption;
 // }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  &::selection {
+    background-color: $grenadier;
+    color: #FFFFFF;
+  }
+}
+
 // ////////////////////////////////////////////////////////////////// Components
 // -----------------------------------------------------------------------------
 .video-wrapper {
