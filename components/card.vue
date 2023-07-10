@@ -223,7 +223,6 @@ export default {
       width: 100%;
       height: 100%;
       pointer-events: none;
-      // animation-play-state: paused;
       @include selection_Invisible;
       > span {
         animation: sidebarTextScroll 7s linear infinite paused;
