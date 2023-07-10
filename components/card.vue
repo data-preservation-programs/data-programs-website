@@ -227,11 +227,6 @@ export default {
         display: block;
       }
     }
-    &:hover {
-      .sidebar-text > span {
-        animation: sidebarTextScroll 7s linear infinite;
-      }
-    }
   }
   .card-content {
     display: flex;
@@ -245,6 +240,11 @@ export default {
     flex-grow: 1;
     display: flex;
     align-items: flex-end;
+  }
+    &:hover {
+    .sidebar-text > span {
+      animation: sidebarTextScroll 7s linear infinite;
+    }
   }
 }
 // ////////////////////////////////////////////////////////////// Type [Project]
