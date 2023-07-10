@@ -95,16 +95,36 @@ export default {
 .data-programs-typeface {
   &.tiny {
     display: none;
+    height: calc(toRem(55) + toRem(14));
     width: toRem(570);
     padding: toRem(7) 0;
     @include tiny {
       display: flex;
     }
+    @include customMaxMQ (390px) {
+      .data {
+        translate : toRem(-3);
+      }
+      programs {
+        translate :toRem(3);
+      }
+    }
+    @include customMaxMQ (375px) {
+      .typeface {
+        height: toRem(47);
+      }
+      .data {
+        translate : toRem(-12);
+      }
+      .programs {
+        translate :toRem(12);
+      }
+    }
   }
 }
 
 .typeface {
-  max-height: clamp(55px, vw(145px), toRem(145));
+  height: clamp(55px, vw(145px), toRem(145));
   :deep(path) {
     fill: transparent;
   }

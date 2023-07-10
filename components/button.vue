@@ -61,7 +61,8 @@ export default {
   padding: 0 toRem(15);
   color: white;
   border-radius: $borderRadius_Medium;
-  &:hover {
+  &:hover,
+  &:focus-visible {
     transition: background-color $duration ease;
     background-color: $color_Secondary;
   }
@@ -92,7 +93,8 @@ export default {
     height: 0.875rem;
     transition: 250ms ease;
   }
-  &:hover {
+  &:hover,
+  &:focus-visible {
     &:after {
       width: 2.375rem;
     }
@@ -111,7 +113,8 @@ export default {
     @include cta;
     transition: 250ms ease;
   }
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background-color: $color_Secondary;
     .text {
       color: $mercury;
@@ -134,7 +137,8 @@ export default {
     .text {
       color: $mercury;
     }
-    &:hover {
+    &:hover,
+    &:focus-visible {
       background-color: $color_Primary;
       &:before {
         opacity: 1;

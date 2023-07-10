@@ -50,8 +50,8 @@ export default {
       tiny: [
         { offset: 4, reverse: true, transparent: ['programs'] },
         { offset: 36, transparent: ['data'] },
-        { offset: -12, reverse: true, fill: ['data'] },
-        { offset: 12, reverse: true, fill: ['programs'] },
+        { offset: -14, reverse: true, fill: ['data'] },
+        { offset: 14, reverse: true, fill: ['programs'] },
         { offset: 11, reverse: true },
         { offset: -4.5, reverse: true },
         { offset: 10, reverse: true },

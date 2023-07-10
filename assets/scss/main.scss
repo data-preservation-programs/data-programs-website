@@ -111,8 +111,8 @@ html, body {
   scroll-behavior: smooth;
   ::selection,
   ::-moz-selection {
-    background: $color_Primary;
-    color: white;
+    background-color: $grenadier;
+    color: #FFFFFF;
   }
   &.no-scroll {
     overflow-y: hidden;
@@ -122,6 +122,10 @@ html, body {
   }
   * {
     box-sizing: border-box;
+    &:focus-visible {
+      outline: 3px solid $grenadier;
+      outline-offset: 2px;
+    }
     &:before,
     &:after {
       box-sizing: border-box;

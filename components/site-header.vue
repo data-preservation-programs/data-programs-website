@@ -186,8 +186,10 @@ export default {
 
 .logo {
   display: block;
+  width: fit-content;
   transition: 250ms ease;
-  &:hover {
+  &:hover,
+  &:focus-visible {
     transform: scale(1.08);
   }
   :deep(svg) {

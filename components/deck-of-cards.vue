@@ -184,7 +184,8 @@ export default {
       &:after {
         transform: translateX(0.125rem);
       }
-      &:hover {
+      &:hover,
+      &:focus-visible {
         &:after {
           transform: translateX(0.875rem);
         }
@@ -195,7 +196,8 @@ export default {
       &:after {
         transform: rotate(180deg) translateX(0.25rem);
       }
-      &:hover {
+      &:hover,
+      &:focus-visible {
         &:after {
           transform: rotate(180deg) translateX(0.875rem);
         }
