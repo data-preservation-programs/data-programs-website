@@ -95,6 +95,7 @@ export default {
 .data-programs-typeface {
   &.tiny {
     display: none;
+    height: calc(toRem(55) + toRem(14));
     width: toRem(570);
     padding: toRem(7) 0;
     @include tiny {
@@ -104,7 +105,7 @@ export default {
 }
 
 .typeface {
-  max-height: clamp(55px, vw(145px), toRem(145));
+  height: clamp(55px, vw(145px), toRem(145));
   :deep(path) {
     fill: transparent;
   }
