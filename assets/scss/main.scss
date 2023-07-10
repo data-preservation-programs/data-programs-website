@@ -111,8 +111,8 @@ html, body {
   scroll-behavior: smooth;
   ::selection,
   ::-moz-selection {
-    background: $color_Primary;
-    color: white;
+    background-color: $grenadier;
+    color: #FFFFFF;
   }
   &.no-scroll {
     overflow-y: hidden;
@@ -245,19 +245,6 @@ strong {
 // caption {
 //   @include caption;
 // }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-a {
-  &::selection {
-    background-color: $grenadier;
-    color: #FFFFFF;
-  }
-}
 
 // ////////////////////////////////////////////////////////////////// Components
 // -----------------------------------------------------------------------------
