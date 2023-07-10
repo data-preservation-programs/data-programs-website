@@ -9,24 +9,26 @@
 
       <template
         v-for="(card, i) in cards"
-        #[getSlotName(i)]="{ classlist }">
+        #[getSlotName(i)]="{ classlist, ctaTabIndex }">
         <div
           :key="`slide-${i}`"
           :class="['slider-card', classlist]">
-          <Card :card="card" class="slide-content" />
+          <Card :key="`slide-${i}`" :card="card" class="slide-content" :cta-tab-index="ctaTabIndex" />
         </div>
       </template>
 
       <template #icon-previous>
         <Button
           :button="previous"
-          class="slider-button previous" />
+          class="slider-button previous"
+          :tabindex="0" />
       </template>
 
       <template #icon-next>
         <Button
           :button="next"
-          class="slider-button next" />
+          class="slider-button next"
+          :tabindex="0" />
       </template>
 
     </CircularSlider>
@@ -101,14 +103,15 @@ export default {
   top: 0;
   width: toRem(440);
   height: toRem(565);
+  opacity: 1;
   transform: translateX(-50%);
-  transition: transform 250ms ease;
+  transition: transform 250ms ease, opacity 250ms ease;
   @include small {
     width: toRem(280);
     height: toRem(358);
   }
   &.delay {
-    transition: transform 250ms ease 250ms;
+    transition: transform 250ms ease 250ms, opacity 250ms ease;
   }
   &.animation-slot-3 {
     transform: translateX(-50%) translateY(45px) rotate(-4deg);

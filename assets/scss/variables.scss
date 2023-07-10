@@ -178,6 +178,10 @@ $borderRadius_ExtraLarge: 0.875rem;
   @return $remValue;
 }
 
+@function vw($px-vw, $base-vw: 1440px) {
+  @return math.div($px-vw * 100vw, $base-vw);
+}
+
 // ------------------------------------------------------------------- Animation
 @mixin animation ($animate...) {
   $max: length($animate);

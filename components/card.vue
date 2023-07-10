@@ -16,6 +16,9 @@
       <Button
         v-if="sidebarImage && reverseImg"
         :button="{ text: '' }"
+        class="card-flip-button"
+        :tabindex="0"
+        @keyup.native.enter="flipCard"
         @click.native="flipCard">
         <div class="card-toggle">
           <FlipIcon />
@@ -54,10 +57,11 @@
         <Button
           v-for="cta in ctas"
           :key="cta.text"
+          :tabindex="ctaTabIndex"
           :button="cta">
         </Button>
       </div>
-      
+
     </div>
 
   </div>
@@ -82,6 +86,11 @@ export default {
       type: Object,
       required: true,
       default: () => ({})
+    },
+    ctaTabIndex: {
+      type: Number,
+      required: false,
+      default: 0
     }
   },
 
@@ -248,20 +257,26 @@ export default {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-start;
     .sidebar-text {
       transition: 1ms linear 350ms;
-      height: calc(100% - 52px);
+      height: calc(100% - 70px);
       opacity: 0;
     }
-    .card-toggle {
+    .card-flip-button {
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      align-items: flex-end;
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
     }
+    .card-toggle {
+      margin-bottom: toRem(21);
+    }
   }
+
   .card-content {
     position: relative;
     padding: 1.5rem toRem(19);
@@ -460,7 +475,6 @@ export default {
 }
 // /////////////////////////////////////////////////////////////// Type [Person]
 .card.type__person {
-  height: unset;
   padding: toRem(49) 0;
   flex-direction: column;
   @include itemDivider;

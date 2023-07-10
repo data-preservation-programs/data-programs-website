@@ -4,7 +4,7 @@
     "description": "Learn about products, tools and incentive programs that drive and make data storage on Filecoin more accessible."
   },
   "og": {
-    "title": "Data Programs",
+    "site_name": "Data Programs",
     "url": "https://data-programs.org",
     "type": "website",
     "image": "/images/data-programs-open-graph.png"
@@ -39,14 +39,14 @@
             "ctas": [
               {
                 "type": "project-cta",
-                "text": "LEARN MORE",
-                "url": "https://filplus.storage/",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
                 "theme": "light"
               },
               {
                 "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://example.com",
+                "text": "LEARN MORE",
+                "url": "https://filplus.storage/",
                 "theme": "dark"
               }
             ]
@@ -60,14 +60,14 @@
             "ctas": [
               {
                 "type": "project-cta",
-                "text": "LEARN MORE",
-                "url": "https://singularity.storage/",
+                "text": "DASHBOARD",
+                "url": "https://dataprograms.grafana.net/public-dashboards/d436fafb93b7437d87c3fa99acd4374f",
                 "theme": "light"
               },
               {
                 "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://dataprograms.grafana.net/public-dashboards/d436fafb93b7437d87c3fa99acd4374f",
+                "text": "LEARN MORE",
+                "url": "https://singularity.storage/",
                 "theme": "dark"
               }
             ]
@@ -81,14 +81,14 @@
             "ctas": [
               {
                 "type": "project-cta",
-                "text": "LEARN MORE",
-                "url": "https://ecosystem-wg.notion.site/Spade-efficient-data-onboarding-to-the-Filecoin-network-8e5dc48fd7c54e0e9385e445543a305a?pvs=4",
+                "text": "DASHBOARD",
+                "url": "https://dataprograms.grafana.net/public-dashboards/5014f382fc8f4cddaf8990ae978f8332",
                 "theme": "light"
               },
               {
                 "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://dataprograms.grafana.net/public-dashboards/5014f382fc8f4cddaf8990ae978f8332",
+                "text": "LEARN MORE",
+                "url": "https://ecosystem-wg.notion.site/Spade-efficient-data-onboarding-to-the-Filecoin-network-8e5dc48fd7c54e0e9385e445543a305a?pvs=4",
                 "theme": "dark"
               }
             ]
@@ -104,7 +104,7 @@
                   "type": "project-cta",
                   "text": "LEARN MORE",
                   "url": "https://spreputation.super.site/",
-                  "theme": "light"
+                  "theme": "dark"
                 }
               ]
             },
@@ -118,7 +118,7 @@
                   "type": "project-cta",
                   "text": "LEARN MORE",
                   "url": "https://filecoinproject.slack.com/archives/C051ZCWSLHE",
-                  "theme": "light"
+                  "theme": "dark"
                 }
               ]
             }
@@ -135,7 +135,7 @@
                 "type": "project-cta",
                 "text": "LEARN MORE",
                 "url": "https://moon-landing.io/",
-                "theme": "light"
+                "theme": "dark"
               }
             ]
           },
@@ -149,14 +149,14 @@
             "ctas": [
               {
                 "type": "project-cta",
-                "text": "LEARN MORE",
-                "url": "https://slingshot.filecoin.io/",
+                "text": "DASHBOARD",
+                "url": "https://datasets.filecoin.io/",
                 "theme": "light"
               },
               {
                 "type": "project-cta",
-                "text": "DASHBOARD",
-                "url": "https://datasets.filecoin.io/",
+                "text": "LEARN MORE",
+                "url": "https://slingshot.filecoin.io/",
                 "theme": "dark"
               }
             ]
@@ -172,7 +172,7 @@
                 "type": "project-cta",
                 "text": "LEARN MORE",
                 "url": "https://docs.google.com/forms/d/e/1FAIpQLSfr9R1rEffGojKcUUgIZWpNdv4GWE6-tgDw3TgI2DQ4JhdPSg/viewform",
-                "theme": "light"
+                "theme": "dark"
               }
             ]
           },
@@ -187,7 +187,7 @@
                 "type": "project-cta",
                 "text": "LEARN MORE",
                 "url": "https://github.com/ribasushi/fil-naive-marketwatch",
-                "theme": "light"
+                "theme": "dark"
               }
             ]
           },
@@ -202,7 +202,7 @@
                 "type": "project-cta",
                 "text": "LEARN MORE",
                 "url": "https://github.com/data-preservation-programs/RetrievalBot",
-                "theme": "light"
+                "theme": "dark"
               }
             ]
           },
@@ -217,7 +217,7 @@
                 "type": "project-cta",
                 "text": "LEARN MORE",
                 "url": "https://github.com/data-preservation-programs/filplus-checker",
-                "theme": "light"
+                "theme": "dark"
               }
             ]
           },
@@ -233,7 +233,7 @@
                 "type": "project-cta",
                 "text": "LEARN MORE",
                 "url": "https://openpanda.io/",
-                "theme": "light"
+                "theme": "dark"
               }
             ]
           }
@@ -284,14 +284,7 @@
         },
         "heading": "ARTICLES",
         "theme": "section-heading",
-        "ctas": [
-          {
-            "type": "text-only",
-            "text": "All articles",
-            "url": "https://example.com",
-            "theme": "regular"
-          }
-        ]
+        "ctas": []
       },
       "col_2": {
         "type": "custom",
@@ -378,13 +371,13 @@
                 {
                   "type": "slider",
                   "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
-                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "title": "Implementation of a Third Party KYC (ID Check) for Fil+ Applicants",
+                  "description": "In the Fil+ application process, all application information is public in a GitHub issue in the Fil+ repo. Because all information is public, applicants are only required to use GitHub IDs as a personal identifier in an effort to keep personal information (name, email) from public view (and from potential abuse from scammers who scrape for ID info).",
                   "ctas": [
                     {
                       "type": "text-only",
                       "text": "READ MORE",
-                      "url": "https://example.com",
+                      "url": "https://medium.com/filecoin-plus/implementation-of-a-third-party-kyc-id-check-for-fil-applicants-e5e825b1484e",
                       "theme": "strong"
                     }
                   ]
@@ -392,17 +385,60 @@
                 {
                   "type": "slider",
                   "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Lörem ipsum syfask disamma än prejuda tant ongen deling",
-                  "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+                  "title": "Retrieval Bot is Live!",
+                  "description": "We are thrilled to announce the launch of our Retrieval Bot on DataCap applications which provides insight into historic retrievability of datasets stored by Fil+ clients.",
                   "ctas": [
                     {
                       "type": "text-only",
                       "text": "READ MORE",
-                      "url": "https://example.com",
+                      "url": "https://medium.com/filecoin-plus/retrieval-bot-is-live-ea577b61f7d3",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "LDN Label Update — Part 1: Label Consolidation",
+                  "description": "GitHub issue labels have played an essential role in tracking and facilitating the distribution of DataCap for LDN applications in the Fil+ program.",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://medium.com/filecoin-plus/ldn-label-update-part-1-label-consolidation-ae2691c78702",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Announcing the Quality Phase for Filecoin Plus",
+                  "description": "The Filecoin Plus program has been in operation for over 2 years now, and has recently crossed over 700PiB of data onboarded through verified deals, constituting approximately 5% of total network capacity!",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://medium.com/filecoin-plus/announcing-the-quality-phase-for-filecoin-plus-2890a9797456",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/surface-of-the-moon.jpg",
+                  "title": "Fil+ Notary App and GitHub Tooling Metrics Dashboard V0.1",
+                  "description": "I am thrilled to introduce the inaugural version of the Fil+ tooling metrics dashboard.",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://medium.com/filecoin-plus/fil-notary-app-and-github-tooling-metrics-dashboard-v0-1-2012a9ed961f",
                       "theme": "strong"
                     }
                   ]
                 }
+
               ]
             }
           }
@@ -578,8 +614,8 @@
         ]
       }
     },
-    "section_contributors": {
-      "id": "section-contributors",
+    "section_collaborators": {
+      "id": "section-collaborators",
       "col_1": {
         "type": "text_block",
         "cols": {
@@ -587,7 +623,7 @@
           "push_left": "off-0",
           "push_right": "off-0"
         },
-        "heading": "CONTRIBUTORS",
+        "heading": "COLLABORATORS",
         "theme": "section-heading"
       },
       "col_2": {
@@ -599,7 +635,7 @@
         },
         "customizations": [
           {
-            "name": "SectionContributors",
+            "name": "SectionCollaborators",
             "props": {
               "logos": [
                 "/images/filecoin-foundation-logo.svg",

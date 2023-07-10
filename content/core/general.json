@@ -21,39 +21,47 @@
     "nav": [
       {
         "text": "PROJECTS",
-        "type": "nav-link"
+        "type": "nav-link",
+        "url": "#section-projects"
       },
       {
         "text": "ABOUT",
-        "type": "nav-link"
+        "type": "nav-link",
+        "url": "#section-about"
       },
       {
         "text": "BLOG",
-        "type": "nav-link"
+        "type": "nav-link",
+        "url": "#section-articles"
       },
       {
         "text": "TEAM",
-        "type": "nav-link"
+        "type": "nav-link",
+        "url": "#section-people"
       }
     ]
   },
   "footer": {
     "links": [
       {
-        "text": "PRODUCTS",
-        "type": "nav-link"
+        "text": "PROJECTS",
+        "type": "nav-link",
+        "url": "#section-projects"
       },
       {
         "text": "ABOUT",
-        "type": "nav-link"
+        "type": "nav-link",
+        "url": "#section-about"
       },
       {
         "text": "BLOG",
-        "type": "nav-link"
+        "type": "nav-link",
+        "url": "#section-articles"
       },
       {
         "text": "TEAM",
-        "type": "nav-link"
+        "type": "nav-link",
+        "url": "#section-people"
       },
       {
         "socials": [

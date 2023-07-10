@@ -1,7 +1,7 @@
 <template>
   <component
     :is="tag"
-    :to="to"
+    :to="href"
     :href="href"
     :target="target"
     :class="['button', `type__${button.type}`, `theme__${button.theme}`]"
@@ -34,11 +34,9 @@ export default {
     target () {
       return this.button.target ? this.button.target : this.$GetTargetBasedOnUrl(this.button.url)
     },
-    to () {
-      return this.button.url ? this.$GetTagBasedOnUrl(this.button.url) === 'nuxt-link' ? this.button.url : false : false
-    },
     href () {
-      return this.button.url ? this.$GetTagBasedOnUrl(this.button.url) === 'a' ? this.button.url : false : false
+      const tag = this.$GetTagBasedOnUrl(this.button.url)
+      return this.button.url ? tag === 'a' || tag === 'nuxt-link' ? this.button.url : false : false
     }
   }
 }

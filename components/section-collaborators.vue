@@ -1,5 +1,5 @@
 <template>
-  <div class="contributors">
+  <div class="collaborators">
 
     <div class="grid">
       <div class="col-12">
@@ -7,11 +7,11 @@
           <CircularSlider
             :grid-cols="sliderCols"
             :reverse-grid="true"
-            :collection="contributors"
+            :collection="collaborators"
             :display-options="{ default: 5, small: 3 }">
 
             <template
-              v-for="(logo, i) in contributors"
+              v-for="(logo, i) in collaborators"
               #[`column-${i}`]>
               <div
                 :key="logo"
@@ -23,12 +23,14 @@
             <template #icon-previous>
               <Button
                 :button="previous"
+                :tabindex="0"
                 class="slider-button previous" />
             </template>
 
             <template #icon-next>
               <Button
                 :button="next"
+                :tabindex="0"
                 class="slider-button next" />
             </template>
 
@@ -87,7 +89,7 @@ import CircularSlider from '@/components/sliders/circular-slider-b'
 
 // ====================================================================== Export
 export default {
-  name: 'SectionContributors',
+  name: 'SectionCollaborators',
 
   components: {
     Button,
@@ -138,7 +140,7 @@ export default {
   },
 
   computed: {
-    contributors () {
+    collaborators () {
       const array = []
       for (let i = 0; i < 3; i++) { array.push(this.logos) }
       return array.flat()

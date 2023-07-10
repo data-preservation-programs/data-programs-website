@@ -24,7 +24,8 @@
 
                   <slot
                     :name="`column-${index}`"
-                    :classlist="slotClasslist(index)">
+                    :classlist="slotClasslist(index)"
+                    :cta-tab-index="determineSlideTabIndex(index, positions)">
                   </slot>
 
                 </div>
@@ -48,11 +49,11 @@
           <div class="slider-controls">
             <div class="slide-selector">
 
-              <div @click="onClick(-1)">
+              <div @click="onClick(-1)" @keyup.enter="onClick(-1)">
                 <slot name="icon-previous"></slot>
               </div>
 
-              <div @click="onClick(1)">
+              <div @click="onClick(1)" @keyup.enter="onClick(1)">
                 <slot name="icon-next"></slot>
               </div>
 
@@ -267,6 +268,22 @@ export default {
           this.increment(-1, this.increment(-1))
           break
       }
+    },
+    determineSlideTabIndex (slideIndex, positions) {
+      let tabindex
+      const positionIndex = positions.indexOf(slideIndex)
+      switch (positionIndex) {
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+          tabindex = 0
+          break
+        default:
+          tabindex = -1
+      }
+      return tabindex
     }
   }
 }
