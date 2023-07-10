@@ -101,6 +101,25 @@ export default {
     @include tiny {
       display: flex;
     }
+    @include customMaxMQ (390px) {
+      .data {
+        translate : toRem(-3);
+      }
+      programs {
+        translate :toRem(3);
+      }
+    }
+    @include customMaxMQ (375px) {
+      .typeface {
+        height: toRem(47);
+      }
+      .data {
+        translate : toRem(-12);
+      }
+      .programs {
+        translate :toRem(12);
+      }
+    }
   }
 }
 
