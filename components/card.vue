@@ -125,7 +125,7 @@ export default {
     sidebarText () {
       if (this.card.sidebar_text) { return this.card.sidebar_text }
       const titleLength = this.title.length
-      const titleRepeats = Math.ceil(100 / (titleLength + 1))
+      const titleRepeats = Math.ceil(150 / (titleLength + 1))
       return Array(titleRepeats).fill(this.title).join(' ')
     },
     headerImage () {
@@ -223,8 +223,10 @@ export default {
       width: 100%;
       height: 100%;
       pointer-events: none;
+      // animation-play-state: paused;
       @include selection_Invisible;
       > span {
+        animation: sidebarTextScroll 7s linear infinite paused;
         display: block;
       }
     }
@@ -243,8 +245,8 @@ export default {
     align-items: flex-end;
   }
     &:hover {
-    .sidebar-text > span {
-      animation: sidebarTextScroll 7s linear infinite;
+      .sidebar-text > span {
+      animation-play-state: running;
     }
   }
 }
