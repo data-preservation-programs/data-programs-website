@@ -222,9 +222,9 @@ export default {
       position: relative;
       width: 100%;
       height: 100%;
-      pointer-events: none;
-      @include selection_Invisible;
+        @include selection_Invisible;
       > span {
+        pointer-events: none;
         animation: sidebarTextScroll 7s linear infinite paused;
         display: block;
       }

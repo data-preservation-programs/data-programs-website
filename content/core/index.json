@@ -613,7 +613,7 @@
           }
         ],
         "alphabetize": true,
-        "sortKey": "title"
+        "sort_key": "title"
       }
     },
     "section_collaborators": {
@@ -651,6 +651,10 @@
                 "/images/eqtylab-logo.svg",
                 "/images/laudspeaker-logo.svg"
               ],
+              "ctatext": {
+                "marquee_text": "WORK WITH US WORK WITH US WORK WITH US WORK WITH US",
+                "text": "Check out the latest project progress here."
+              },
               "imageblock": {
                 "src": "/images/warped-cube.svg"
               }
