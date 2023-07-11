@@ -394,19 +394,19 @@ img {
   &.left {
     &.position-2,
     &.position-3 {
-      transition: transform 250ms ease, z-index 250ms ease;
+      transition: transform 250ms ease 40ms, z-index 250ms ease 40ms;
     }
     &.position-4,
     &.position-5,
     &.position-6 {
-      transition: transform 250ms ease 250ms, z-index 250ms ease 250ms;
+      transition: transform 250ms ease 150ms, z-index 250ms ease 250ms;
     }
   }
   &.right {
     &.position-2,
     &.position-3,
     &.position-4 {
-      transition: transform 250ms ease 250ms, z-index 250ms ease 250ms;
+      transition: transform 250ms ease 40ms, z-index 250ms ease 40ms;
     }
     &.position-5,
     &.position-6 {

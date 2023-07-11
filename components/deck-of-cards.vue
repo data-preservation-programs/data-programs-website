@@ -119,7 +119,7 @@ export default {
     height: toRem(358);
   }
   &.delay {
-    transition: transform 250ms ease 250ms, opacity 250ms ease;
+    transition: transform 150ms ease 40ms, opacity 250ms ease;
   }
   &.animation-slot-3 {
     transform: translateX(-50%) translateY(45px) rotate(-4deg);
