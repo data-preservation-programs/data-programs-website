@@ -4,11 +4,11 @@
     <CircularSlider
       :grid-cols="columns"
       :reverse-grid="true"
-      :collection="cards"
+      :collection="cardList"
       :display-options="{ default: 5 }">
 
       <template
-        v-for="(card, i) in cards"
+        v-for="(card, i) in cardList"
         #[getSlotName(i)]="{ classlist, ctaTabIndex }">
         <div
           :key="`slide-${i}`"
@@ -84,6 +84,14 @@ export default {
         text: 'NEXT',
         theme: 'strong'
       }
+    }
+  },
+
+  computed: {
+    cardList () {
+      const cards = this.cards
+      if (cards.length < 7) { return [...cards, ...cards] }
+      return cards
     }
   },
 
