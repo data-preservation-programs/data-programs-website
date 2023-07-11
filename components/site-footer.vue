@@ -205,12 +205,16 @@ export default {
   }
   .after {
     :deep(.button) {
+      transition: scale 250ms ease;
       &:not(:last-child) {
         margin-right: toRem(55);
       }
       .text {
         @include fontWeight_Medium;
         line-height: leading(36, 16);
+      }
+      &:hover {
+        scale: 1.125;
       }
     }
   }
@@ -220,6 +224,17 @@ export default {
   &.social {
     margin: 0.75rem 0;
     margin-left: 1.375rem;
+    :deep(path) {
+      transition: all 250ms ease;
+      stroke: transparent;
+      stroke-width: 1px;
+    }
+    &:hover {
+      :deep(path) {
+        fill: transparent;
+        stroke: black;
+      }
+    }
   }
 }
 </style>
