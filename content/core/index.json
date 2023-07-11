@@ -53,7 +53,7 @@
           },
           {
             "type": "project",
-            "logo": "",
+            "logo": "/images/singularity-logo.svg",
             "img": "",
             "title": "SINGULARITY",
             "description": "Singularity is a general-purpose onboarding tool for Filecoin, which has also been able to leverage its modular design for purpose-built data preparation tooling",
