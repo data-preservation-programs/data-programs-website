@@ -113,13 +113,13 @@ export default {
   height: toRem(565);
   opacity: 1;
   transform: translateX(-50%);
-  transition: transform 250ms ease, opacity 250ms ease;
+  transition: transform 500ms ease, opacity 500ms ease;
   @include small {
     width: toRem(280);
     height: toRem(358);
   }
   &.delay {
-    transition: transform 150ms ease 40ms, opacity 250ms ease;
+    transition: transform 500ms ease 40ms, opacity 500ms ease;
   }
   &.animation-slot-3 {
     transform: translateX(-50%) translateY(45px) rotate(-4deg);
