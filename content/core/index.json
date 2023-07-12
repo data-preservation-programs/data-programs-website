@@ -20,11 +20,12 @@
     },
     "section_project_list": {
       "id": "section-projects",
+      "grid": ["center"],
       "col_1": {
         "type": "card_list_block",
         "cols": {
-          "num": "col-12_sm-10_ti-12",
-          "push_left": "off-0_sm-1_ti-0",
+          "num": "col-11_sm-10_ti-12",
+          "push_left": "off-0",
           "push_right": "off-0"
         },
         "card_columns": "col-4_lg-6_sm-12",
@@ -53,7 +54,7 @@
           },
           {
             "type": "project",
-            "logo": "",
+            "logo": "/images/singularity-logo.svg",
             "img": "",
             "title": "SINGULARITY",
             "description": "Singularity is a general-purpose onboarding tool for Filecoin, which has also been able to leverage its modular design for purpose-built data preparation tooling",
@@ -74,7 +75,7 @@
           },
           {
             "type": "project",
-            "logo": "",
+            "logo": "/images/spade-logo.png",
             "img": "/images/spade-texture.jpg",
             "title": "SPADE",
             "description": "Building the latest deal engine to support at-scale data onboarding in the Filecoin network",
@@ -242,11 +243,11 @@
     },
     "section_about": {
       "id": "section-about",
-      "grid": ["middle"],
+      "grid": ["middle", "center"],
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-12",
+          "num": "col-11",
           "push_left": "off-0",
           "push_right": "off-0"
         },
@@ -257,7 +258,7 @@
         "type": "image_block",
         "cols": {
           "num": "col-3_md-6",
-          "push_left": "off-1_md-3",
+          "push_left": "off-0_md-3",
           "push_right": "off-1_md-3"
         },
         "src": "/images/warped-grid.svg"
@@ -266,19 +267,19 @@
         "type": "text_block",
         "cols": {
           "num": "col-6_md-10_ti-12",
-          "push_left": "off-0_md-1_ti-0",
-          "push_right": "off-1_md-1_ti-0"
+          "push_left": "off-0_md-0_ti-0",
+          "push_right": "off-0_md-1_ti-0"
         },
         "description": "The Data Programs team is focused on growing the utilization of the Filecoin network, through the development of tools, products, and programs that make data storage on Filecoin more accessible.<br><br> Our team is a part of the Network Growth organization in Outercore, which focuses on ecosystem growth for the Filecoin and IPFS networks. We work closely with several other teams and individuals to form the broader working group. This WG supports several key initiatives in the Filecoin ecosystem.<br><br> In addition to developing and supporting tools and pipelines to onboard data to the network, we want to establish a high standard for how data should be onboarded to the decentralized web at scale. Everything we work on is designed to be open - join us in various Slack conversations, WG meetings, or contribute code to our repos."
       }
     },
     "section_articles": {
       "id": "section-articles",
-      "grid": ["noBottom", "noGutter"],
+      "grid": ["noBottom", "noGutter", "center"],
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-12",
+          "num": "col-11",
           "push_left": "off-0",
           "push_right": "off-0"
         },
@@ -289,7 +290,7 @@
       "col_2": {
         "type": "custom",
         "cols": {
-          "num": "col-12",
+          "num": "col-11",
           "push_left": "off-0",
           "push_right": "off-0"
         },
@@ -377,10 +378,11 @@
     },
     "section_people": {
       "id": "section-people",
+      "grid": ["center"],
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-12",
+          "num": "col-11",
           "push_left": "off-0",
           "push_right": "off-0"
         },
@@ -389,8 +391,9 @@
       },
       "col_2": {
         "type": "card_list_block",
+      "grid": ["center"],
         "cols": {
-          "num": "col-12",
+          "num": "col-11",
           "push_left": "off-0",
           "push_right": "off-0"
         },
@@ -478,7 +481,7 @@
           {
             "type": "person",
             "title": "ORUN",
-            "description": "UNDONE VENTURES - CIO, ENGINEER",
+            "description": "UNDONE VENTURES - FOUNDING ENGINEER",
             "img": "/images/orun.jpg"
           },
           {
@@ -543,15 +546,16 @@
           }
         ],
         "alphabetize": true,
-        "sortKey": "title"
+        "sort_key": "title"
       }
     },
     "section_collaborators": {
       "id": "section-collaborators",
+      "grid": ["center"],
       "col_1": {
         "type": "text_block",
         "cols": {
-          "num": "col-12",
+          "num": "col-11",
           "push_left": "off-0",
           "push_right": "off-0"
         },
@@ -561,7 +565,7 @@
       "col_2": {
         "type": "custom",
         "cols": {
-          "num": "col-12",
+          "num": "col-11",
           "push_left": "off-0",
           "push_right": "off-0"
         },
@@ -581,6 +585,10 @@
                 "/images/eqtylab-logo.svg",
                 "/images/laudspeaker-logo.svg"
               ],
+              "ctatext": {
+                "marquee_text": "WORK WITH US WORK WITH US WORK WITH US WORK WITH US",
+                "text": "Check out the latest project progress here."
+              },
               "imageblock": {
                 "src": "/images/warped-cube.svg"
               }
