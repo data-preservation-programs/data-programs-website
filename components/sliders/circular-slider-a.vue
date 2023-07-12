@@ -414,7 +414,7 @@ img {
       transition: transform 500ms ease-out 130ms, z-index 500ms ease-out 100ms;
     }
     &.position-4 {
-      transition: transform 500ms ease-in-out 100ms, z-index 500ms ease-in-out 100ms;
+      transition: transform 500ms ease-in-out 100ms, z-index 500ms ease-in-out 10ms;
     }
     &.position-5,
     &.position-6 {
