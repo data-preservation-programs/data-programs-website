@@ -213,7 +213,8 @@ export default {
         @include fontWeight_Medium;
         line-height: leading(36, 16);
       }
-      &:hover {
+      &:hover,
+      &:focus-visible {
         scale: 1.125;
       }
     }
@@ -229,7 +230,8 @@ export default {
       stroke: transparent;
       stroke-width: 1px;
     }
-    &:hover {
+    &:hover,
+    &:focus-visible {
       :deep(path) {
         fill: transparent;
         stroke: black;

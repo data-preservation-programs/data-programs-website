@@ -45,15 +45,15 @@
         <div class="cta-block">
 
           <div class="text-marquee">
-            <span class="typeface" v-html="ctatext.marquee_text" />
+            <span class="typeface" v-html="ctablock.marquee_text" />
           </div>
 
           <div class="cta">
 
-            <span class="text regular" v-html="ctatext.text" />
+            <span class="text regular" v-html="ctablock.text" />
 
             <div class="button-wrapper">
-              <Button :button="{ url: 'https://boards.greenhouse.io/protocollabs/jobs/4864599004' }">
+              <Button :button="{ url: ctablock.url }">
                 <ArrowUpRight />
               </Button>
             </div>
@@ -96,7 +96,7 @@ export default {
       required: false,
       default: () => []
     },
-    ctatext: {
+    ctablock: {
       type: Object,
       required: false,
       default: () => ({})

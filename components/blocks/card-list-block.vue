@@ -42,7 +42,7 @@ export default {
 
   computed: {
     cards () {
-      const sortKey = this.block.sortKey
+      const sortKey = this.block.sort_key
       if (this.block.alphabetize && sortKey) {
         return [...this.block.cards].sort((a, b) => {
           if (a[sortKey].toLowerCase() < b[sortKey].toLowerCase()) { return -1 }
