@@ -302,7 +302,7 @@
               "cards": [
                 {
                   "type": "slider",
-                  "img": "/images/data-programs-default-image-3.png",
+                  "img": "/images/ldn-label-update-part-1-article-image.png",
                   "title": "LDN Label Update — Part 1: Label Consolidation",
                   "description": "GitHub issue labels have played an essential role in tracking and facilitating the distribution of DataCap for LDN applications in the Fil+ program.",
                   "ctas": [
@@ -316,7 +316,7 @@
                 },
                 {
                   "type": "slider",
-                  "img": "/images/data-programs-default-image-7.png",
+                  "img": "/images/fil-plus-notary-app-and-github-tooling-article-image.png",
                   "title": "Fil+ Notary App and GitHub Tooling Metrics Dashboard V0.1",
                   "description": "I am thrilled to introduce the inaugural version of the Fil+ tooling metrics dashboard.",
                   "ctas": [
@@ -330,7 +330,7 @@
                 },
                 {
                   "type": "slider",
-                  "img": "/images/data-programs-default-image-1.png",
+                  "img": "/images/announcing-the-quality-phase-for-fil-plus-article-image.png",
                   "title": "Announcing the Quality Phase for Filecoin Plus",
                   "description": "The Filecoin Plus program has been in operation for over 2 years now, and has recently crossed over 700PiB of data onboarded through verified deals, constituting approximately 5% of total network capacity!",
                   "ctas": [
@@ -344,7 +344,7 @@
                 },
                 {
                   "type": "slider",
-                  "img": "/images/data-programs-default-image-6.png",
+                  "img": "/images/retrieval-bot-is-live-article-image.png",
                   "title": "Retrieval Bot is Live!",
                   "description": "We are thrilled to announce the launch of our Retrieval Bot on DataCap applications which provides insight into historic retrievability of datasets stored by Fil+ clients.",
                   "ctas": [
@@ -358,7 +358,7 @@
                 },
                 {
                   "type": "slider",
-                  "img": "/images/data-programs-default-image-2.png",
+                  "img": "/images/implementation-of-third-party-kyc-article-image.png",
                   "title": "Implementation of a Third Party KYC (ID Check) for Fil+ Applicants",
                   "description": "In the Fil+ application process, all application information is public in a GitHub issue in the Fil+ repo. Because all information is public, applicants are only required to use GitHub IDs as a personal identifier in an effort to keep personal information (name, email) from public view (and from potential abuse from scammers who scrape for ID info).",
                   "ctas": [
