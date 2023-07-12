@@ -79,7 +79,7 @@ export default {
   background-repeat: repeat;
 }
 
-:deep(.hero-header) {
+:deep(#hero-header) {
   margin-bottom: clamp(toRem(80), vw(225px), toRem(225));
   @include mini {
     margin-bottom: clamp(3rem, 12vw, 6rem);
@@ -115,19 +115,25 @@ export default {
     }
   }
   .text-block {
+    font-family: $font_Secondary;
     &.theme__section-heading {
       margin-bottom: toRem(76);
       @include mini {
         margin-bottom: 0;
       }
     }
+    h2 {
+      font-size: clamp(toRem(18), vw(24px), toRem(24));
+      line-height: (36, 24);
+      font-weight: 600;
+      margin-bottom: toRem(55);
+    }
     .description {
       p {
-        @include h4;
-        margin-bottom: toRem(28);
-        &:first-child {
-          @include fontWeight_Semibold;
-        }
+        font-family: $font_Secondary;
+        font-size: clamp(toRem(16), vw(20px), toRem(20));
+        line-height: (30, 20);
+        font-weight: 500;
       }
     }
   }

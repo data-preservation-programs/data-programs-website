@@ -46,9 +46,5 @@ export default {
   &:last-child {
     @include sectionDivider;
   }
-  :deep(.text) {
-    font-size: 1rem;
-    line-height: leading(24, 16);
-  }
 }
 </style>

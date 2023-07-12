@@ -21,7 +21,7 @@
     </div>
 
     <!-- =========================================================== Desktop -->
-    <div class="grid-center main-content">
+    <div class="grid main-content">
 
       <div class="col-2_sm-3">
         <NuxtLink to="/" class="logo">
@@ -29,7 +29,7 @@
         </NuxtLink>
       </div>
 
-      <div class="col-5_sm-3" data-push-left="off-4_sm-6">
+      <div class="col-5_sm-3" data-push-left="off-5_sm-6">
 
         <Navbar :links="navigation" class="desktop" />
 

@@ -87,6 +87,9 @@ export default {
   &:first-child {
     padding-top: 0;
   }
+  @include customMinMQ($breakpoint_Xlarge) {
+    width: 101%;
+  }
   @include mini {
     padding-top: 0.5rem;
   }

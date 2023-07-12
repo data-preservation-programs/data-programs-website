@@ -224,8 +224,10 @@ export default {
       height: 100%;
         @include selection_Invisible;
       > span {
+        position: absolute;
+        bottom: 0;
         pointer-events: none;
-        animation: sidebarTextScroll 7s linear infinite paused;
+        animation: sidebarTextScroll 20s linear infinite paused;
         display: block;
       }
     }
@@ -567,7 +569,7 @@ export default {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-100%)
+    transform: translateY(80%)
   }
 }
 

@@ -104,6 +104,10 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  @include customMinMQ($breakpoint_Xlarge) {
+    width: $breakpoint_Xlarge;
+    margin: 0 auto;
+  }
   @include small {
     margin-top: 1rem;
   }
