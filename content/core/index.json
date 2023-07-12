@@ -368,76 +368,6 @@
                       "theme": "strong"
                     }
                   ]
-                },
-                {
-                  "type": "slider",
-                  "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Implementation of a Third Party KYC (ID Check) for Fil+ Applicants",
-                  "description": "In the Fil+ application process, all application information is public in a GitHub issue in the Fil+ repo. Because all information is public, applicants are only required to use GitHub IDs as a personal identifier in an effort to keep personal information (name, email) from public view (and from potential abuse from scammers who scrape for ID info).",
-                  "ctas": [
-                    {
-                      "type": "text-only",
-                      "text": "READ MORE",
-                      "url": "https://medium.com/filecoin-plus/implementation-of-a-third-party-kyc-id-check-for-fil-applicants-e5e825b1484e",
-                      "theme": "strong"
-                    }
-                  ]
-                },
-                {
-                  "type": "slider",
-                  "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Retrieval Bot is Live!",
-                  "description": "We are thrilled to announce the launch of our Retrieval Bot on DataCap applications which provides insight into historic retrievability of datasets stored by Fil+ clients.",
-                  "ctas": [
-                    {
-                      "type": "text-only",
-                      "text": "READ MORE",
-                      "url": "https://medium.com/filecoin-plus/retrieval-bot-is-live-ea577b61f7d3",
-                      "theme": "strong"
-                    }
-                  ]
-                },
-                {
-                  "type": "slider",
-                  "img": "/images/surface-of-the-moon.jpg",
-                  "title": "LDN Label Update — Part 1: Label Consolidation",
-                  "description": "GitHub issue labels have played an essential role in tracking and facilitating the distribution of DataCap for LDN applications in the Fil+ program.",
-                  "ctas": [
-                    {
-                      "type": "text-only",
-                      "text": "READ MORE",
-                      "url": "https://medium.com/filecoin-plus/ldn-label-update-part-1-label-consolidation-ae2691c78702",
-                      "theme": "strong"
-                    }
-                  ]
-                },
-                {
-                  "type": "slider",
-                  "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Announcing the Quality Phase for Filecoin Plus",
-                  "description": "The Filecoin Plus program has been in operation for over 2 years now, and has recently crossed over 700PiB of data onboarded through verified deals, constituting approximately 5% of total network capacity!",
-                  "ctas": [
-                    {
-                      "type": "text-only",
-                      "text": "READ MORE",
-                      "url": "https://medium.com/filecoin-plus/announcing-the-quality-phase-for-filecoin-plus-2890a9797456",
-                      "theme": "strong"
-                    }
-                  ]
-                },
-                {
-                  "type": "slider",
-                  "img": "/images/surface-of-the-moon.jpg",
-                  "title": "Fil+ Notary App and GitHub Tooling Metrics Dashboard V0.1",
-                  "description": "I am thrilled to introduce the inaugural version of the Fil+ tooling metrics dashboard.",
-                  "ctas": [
-                    {
-                      "type": "text-only",
-                      "text": "READ MORE",
-                      "url": "https://medium.com/filecoin-plus/fil-notary-app-and-github-tooling-metrics-dashboard-v0-1-2012a9ed961f",
-                      "theme": "strong"
-                    }
-                  ]
                 }
 
               ]
@@ -655,9 +585,10 @@
                 "/images/eqtylab-logo.svg",
                 "/images/laudspeaker-logo.svg"
               ],
-              "ctatext": {
+              "ctablock": {
                 "marquee_text": "WORK WITH US WORK WITH US WORK WITH US WORK WITH US",
-                "text": "Check out the latest project progress here."
+                "text": "Check out the latest project progress here.",
+                "url": "https://github.com/data-preservation-programs"
               },
               "imageblock": {
                 "src": "/images/warped-cube.svg"
