@@ -79,7 +79,7 @@ export default {
   background-repeat: repeat;
 }
 
-:deep(.hero-header) {
+:deep(#hero-header) {
   margin-bottom: clamp(toRem(80), vw(225px), toRem(225));
   @include mini {
     margin-bottom: clamp(3rem, 12vw, 6rem);
