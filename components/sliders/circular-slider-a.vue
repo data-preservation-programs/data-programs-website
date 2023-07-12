@@ -396,17 +396,25 @@ img {
     &.position-3 {
       transition: transform 500ms ease-in-out 40ms, z-index 500ms ease-in-out 40ms;
     }
-    &.position-4,
-    &.position-5,
+    &.position-4{
+      transition: transform 500ms ease-in-out 100ms, z-index 500ms ease-in-out 10ms;
+    }
+    &.position-5 {
+      transition: transform 500ms ease-out 130ms, z-index 500ms ease-out 100ms;
+    }
     &.position-6 {
-      transition: transform 500ms ease-in-out 150ms, z-index 500ms ease-in-out 250ms;
+      transition: transform 500ms ease-in 170ms, z-index 500ms ease-in 0ms;
     }
   }
   &.right {
-    &.position-2,
-    &.position-3,
+    &.position-2 {
+      transition: transform 500ms ease-in 170ms, z-index 500ms ease-in 100ms;
+    }
+    &.position-3 {
+      transition: transform 500ms ease-out 130ms, z-index 500ms ease-out 100ms;
+    }
     &.position-4 {
-      transition: transform 500ms ease-in-out 100ms, z-index 500ms ease-in-out 100ms;
+      transition: transform 500ms ease-in-out 100ms, z-index 500ms ease-in-out 10ms;
     }
     &.position-5,
     &.position-6 {
