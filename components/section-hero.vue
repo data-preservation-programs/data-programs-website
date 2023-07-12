@@ -1,8 +1,8 @@
 <template>
   <div class="section-hero-header">
 
-    <div class="grid">
-      <div class="col-7_sm-8_ti-9">
+    <div class="grid-center">
+      <div class="col-7_sm-8_ti-9" data-push-right="off-4">
         <div
           class="statement-of-intent"
           v-html="headerData.statement.toUpperCase()">

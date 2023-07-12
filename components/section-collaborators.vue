@@ -44,20 +44,13 @@
       <div class="col-7_md-8_sm-7_mi-12">
         <div class="cta-block">
 
-          <div class="typeface">
-            <JoinUsTypeface class="typeface" />
+          <div class="text-marquee">
+            <span class="typeface" v-html="ctatext.marquee_text" />
           </div>
 
           <div class="cta">
 
-            <div class="text">
-              <div class="strong">
-                Lorem ipsum work with us?
-              </div>
-              <div class="regular">
-                Lörem ipsum syfask disamma.
-              </div>
-            </div>
+            <span class="text regular" v-html="ctatext.text" />
 
             <div class="button-wrapper">
               <Button :button="{ url: 'https://boards.greenhouse.io/protocollabs/jobs/4864599004' }">
@@ -84,7 +77,6 @@
 import Button from '@/components/button'
 import ImageBlock from '@/components/blocks/image-block'
 import ArrowUpRight from '@/components/svgs/arrow-up-right'
-import JoinUsTypeface from '@/components/svgs/join-us'
 import CircularSlider from '@/components/sliders/circular-slider-b'
 
 // ====================================================================== Export
@@ -95,7 +87,6 @@ export default {
     Button,
     ImageBlock,
     ArrowUpRight,
-    JoinUsTypeface,
     CircularSlider
   },
 
@@ -104,6 +95,11 @@ export default {
       type: Array,
       required: false,
       default: () => []
+    },
+    ctatext: {
+      type: Object,
+      required: false,
+      default: () => ({})
     },
     imageblock: {
       type: Object,
@@ -263,7 +259,6 @@ export default {
   height: 100%;
   background-color: $color_Secondary;
   border-radius: toRem(19);
-  padding: toRem(30) toRem(38);
   overflow: hidden;
   @include medium {
     padding: toRem(30) toRem(30);
@@ -272,27 +267,37 @@ export default {
     padding: toRem(27) toRem(19);
     padding-bottom: toRem(20);
   }
-  .typeface {
+  &:hover {
+    .typeface {
+      animation-play-state: running;
+    }
+  }
+  .text-marquee {
+    height: toRem(190);
     width: 100%;
-    margin-top: 1.125rem;
+  }
+  .typeface {
+    display: block;
+    font-family: $font_Primary;
+    font-size: toRem(146);
+    line-height: 1.3;
+    color: $color_Secondary;
+    @include fontWeight_Medium;
+    white-space: nowrap;
+    text-shadow: 0px 0px 0 $mercury, 0px 0px 0 $mercury, 0px 0px 0 $mercury, 0px 0px 0 $mercury;
+    -webkit-text-stroke: 1px $mercury;
+    animation: marqueeTextScroll 17s linear infinite paused;
+    pointer-events: none;
+    @include selection_Invisible;
     @include small {
       margin-top: 0;
       margin-bottom: 1.875rem;
-    }
-    :deep(svg) {
-      width: toRem(1103);
-      transform: translateX(-138px);
-      @include small {
-        width: toRem(477);
-        transform: translateX(-50px);
-        height: toRem(45);
-        margin-bottom: 0;
-      }
     }
   }
   .cta {
     display: flex;
     justify-content: space-between;
+    padding: toRem(30) toRem(19) toRem(30) toRem(38);
     @include large {
       align-items: flex-end;
     }
@@ -310,9 +315,6 @@ export default {
       @include small {
         @include fontSize_Small;
       }
-      .strong {
-        @include fontWeight_Medium;
-      }
       .regular {
         @include fontWeight_Regular;
       }
@@ -326,12 +328,12 @@ export default {
     }
     :deep(.button) {
       @include small {
-        width: toRem(39);
-        height: toRem(39);
+        width: toRem(94);
+        height: toRem(94);
       }
       svg {
-        width: toRem(39);
-        height: toRem(39);
+        width: toRem(94);
+        height: toRem(94);
       }
     }
   }
@@ -340,6 +342,16 @@ export default {
 :deep(.image-block) {
   @include mini {
     margin-top: toRem(15);
+  }
+}
+
+// ////////////////////////////////////////////////////////////////// Animations
+@keyframes marqueeTextScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-440%)
   }
 }
 
