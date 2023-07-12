@@ -1,12 +1,12 @@
 <template>
   <footer class="site-footer">
-    <div class="grid-noGutter-center">
+    <div class="grid-noGutter">
 
-      <div class="col-11">
+      <div class="col-12">
         <div class="divider"></div>
       </div>
 
-      <div class="col-5_sm-12">
+      <div class="col-6_sm-12">
         <div class="site-footer-logo">
           <div class="statement-of-intent">
             {{ headerData.statement.toUpperCase() }}
@@ -41,7 +41,7 @@
         </div>
       </div>
 
-      <div class="col-11">
+      <div class="col-12">
         <div class="copyright-container">
           <div class="before">
             {{ copyright.before }}
