@@ -74,12 +74,12 @@ export default {
 .type__text-only,
 .type__nav-link {
   position: relative;
-  @include cta;
+  @include nav;
   padding: toRem(10) 0;
   padding-left: 1rem;
   .text {
     display: inline-block;
-    @include cta;
+    @include nav;
   }
   &:after {
     content: '';
