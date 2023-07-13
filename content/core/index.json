@@ -225,7 +225,7 @@
           {
             "type": "project",
             "logo": "/images/open-panda-logo.svg",
-            "img": "/images/open-panda-sanddunes.jpg",
+            "img": "/images/open-panda-map.png",
             "title": "OPEN PANDA",
             "reverse_img": "/images/open-panda-screencap.jpg",
             "description": "Open Panda is a platform for data researchers, analysts, students and enthusiasts to interact with open datasets stored on Filecoin.",
