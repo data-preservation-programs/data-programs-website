@@ -227,7 +227,7 @@ export default {
         position: absolute;
         bottom: 0;
         pointer-events: none;
-        animation: sidebarTextScroll 20s linear infinite paused;
+        animation: sidebarTextScroll 40s linear infinite paused;
         display: block;
       }
     }
