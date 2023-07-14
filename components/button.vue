@@ -102,7 +102,7 @@ export default {
 }
 
 .type__project-cta {
-  padding: 0 toRem(13);
+  padding: 0 clamp(toRem(9), vw(13px), toRem(13));
   border: solid 2px $color_Secondary;
   border-radius: 0.3125rem;
   transition: 250ms ease;
