@@ -95,18 +95,12 @@ $letterSpacing_Large: 0.03em;
   }
 }
 
-@mixin cta { // card ctas, footer links
-  @include fontSize_Regular; // 18px
+@mixin cta { // project card ctas
+  font-size: clamp(toRem(14), vw(16px), toRem(16));
   @include fontWeight_Bold; // 700
   font-family: $font_Secondary;
-  line-height: leading(33, 18);
+  line-height: leading(33, 16);
   letter-spacing: 0.03em;
-  @include mini {
-    @include fontSize_Small; // 16
-    @include fontWeight_Bold; // 700
-    line-height: leading(33, 16);
-    letter-spacing: 0.03em;
-  }
 }
 
 @mixin nav { // card ctas, footer links
