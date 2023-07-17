@@ -28,11 +28,11 @@
 
     </div>
 
-    <div
+    <img
       v-if="reverseImg"
       class="reverse-image"
-      :style="{ 'background-image': `url(${reverseImg})` }">
-    </div>
+      :src="reverseImg"
+      :loading="lazyLoad ? 'lazy' : 'eager'" />
 
     <div class="card-content">
 
@@ -195,8 +195,7 @@ export default {
   }
 }
 
-.sidebar-image,
-.image {
+.sidebar-image {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -271,7 +270,6 @@ export default {
 .card.type__project {
   position: relative;
   box-sizing: content-box;
-  // height: 100%;
   @include mini {
     height: toRem(330);
   }
@@ -429,11 +427,11 @@ export default {
   position: absolute;
   left: toRem(70);
   top: 0;
-  width: calc(100% - 68px);
+  width: calc(100% - toRem(70));
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  border-top-right-radius: toRem(8);
+  border-bottom-right-radius: toRem(8);
+  object-fit: cover;
   z-index: -1;
   transition: 1ms linear 350ms;
   opacity: 0;
