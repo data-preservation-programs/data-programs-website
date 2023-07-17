@@ -2,6 +2,7 @@
   <div :class="['card', `type__${type}`, `theme__${theme}`, flipped]">
 
     <div
+      v-if="type !== 'person'"
       :class="['sidebar', { 'sidebar-image': sidebarImage }]"
       :style="sidebarImage">
 
@@ -36,13 +37,18 @@
     <div class="card-content">
 
       <div
-        v-if="type !== 'person'"
         class="image"
         :style="headerImage">
         <img
           v-if="logo"
           :src="logo"
-          :class="['logo', logoTitle]" />
+          :class="['logo', logoTitle]"
+          :loading="lazyLoad ? 'lazy' : 'eager'" />
+        <img
+          v-if="personImage"
+          :src="personImage"
+          class="person-image"
+          :loading="lazyLoad ? 'lazy' : 'eager'" />
       </div>
 
       <div class="title">
@@ -113,6 +119,9 @@ export default {
     title () {
       return this.card.title
     },
+    lazyLoad () {
+      return this.card.lazy_load || true
+    },
     logoTitle () {
       return this.title.toLowerCase().replaceAll(' ', '-').replaceAll('.', '-')
     },
@@ -120,7 +129,7 @@ export default {
       return this.card.description
     },
     sidebarImage () {
-      return this.type !== 'slider' && this.image ? { 'background-image': `url(${this.image})` } : false
+      return this.type === 'project' && this.image ? { 'background-image': `url(${this.image})` } : false
     },
     sidebarText () {
       if (this.card.sidebar_text) { return this.card.sidebar_text }
@@ -130,6 +139,9 @@ export default {
     },
     headerImage () {
       return this.type === 'slider' ? { 'background-image': `url(${this.image})` } : null
+    },
+    personImage () {
+      return this.type === 'person' ? this.image : null
     },
     ctas () {
       return this.card.ctas ? this.card.ctas : []
@@ -506,20 +518,17 @@ export default {
   padding: toRem(49) 0;
   flex-direction: column;
   @include itemDivider;
-  .sidebar-image {
-    width: toRem(75);
-    height: toRem(75);
-    border-radius: 50%;
-    margin-bottom: toRem(13);
-    .sidebar-text {
-      display: none;
-    }
-  }
   .card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 75%;
+  }
+  .person-image {
+    width: toRem(75);
+    height: toRem(75);
+    border-radius: 50%;
+    margin-bottom: toRem(13);
   }
   .title {
     @include h3;
