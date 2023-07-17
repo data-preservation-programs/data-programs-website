@@ -167,6 +167,12 @@ export default {
     .main-content {
       z-index: 1001;
     }
+    .main-content {
+      position: fixed;
+    }
+    .nav-toggle-wrapper {
+      top: 0.5rem;
+    }
     .logo {
       :deep(path) {
         &:not(.letter) {
