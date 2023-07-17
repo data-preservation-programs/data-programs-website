@@ -294,13 +294,10 @@ export default {
   }
   .sidebar-image {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     height: 100%;
     .sidebar-text {
       transition: 1ms linear 350ms;
-      height: calc(100% - 70px);
+      height: calc(100% - toRem(70));
       opacity: 0;
     }
     .card-flip-button {
