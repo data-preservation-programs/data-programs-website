@@ -36,18 +36,16 @@
 
     <div class="card-content">
 
-      <div
-        class="image"
-        :style="headerImage">
+      <div class="image">
         <img
-          v-if="logo"
-          :src="logo"
-          :class="['logo', logoTitle]"
+          v-if="type === 'project'"
+          :class="[`image-${type}`, logoTitle]"
+          :src="contentImage"
           :loading="lazyLoad ? 'lazy' : 'eager'" />
         <img
-          v-if="personImage"
-          :src="personImage"
-          class="person-image"
+          v-else
+          :class="`image-${type}`"
+          :src="contentImage"
           :loading="lazyLoad ? 'lazy' : 'eager'" />
       </div>
 
@@ -113,14 +111,26 @@ export default {
     image () {
       return this.card.img
     },
-    logo () {
-      return this.type === 'project' ? this.card.logo : false
-    },
     title () {
       return this.card.title
     },
     lazyLoad () {
       return this.card.lazy_load || true
+    },
+    contentImage () {
+      let image
+      switch (this.type) {
+        case 'project':
+          image = this.card.logo
+          break
+        case 'person':
+        case 'slider':
+          image = this.card.img
+          break
+        default:
+          image = null
+      }
+      return image
     },
     logoTitle () {
       return this.title.toLowerCase().replaceAll(' ', '-').replaceAll('.', '-')
@@ -136,12 +146,6 @@ export default {
       const titleLength = this.title.length
       const titleRepeats = Math.ceil(150 / (titleLength + 1))
       return Array(titleRepeats).fill(this.title).join(' ')
-    },
-    headerImage () {
-      return this.type === 'slider' ? { 'background-image': `url(${this.image})` } : null
-    },
-    personImage () {
-      return this.type === 'person' ? this.image : null
     },
     ctas () {
       return this.card.ctas ? this.card.ctas : []
@@ -328,9 +332,10 @@ export default {
       margin-bottom: toRem(21);
     }
   }
-  .logo {
+  .image-project {
     width: unset;
-    height: 100%;
+    height: toRem(77);
+    object-fit: contain;
     &:not(.filplus-storage) {
       padding: 0.9375rem 0;
     }
@@ -465,12 +470,16 @@ export default {
     }
   }
   .image {
+    margin-bottom: toRem(32);
+    @include small {
+      margin-bottom: toRem(19);
+    }
+  }
+  .image-slider {
     width: calc(100% + 2px);
     height: toRem(195);
-    margin-bottom: toRem(40);
     @include small {
       height: toRem(125);
-      margin-bottom: toRem(19);
     }
   }
   .title,
@@ -495,6 +504,7 @@ export default {
   }
   .description {
     @include p2;
+    text-overflow: ellipsis;
     @include small {
       @include fontSize_Tiny;
     }
@@ -524,7 +534,7 @@ export default {
     justify-content: center;
     max-width: 75%;
   }
-  .person-image {
+  .image-person {
     width: toRem(75);
     height: toRem(75);
     border-radius: 50%;
