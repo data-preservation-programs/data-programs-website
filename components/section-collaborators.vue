@@ -16,7 +16,7 @@
               <div
                 :key="logo"
                 class="image-wrapper">
-                <img :src="logo" loading="lazy" />
+                <img :src="logo" loading="lazy" :alt="$GetPrettyNameFromUrl(logo)" />
               </div>
             </template>
 

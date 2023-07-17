@@ -32,7 +32,8 @@
       v-if="reverseImg"
       class="reverse-image"
       :src="reverseImg"
-      :loading="lazyLoad ? 'lazy' : 'eager'" />
+      :loading="lazyLoad ? 'lazy' : 'eager'"
+      :alt="$GetPrettyNameFromUrl(reverseImg)" />
 
     <div class="card-content">
 
@@ -41,12 +42,14 @@
           v-if="type === 'project'"
           :class="[`image-${type}`, logoTitle]"
           :src="contentImage"
-          :loading="lazyLoad ? 'lazy' : 'eager'" />
+          :loading="lazyLoad ? 'lazy' : 'eager'"
+          :alt="$GetPrettyNameFromUrl(contentImage)" />
         <img
           v-else
           :class="`image-${type}`"
           :src="contentImage"
-          :loading="lazyLoad ? 'lazy' : 'eager'" />
+          :loading="lazyLoad ? 'lazy' : 'eager'"
+          :alt="$GetPrettyNameFromUrl(contentImage)" />
       </div>
 
       <div class="title">
