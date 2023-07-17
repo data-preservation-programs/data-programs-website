@@ -404,145 +404,145 @@
             "type": "person",
             "title": "DEEP",
             "description": "TEAM LEAD",
-            "img": "/images/deep-kapur.jpg"
+            "img": "/images/deep-kapur-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "PETER",
             "description": "SPADE, MANY OTHERS",
-            "img": "/images/peter.jpg"
+            "img": "/images/peter-illustrated-portrait-of-eye.jpg"
           },
           {
             "type": "person",
             "title": "CATALIN",
             "description": "DMOB",
-            "img": "/images/catalin.jpg"
+            "img": "/images/catalin-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "RG",
             "description": "FIL PLUS, T & T",
-            "img": "/images/rg.jpg"
+            "img": "/images/rg-illustrated-portrait.jpg"
           },
           {
             "type": "person",
             "title": "CARO",
             "description": "SLINGSHOT, REPUTATION DAO, CID METADATA",
-            "img": "/images/caro.jpg"
+            "img": "/images/caro-illustrated-portrait.jpg"
           },
           {
             "type": "person",
             "title": "RARES",
             "description": "DMOB",
-            "img": "/images/rares.jpg"
+            "img": "/images/rares-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "XINAN",
             "description": "SINGULARITY, VALIDATIONBOT, CID CHECKER",
-            "img": "/images/xinan-xu.jpg"
+            "img": "/images/xinan-xu-illustrated-portrait.jpg"
           },
           {
             "type": "person",
             "title": "SIMON",
             "description": "FIL PLUS CLIENT PATH TO DATACAP",
-            "img": "/images/simon-kim.jpg"
+            "img": "/images/simon-kim-illustrated-portrait.jpg"
           },
           {
             "type": "person",
             "title": "FABRIZIO",
             "description": "KEYKO",
-            "img": "/images/fabrizio.jpg"
+            "img": "/images/fabrizio-photographed-portrait-with-green-tint.jpg"
           },
           {
             "type": "person",
             "title": "PHIL",
             "description": "FIL PLUS NOTARY TOOLING AND INCENTIVES",
-            "img": "/images/phil-pangestu.jpg"
+            "img": "/images/phil-pangestu-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "KEVIN",
             "description": "FIL PLUS SUPPORT FOR PRIVATE AND ENTERPRISE DATA",
-            "img": "/images/kevin-zakorchemny.jpg"
+            "img": "/images/kevin-zakorchemny-illustrated-portrait.jpg"
           },
           {
             "type": "person",
             "title": "HÜSEYIN",
             "description": "KEYKO",
-            "img": "/images/huseyin.jpg"
+            "img": "/images/huseyin-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "DIANA",
             "description": "UNDONE VENTURES - FOUNDER, CXO",
-            "img": "/images/diana.jpg"
+            "img": "/images/diana-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "ORUN",
             "description": "UNDONE VENTURES - FOUNDING ENGINEER",
-            "img": "/images/orun.jpg"
+            "img": "/images/orun-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "ESRAA",
             "description": "KEYKO",
-            "img": "/images/esraa.jpg"
+            "img": "/images/esraa-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "NAURAS",
             "description": "UNDONE VENTURES - PARTNER, ENGINEER",
-            "img": "/images/nauras.jpg"
+            "img": "/images/nauras-photographed-portrait-in-a-pig-costume.jpg"
           },
           {
             "type": "person",
             "title": "EMILY",
             "description": "UNDONE VENTURES - ART DIRECTOR",
-            "img": "/images/emily.jpg"
+            "img": "/images/emily-artistic-multi-colored-portrait.jpg"
           },
           {
             "type": "person",
             "title": "JOSEPH",
             "description": "UNDONE VENTURES - UX PRODUCTION",
-            "img": "/images/joseph.jpg"
+            "img": "/images/joseph-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "BEN",
             "description": "UNDONE VENTURES - ENGINEER",
-            "img": "/images/ben.jpg"
+            "img": "/images/ben-photographed-portrait"
           },
           {
             "type": "person",
             "title": "THOMSON",
             "description": "UNDONE VENTURES - PROJECT MANAGER",
-            "img": "/images/thomson.jpg"
+            "img": "/images/thomson-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "JO",
             "description": "UNDONE VENTURES - ENGINEER",
-            "img": "/images/jo.jpg"
+            "img": "/images/jo-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "KRITIKA",
             "description": "UNDONE VENTURES - ENGINEER",
-            "img": "/images/kritika.jpg"
+            "img": "/images/kritika-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "JAC",
             "description": "UNDONE VENTURES - QUALITY ASSURANCE",
-            "img": "/images/jac.jpg"
+            "img": "/images/jac-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "SARA",
             "description": "UNDONE VENTURES - ENGINEER",
-            "img": "/images/sara.jpg"
+            "img": "/images/sara-photographed-portrait.jpg"
           }
         ],
         "alphabetize": true,
