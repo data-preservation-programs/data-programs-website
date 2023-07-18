@@ -165,13 +165,16 @@ export default {
         margin-bottom: 0;
       }
       .button {
+        padding-right: 1.75rem;
+        margin-right: -1.75rem;
         .text {
           margin-right: toRem(11);
           @include small {
             @include fontSize_Mini;
           }
         }
-        &:hover {
+        &:hover,
+        &:focus-visible {
           &:after {
             transform: translateX(0.75rem);
           }
