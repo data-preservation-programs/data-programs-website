@@ -2,6 +2,7 @@
   <div :class="['card', `type__${type}`, `theme__${theme}`, flipped]">
 
     <div
+      v-if="type !== 'person'"
       :class="['sidebar', { 'sidebar-image': sidebarImage }]"
       :style="sidebarImage">
 
@@ -27,22 +28,28 @@
 
     </div>
 
-    <div
+    <img
       v-if="reverseImg"
       class="reverse-image"
-      :style="{ 'background-image': `url(${reverseImg})` }">
-    </div>
+      :src="reverseImg"
+      :loading="lazyLoad ? 'lazy' : 'eager'"
+      :alt="$GetPrettyNameFromUrl(reverseImg)" />
 
     <div class="card-content">
 
-      <div
-        v-if="type !== 'person'"
-        class="image"
-        :style="headerImage">
+      <div class="image">
         <img
-          v-if="logo"
-          :src="logo"
-          :class="['logo', logoTitle]" />
+          v-if="type === 'project'"
+          :class="[`image-${type}`, logoTitle]"
+          :src="contentImage"
+          :loading="lazyLoad ? 'lazy' : 'eager'"
+          :alt="$GetPrettyNameFromUrl(contentImage)" />
+        <img
+          v-else
+          :class="`image-${type}`"
+          :src="contentImage"
+          :loading="lazyLoad ? 'lazy' : 'eager'"
+          :alt="$GetPrettyNameFromUrl(contentImage)" />
       </div>
 
       <div class="title">
@@ -107,11 +114,26 @@ export default {
     image () {
       return this.card.img
     },
-    logo () {
-      return this.type === 'project' ? this.card.logo : false
-    },
     title () {
       return this.card.title
+    },
+    lazyLoad () {
+      return this.card.lazy_load || true
+    },
+    contentImage () {
+      let image
+      switch (this.type) {
+        case 'project':
+          image = this.card.logo
+          break
+        case 'person':
+        case 'slider':
+          image = this.card.img
+          break
+        default:
+          image = null
+      }
+      return image
     },
     logoTitle () {
       return this.title.toLowerCase().replaceAll(' ', '-').replaceAll('.', '-')
@@ -120,16 +142,13 @@ export default {
       return this.card.description
     },
     sidebarImage () {
-      return this.type !== 'slider' && this.image ? { 'background-image': `url(${this.image})` } : false
+      return this.type === 'project' && this.image ? { 'background-image': `url(${this.image})` } : false
     },
     sidebarText () {
       if (this.card.sidebar_text) { return this.card.sidebar_text }
       const titleLength = this.title.length
       const titleRepeats = Math.ceil(150 / (titleLength + 1))
       return Array(titleRepeats).fill(this.title).join(' ')
-    },
-    headerImage () {
-      return this.type === 'slider' ? { 'background-image': `url(${this.image})` } : null
     },
     ctas () {
       return this.card.ctas ? this.card.ctas : []
@@ -179,8 +198,7 @@ export default {
   }
 }
 
-.sidebar-image,
-.image {
+.sidebar-image {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -255,7 +273,6 @@ export default {
 .card.type__project {
   position: relative;
   box-sizing: content-box;
-  // height: 100%;
   @include mini {
     height: toRem(330);
   }
@@ -313,9 +330,10 @@ export default {
       margin-bottom: toRem(21);
     }
   }
-  .logo {
+  .image-project {
     width: unset;
-    height: 100%;
+    height: toRem(77);
+    object-fit: contain;
     &:not(.filplus-storage) {
       padding: 0.9375rem 0;
     }
@@ -409,11 +427,11 @@ export default {
   position: absolute;
   left: toRem(70);
   top: 0;
-  width: calc(100% - 68px);
+  width: calc(100% - toRem(70));
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  border-top-right-radius: toRem(8);
+  border-bottom-right-radius: toRem(8);
+  object-fit: cover;
   z-index: -1;
   transition: 1ms linear 350ms;
   opacity: 0;
@@ -450,12 +468,16 @@ export default {
     }
   }
   .image {
+    margin-bottom: toRem(32);
+    @include small {
+      margin-bottom: toRem(19);
+    }
+  }
+  .image-slider {
     width: calc(100% + 2px);
     height: toRem(195);
-    margin-bottom: toRem(40);
     @include small {
       height: toRem(125);
-      margin-bottom: toRem(19);
     }
   }
   .title,
@@ -480,6 +502,7 @@ export default {
   }
   .description {
     @include p2;
+    text-overflow: ellipsis;
     @include small {
       @include fontSize_Tiny;
     }
@@ -503,20 +526,17 @@ export default {
   padding: toRem(49) 0;
   flex-direction: column;
   @include itemDivider;
-  .sidebar-image {
-    width: toRem(75);
-    height: toRem(75);
-    border-radius: 50%;
-    margin-bottom: toRem(13);
-    .sidebar-text {
-      display: none;
-    }
-  }
   .card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 75%;
+  }
+  .image-person {
+    width: toRem(75);
+    height: toRem(75);
+    border-radius: 50%;
+    margin-bottom: toRem(13);
   }
   .title {
     @include h3;

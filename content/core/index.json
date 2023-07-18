@@ -33,10 +33,10 @@
           {
             "type": "project",
             "logo": "/images/filecoin-plug-logo.svg",
-            "img": "/images/fil-plus-bricks.jpg",
+            "img": "/images/fil-plus-green-stacked-bricks.jpg",
             "title": "FILPLUS.STORAGE",
             "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
-            "reverse_img": "/images/filplus-storage-screencap.jpg",
+            "reverse_img": "/images/filplus-storage-quickstart-your-datacap.jpg",
             "ctas": [
               {
                 "type": "project-cta",
@@ -76,7 +76,7 @@
           {
             "type": "project",
             "logo": "/images/spade-logo.png",
-            "img": "/images/spade-texture.jpg",
+            "img": "/images/spade-black-and-white-rough-rocky-texture.jpg",
             "title": "SPADE",
             "description": "Spade is data onboarding platform which facilitates high-throughput low-friction data onboarding to the Filecoin network.",
             "ctas": [
@@ -127,7 +127,7 @@
           {
             "type": "project",
             "logo": "/images/moonlanding-logo.svg",
-            "img": "/images/moon.jpg",
+            "img": "/images/zoomed-out-space-view-of-earth.jpg",
             "title": "MOONLANDING",
             "reverse_img": "/images/moonlanding-screencap.jpg",
             "description": "Moon Landing is designed to ramp up storage providers in the Filecoin network by enabling them to serve verified deals at scale.",
@@ -145,7 +145,7 @@
             "logo": "/images/slingshot-logo.svg",
             "img": "/images/slingshot-warpspeed.jpg",
             "title": "SLINGSHOT",
-            "reverse_img": "/images/slingshot-screencap.jpg",
+            "reverse_img": "/images/slingshot-community-info.jpg",
             "description": "A community program for developers, data preparers, and storage providers for preserving open datasets on the decentralized web, forever.",
             "ctas": [
               {
@@ -225,9 +225,9 @@
           {
             "type": "project",
             "logo": "/images/open-panda-logo.svg",
-            "img": "/images/open-panda-map.png",
+            "img": "/images/open-panda-geographical-map.png",
             "title": "OPEN PANDA",
-            "reverse_img": "/images/open-panda-screencap.jpg",
+            "reverse_img": "/images/open-panda-data-search.jpg",
             "description": "Open Panda is a platform for data researchers, analysts, students and enthusiasts to interact with open datasets stored on Filecoin.",
             "ctas": [
               {
@@ -309,7 +309,7 @@
               "cards": [
                 {
                   "type": "slider",
-                  "img": "/images/ldn-label-update-part-1-article-image.png",
+                  "img": "/images/repeating-neon-green-irregular-rectangle-shape-on-black-background.png",
                   "title": "LDN Label Update — Part 1: Label Consolidation",
                   "description": "GitHub issue labels have played an essential role in tracking and facilitating the distribution of DataCap for LDN applications in the Fil+ program.",
                   "ctas": [
@@ -323,7 +323,7 @@
                 },
                 {
                   "type": "slider",
-                  "img": "/images/fil-plus-notary-app-and-github-tooling-article-image.png",
+                  "img": "/images/small-cute-wooden-figure-with-big-eyes-smiling-in-a-black-cat-suit.png",
                   "title": "Fil+ Notary App and GitHub Tooling Metrics Dashboard V0.1",
                   "description": "I am thrilled to introduce the inaugural version of the Fil+ tooling metrics dashboard.",
                   "ctas": [
@@ -337,7 +337,7 @@
                 },
                 {
                   "type": "slider",
-                  "img": "/images/announcing-the-quality-phase-for-fil-plus-article-image.jpg",
+                  "img": "/images/filecoin-data-measuring-graph.jpg",
                   "title": "Announcing the Quality Phase for Filecoin Plus",
                   "description": "The Filecoin Plus program has been in operation for over 2 years now, and has recently crossed over 700PiB of data onboarded through verified deals, constituting approximately 5% of total network capacity!",
                   "ctas": [
@@ -351,7 +351,7 @@
                 },
                 {
                   "type": "slider",
-                  "img": "/images/retrieval-bot-is-live-article-image.png",
+                  "img": "/images/multi-colored-3d-iridescent-shapes-on-a-grid-background.png",
                   "title": "Retrieval Bot is Live!",
                   "description": "We are thrilled to announce the launch of our Retrieval Bot on DataCap applications which provides insight into historic retrievability of datasets stored by Fil+ clients.",
                   "ctas": [
@@ -365,7 +365,7 @@
                 },
                 {
                   "type": "slider",
-                  "img": "/images/implementation-of-third-party-kyc-article-image.png",
+                  "img": "/images/pixelated-image-of-a-face.png",
                   "title": "Implementation of a Third Party KYC (ID Check) for Fil+ Applicants",
                   "description": "In the Fil+ application process, all application information is public in a GitHub issue in the Fil+ repo. Because all information is public, applicants are only required to use GitHub IDs as a personal identifier in an effort to keep personal information (name, email) from public view (and from potential abuse from scammers who scrape for ID info).",
                   "ctas": [
@@ -411,145 +411,145 @@
             "type": "person",
             "title": "DEEP",
             "description": "TEAM LEAD",
-            "img": "/images/deep-kapur.jpg"
+            "img": "/images/deep-kapur-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "PETER",
             "description": "SPADE, MANY OTHERS",
-            "img": "/images/peter.jpg"
+            "img": "/images/peter-illustrated-portrait-of-eye.jpg"
           },
           {
             "type": "person",
             "title": "CATALIN",
             "description": "DMOB",
-            "img": "/images/catalin.jpg"
+            "img": "/images/catalin-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "RG",
             "description": "FIL PLUS, T & T",
-            "img": "/images/rg.jpg"
+            "img": "/images/rg-illustrated-portrait.jpg"
           },
           {
             "type": "person",
             "title": "CARO",
             "description": "SLINGSHOT, REPUTATION DAO, CID METADATA",
-            "img": "/images/caro.jpg"
+            "img": "/images/caro-illustrated-portrait.jpg"
           },
           {
             "type": "person",
             "title": "RARES",
             "description": "DMOB",
-            "img": "/images/rares.jpg"
+            "img": "/images/rares-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "XINAN",
             "description": "SINGULARITY, VALIDATIONBOT, CID CHECKER",
-            "img": "/images/xinan-xu.jpg"
+            "img": "/images/xinan-xu-illustrated-portrait.jpg"
           },
           {
             "type": "person",
             "title": "SIMON",
             "description": "FIL PLUS CLIENT PATH TO DATACAP",
-            "img": "/images/simon-kim.jpg"
+            "img": "/images/simon-kim-illustrated-portrait.jpg"
           },
           {
             "type": "person",
             "title": "FABRIZIO",
             "description": "KEYKO",
-            "img": "/images/fabrizio.jpg"
+            "img": "/images/fabrizio-photographed-portrait-with-green-tint.jpg"
           },
           {
             "type": "person",
             "title": "PHIL",
             "description": "FIL PLUS NOTARY TOOLING AND INCENTIVES",
-            "img": "/images/phil-pangestu.jpg"
+            "img": "/images/phil-pangestu-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "KEVIN",
             "description": "FIL PLUS SUPPORT FOR PRIVATE AND ENTERPRISE DATA",
-            "img": "/images/kevin-zakorchemny.jpg"
+            "img": "/images/kevin-zakorchemny-illustrated-portrait.jpg"
           },
           {
             "type": "person",
             "title": "HÜSEYIN",
             "description": "KEYKO",
-            "img": "/images/huseyin.jpg"
+            "img": "/images/huseyin-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "DIANA",
             "description": "UNDONE VENTURES - FOUNDER, CXO",
-            "img": "/images/diana.jpg"
+            "img": "/images/diana-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "ORUN",
             "description": "UNDONE VENTURES - FOUNDING ENGINEER",
-            "img": "/images/orun.jpg"
+            "img": "/images/orun-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "ESRAA",
             "description": "KEYKO",
-            "img": "/images/esraa.jpg"
+            "img": "/images/esraa-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "NAURAS",
             "description": "UNDONE VENTURES - PARTNER, ENGINEER",
-            "img": "/images/nauras.jpg"
+            "img": "/images/nauras-photographed-portrait-in-a-pig-costume.jpg"
           },
           {
             "type": "person",
             "title": "EMILY",
             "description": "UNDONE VENTURES - ART DIRECTOR",
-            "img": "/images/emily.jpg"
+            "img": "/images/emily-artistic-multicolored-portrait.jpg"
           },
           {
             "type": "person",
             "title": "JOSEPH",
             "description": "UNDONE VENTURES - UX PRODUCTION",
-            "img": "/images/joseph.jpg"
+            "img": "/images/joseph-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "BEN",
             "description": "UNDONE VENTURES - ENGINEER",
-            "img": "/images/ben.jpg"
+            "img": "/images/ben-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "THOMSON",
             "description": "UNDONE VENTURES - PROJECT MANAGER",
-            "img": "/images/thomson.jpg"
+            "img": "/images/thomson-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "JO",
             "description": "UNDONE VENTURES - ENGINEER",
-            "img": "/images/jo.jpg"
+            "img": "/images/jo-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "KRITIKA",
             "description": "UNDONE VENTURES - ENGINEER",
-            "img": "/images/kritika.jpg"
+            "img": "/images/kritika-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "JAC",
             "description": "UNDONE VENTURES - QUALITY ASSURANCE",
-            "img": "/images/jac.jpg"
+            "img": "/images/jac-photographed-portrait.jpg"
           },
           {
             "type": "person",
             "title": "SARA",
             "description": "UNDONE VENTURES - ENGINEER",
-            "img": "/images/sara.jpg"
+            "img": "/images/sara-photographed-portrait.jpg"
           }
         ],
         "alphabetize": true,
