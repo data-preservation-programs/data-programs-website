@@ -286,7 +286,14 @@
         },
         "heading": "ARTICLES",
         "theme": "section-heading",
-        "ctas": []
+        "ctas": [
+          {
+            "type": "text-only",
+            "text": "All articles",
+            "url": "https://medium.com/data-programs",
+            "theme": "regular"
+          }
+        ]
       },
       "col_2": {
         "type": "custom",
