@@ -78,7 +78,7 @@
             "logo": "/images/spade-logo.png",
             "img": "/images/spade-texture.jpg",
             "title": "SPADE",
-            "description": "Building the latest deal engine to support at-scale data onboarding in the Filecoin network",
+            "description": "Spade is data onboarding platform which facilitates high-throughput low-friction data onboarding to the Filecoin network.",
             "ctas": [
               {
                 "type": "project-cta",
