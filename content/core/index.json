@@ -76,7 +76,7 @@
           {
             "type": "project",
             "logo": "/images/spade-logo.png",
-            "img": "/images/spade-black-and-white-rough-rocky-texture.jpg",
+            "img": "",
             "title": "SPADE",
             "description": "Spade is data onboarding platform which facilitates high-throughput low-friction data onboarding to the Filecoin network.",
             "ctas": [
