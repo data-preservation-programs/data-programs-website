@@ -550,6 +550,18 @@
             "title": "SARA",
             "description": "UNDONE VENTURES - ENGINEER",
             "img": "/images/sara-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "GALEN",
+            "description": "FILECOIN FOUNDATION",
+            "img": "/images/galen-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "KWRAY",
+            "description": "FILECOIN FOUNDATION",
+            "img": "/images/kwray-black-and-white-photographed-portrait.jpg"
           }
         ],
         "alphabetize": true,

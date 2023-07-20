@@ -216,8 +216,8 @@ export default {
   .card-list-block {
     .col-4_md-6 {
       &:nth-last-child(1),
-      &:nth-last-child(2),
-      &:nth-last-child(3) {
+      &:nth-last-child(2) {
+      // &:nth-last-child(3) {
         .card {
           border-bottom: none;
         }
