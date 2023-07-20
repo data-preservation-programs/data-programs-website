@@ -106,6 +106,12 @@
                   "text": "LEARN MORE",
                   "url": "https://spreputation.super.site/",
                   "theme": "dark"
+                },
+                {
+                  "type": "project-cta",
+                  "text": "DASHBOARD",
+                  "url": "https://retrievalbot-dashboard.vercel.app/?clients=f01074655",
+                  "theme": "light"
                 }
               ]
             },
