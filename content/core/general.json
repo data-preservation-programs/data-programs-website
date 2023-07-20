@@ -1,13 +1,13 @@
 {
   "seo": {
-    "title": "Nuxt Static Boilerplate",
-    "description": ""
+    "title": "Data Programs",
+    "description": "Learn about products, tools and incentive programs that drive and make data storage on Filecoin more accessible."
   },
   "og": {
-    "site_name": "Nuxt Static Boilerplate",
-    "url": "https://au-nuxt-static.on.fleek.co",
+    "site_name": "Data Programs",
+    "url": "https://data-programs.org",
     "type": "website",
-    "image": "/images/open-graph.png"
+    "image": "/images/data-programs-open-graph.png"
   },
   "header": {
     "ctas": [
@@ -17,34 +17,78 @@
         "url": "/blog/hello-world"
       }
     ],
+    "statement": "tools, products, & incentive programs designed to drive growth and make data storage on Filecoin more accessible",
     "nav": [
       {
-        "text": "Storybook",
-        "type": "underline",
-        "url": "https://au-nuxt-static.on.fleek.co"
+        "text": "PROJECTS",
+        "type": "nav-link",
+        "url": "#section-projects"
+      },
+      {
+        "text": "ABOUT",
+        "type": "nav-link",
+        "url": "#section-about"
+      },
+      {
+        "text": "BLOG",
+        "type": "nav-link",
+        "url": "#section-articles"
+      },
+      {
+        "text": "TEAM",
+        "type": "nav-link",
+        "url": "#section-people"
       }
     ]
   },
   "footer": {
-    "copyright": "Made with ❤️ by AU",
-    "social": [
+    "links": [
       {
-        "id": "facebook",
-        "url": "https://www.facebook.com/"
+        "text": "PROJECTS",
+        "type": "nav-link",
+        "url": "#section-projects"
       },
       {
-        "id": "twitter",
-        "url": "https://twitter.com/"
+        "text": "ABOUT",
+        "type": "nav-link",
+        "url": "#section-about"
       },
       {
-        "id": "linkedin",
-        "url": "https://www.linkedin.com/company/"
+        "text": "BLOG",
+        "type": "nav-link",
+        "url": "#section-articles"
       },
       {
-        "id": "youtube",
-        "url": "https://www.youtube.com/user/"
+        "text": "TEAM",
+        "type": "nav-link",
+        "url": "#section-people"
+      },
+      {
+        "socials": [
+          {
+            "icon": "slack",
+            "url": "https://filecoinproject.slack.com/archives/C01DLAPKDGX"
+          },
+          {
+            "icon": "github",
+            "url": "https://github.com/data-preservation-programs"
+          }
+        ]
       }
-    ]
+    ],
+    "copyright": {
+      "before": "",
+      "after": [
+        {
+          "text": "Terms",
+          "url": "https://example.com"
+        },
+        {
+          "text": "Privacy Policy",
+          "url": "https://example.com"
+        }
+      ]
+    }
   },
   "page_404": {
     "page_content": {

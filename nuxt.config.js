@@ -9,8 +9,8 @@ export default {
     nodeEnv: process.env.NODE_ENV,
     serverEnv: process.env.SERVER_ENV,
     seo: {
-      siteName: 'AU Nuxt Static Boilerplate',
-      siteUrl: 'https://au-nuxt-static.on.fleek.co'
+      siteName: 'Data Programs',
+      siteUrl: 'https://data-programs.org'
     },
     redirects: []
   },
@@ -19,7 +19,7 @@ export default {
   // /////////////////////////////////////////////////////////// Server & Render
   // ---------------------------------------------------------------------------
   server: {
-    port: 9100,
+    port: 10100,
     host: process.env.NODE_ENV !== 'development' ? '0.0.0.0' : 'localhost'
   },
   render: {

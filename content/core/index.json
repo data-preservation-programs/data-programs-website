@@ -1,121 +1,608 @@
 {
   "seo": {
-    "title": "AU Nuxt Static Boilerplate",
-    "description": ""
+    "title": "Data Programs",
+    "description": "Learn about products, tools and incentive programs that drive and make data storage on Filecoin more accessible."
   },
   "og": {
-    "title": "AU Nuxt Static Boilerplate",
-    "url": "https://au-nuxt-static.on.fleek.co",
+    "site_name": "Data Programs",
+    "url": "https://data-programs.org",
     "type": "website",
-    "image": "/images/open-graph.png"
+    "image": "/images/data-programs-open-graph.png"
   },
   "page_content": {
-    "section_text_center": {
-      "grid": [
-        "middle",
-        "center",
-        "noGutter"
-      ],
-      "col_1": {
-        "type": "text_block",
-        "align": "center",
-        "cols": {
-          "num": "col-12",
-          "push_left": "off-1_md-0",
-          "push_right": "off-1_md-0"
-        },
-        "heading": "Welcome to AU's Nuxt Static Boilerplate"
-      },
-      "hide": false
+    "section-hero-header": {
+      "id": "hero-header",
+      "off_grid": [
+        {
+          "name": "SectionHero"
+        }
+      ]
     },
-    "section_basic_section_1": {
-      "grid": [
-        "middle",
-        "center"
-      ],
+    "section_project_list": {
+      "id": "section-projects",
+      "grid": ["center"],
       "col_1": {
-        "label": "Documentation",
-        "heading": "Storybook",
-        "description": "Storybook automatically deploys to [https://agency-undone.github.io/nuxt-static](https://agency-undone.github.io/nuxt-static) using Github pages when committing to develop",
-        "ctas": [
+        "type": "card_list_block",
+        "cols": {
+          "num": "col-11_sm-10_ti-12",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "card_columns": "col-4_lg-6_sm-12",
+        "cards": [
           {
-            "type": "solid",
-            "text": "Storybook",
-            "url": "https://agency-undone.github.io/nuxt-static"
+            "type": "project",
+            "logo": "/images/filecoin-plug-logo.svg",
+            "img": "/images/fil-plus-green-stacked-bricks.jpg",
+            "title": "FILPLUS.STORAGE",
+            "description": "Fil+ program adds a layer of social trust to the Filecoin network by helping identify trustworthy clients that are looking to store data onto the network",
+            "reverse_img": "/images/filplus-storage-quickstart-your-datacap.jpg",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://example.com",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://filplus.storage/",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/singularity-logo.svg",
+            "img": "",
+            "title": "SINGULARITY",
+            "description": "Singularity is a end-to-end solution for large-scale data onboarding for Filecoin. It is designed to be modular, and can be leveraged for purpose-built data preparation tooling.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://dataprograms.grafana.net/public-dashboards/d436fafb93b7437d87c3fa99acd4374f",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://singularity.storage/",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/spade-logo.png",
+            "img": "",
+            "title": "SPADE",
+            "description": "Spade is data onboarding platform which facilitates high-throughput low-friction data onboarding to the Filecoin network.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://dataprograms.grafana.net/public-dashboards/5014f382fc8f4cddaf8990ae978f8332",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://ecosystem-wg.notion.site/Spade-efficient-data-onboarding-to-the-Filecoin-network-8e5dc48fd7c54e0e9385e445543a305a?pvs=4",
+                "theme": "dark"
+              }
+            ]
+          },
+          [
+            {
+              "type": "project",
+              "title": "SP REPUTATION WG",
+              "description": "Measuring Storage Provider reputation and quality of service.",
+              "theme": "mini-card",
+              "ctas": [
+                {
+                  "type": "project-cta",
+                  "text": "LEARN MORE",
+                  "url": "https://spreputation.super.site/",
+                  "theme": "dark"
+                }
+              ]
+            },
+            {
+              "type": "project",
+              "title": "METADATA WG",
+              "description": "Aligning the Filecoin ecosystem on metadata collection standards.",
+              "theme": "mini-card",
+              "ctas": [
+                {
+                  "type": "project-cta",
+                  "text": "LEARN MORE",
+                  "url": "https://filecoinproject.slack.com/archives/C051ZCWSLHE",
+                  "theme": "dark"
+                }
+              ]
+            }
+          ],
+          {
+            "type": "project",
+            "logo": "/images/moonlanding-logo.svg",
+            "img": "/images/zoomed-out-space-view-of-earth.jpg",
+            "title": "MOONLANDING",
+            "reverse_img": "/images/moonlanding-screencap.jpg",
+            "description": "Moon Landing is designed to ramp up storage providers in the Filecoin network by enabling them to serve verified deals at scale.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://moon-landing.io/",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/slingshot-logo.svg",
+            "img": "/images/slingshot-warpspeed.jpg",
+            "title": "SLINGSHOT",
+            "reverse_img": "/images/slingshot-community-info.jpg",
+            "description": "A community program for developers, data preparers, and storage providers for preserving open datasets on the decentralized web, forever.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "DASHBOARD",
+                "url": "https://datasets.filecoin.io/",
+                "theme": "light"
+              },
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://slingshot.filecoin.io/",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/ground-control-logo.svg",
+            "img": "",
+            "title": "GROUND CONTROL",
+            "description": "Know Your Storage Provider automation for enabling client to SP matching for the Spade platform.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSfr9R1rEffGojKcUUgIZWpNdv4GWE6-tgDw3TgI2DQ4JhdPSg/viewform",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/deals-oracle-logo.svg",
+            "img": "",
+            "title": "DEALS ORACLE",
+            "description": "Tracking active Filecoin storage deals. Part of the overall Spade platform, but also supports several dashboards and enables data onboarding analysis.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://github.com/ribasushi/fil-naive-marketwatch",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/retrieval-bot-logo.svg",
+            "img": "",
+            "title": "RETRIEVAL BOT",
+            "description": "A scalable service to perform retrieval testing on data stored on the Filecoin network.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://github.com/data-preservation-programs/RetrievalBot",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/cid-checker-logo.svg",
+            "img": "",
+            "title": "CID CHECKER",
+            "description": "Deal distribution analysis and reporting for data stored on Filecoin through the Filecoin Plus program.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://github.com/data-preservation-programs/filplus-checker",
+                "theme": "dark"
+              }
+            ]
+          },
+          {
+            "type": "project",
+            "logo": "/images/open-panda-logo.svg",
+            "img": "/images/open-panda-geographical-map.png",
+            "title": "OPEN PANDA",
+            "reverse_img": "/images/open-panda-data-search.jpg",
+            "description": "Open Panda is a platform for data researchers, analysts, students and enthusiasts to interact with open datasets stored on Filecoin.",
+            "ctas": [
+              {
+                "type": "project-cta",
+                "text": "LEARN MORE",
+                "url": "https://openpanda.io/",
+                "theme": "dark"
+              }
+            ]
           }
-        ],
-        "type": "text_block",
-        "cols": {
-          "num": "col-6_md-12",
-          "push_left": "",
-          "push_right": ""
-        }
-      },
-      "col_2": {
-        "src": "/images/open-graph.png",
-        "type": "image_block",
-        "cols": {
-          "num": "col-5_md-12_lg-last_md-first",
-          "push_left": "",
-          "push_right": ""
-        }
+        ]
       }
     },
-    "section_basic_section_2": {
-      "grid": [
-        "middle",
-        "center"
-      ],
+    "section_about": {
+      "id": "section-about",
+      "grid": ["middle", "center"],
       "col_1": {
-        "heading": "Index Page",
-        "description": "Index page is being pulled from <code>/content/core/index.json</code>",
-        "ctas": [
-          {
-            "type": "solid",
-            "text": "Home",
-            "url": "/"
-          }
-        ],
         "type": "text_block",
         "cols": {
-          "num": "col-4_md-12",
-          "push_left": "",
-          "push_right": ""
-        }
+          "num": "col-11",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "heading": "WHAT IS DATA PROGRAMS",
+        "theme": "section-heading"
       },
       "col_2": {
-        "heading": "Blog Template",
-        "description": "Blog posts are auto generated when md file is added to <code>/content/blog</code>. Url is under <code>/blog/[slug]</code>",
-        "ctas": [
-          {
-            "type": "solid",
-            "text": "Hello World",
-            "url": "/blog/hello-world"
-          }
-        ],
-        "type": "text_block",
+        "type": "image_block",
         "cols": {
-          "num": "col-4_md-12",
-          "push_left": "",
-          "push_right": ""
-        }
+          "num": "col-3_md-6",
+          "push_left": "off-0_md-3",
+          "push_right": "off-1_md-3"
+        },
+        "src": "/images/warped-grid.svg"
       },
       "col_3": {
-        "heading": "Page Template",
-        "description": "Pages are auto generated when json file is added to <code>/content/page</code>`. Only top level tier support at the moment",
-        "ctas": [
-          {
-            "type": "solid",
-            "text": "About",
-            "url": "/about"
-          }
-        ],
         "type": "text_block",
         "cols": {
-          "num": "col-4_md-12",
-          "push_left": "",
-          "push_right": ""
-        }
+          "num": "col-6_md-10_ti-12",
+          "push_left": "off-0_md-0_ti-0",
+          "push_right": "off-0_md-1_ti-0"
+        },
+        "heading": "The Data Programs team is focused on growing the utilization of the Filecoin network, through the development of tools, products, and programs that make data storage on Filecoin more accessible.",
+        "description": "Our team is a part of the Network Growth organization in Outercore, which focuses on ecosystem growth for the Filecoin and IPFS networks. We work closely with several other teams and individuals to form the broader working group. This WG supports several key initiatives in the Filecoin ecosystem.<br><br> In addition to developing and supporting tools and pipelines to onboard data to the network, we want to establish a high standard for how data should be onboarded to the decentralized web at scale. Everything we work on is designed to be open - join us in various Slack conversations, WG meetings, or contribute code to our repos."
+      }
+    },
+    "section_articles": {
+      "id": "section-articles",
+      "grid": ["noBottom", "noGutter", "center"],
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-11",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "heading": "ARTICLES",
+        "theme": "section-heading",
+        "ctas": [
+          {
+            "type": "text-only",
+            "text": "All articles",
+            "url": "https://medium.com/data-programs",
+            "theme": "regular"
+          }
+        ]
+      },
+      "col_2": {
+        "type": "custom",
+        "cols": {
+          "num": "col-11",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "customizations": [
+          {
+            "name": "DeckOfCards",
+            "props": {
+              "cards": [
+                {
+                  "type": "slider",
+                  "img": "/images/repeating-neon-green-irregular-rectangle-shape-on-black-background.png",
+                  "title": "LDN Label Update — Part 1: Label Consolidation",
+                  "description": "GitHub issue labels have played an essential role in tracking and facilitating the distribution of DataCap for LDN applications in the Fil+ program.",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://medium.com/filecoin-plus/ldn-label-update-part-1-label-consolidation-ae2691c78702",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/small-cute-wooden-figure-with-big-eyes-smiling-in-a-black-cat-suit.png",
+                  "title": "Fil+ Notary App and GitHub Tooling Metrics Dashboard V0.1",
+                  "description": "I am thrilled to introduce the inaugural version of the Fil+ tooling metrics dashboard.",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://medium.com/filecoin-plus/fil-notary-app-and-github-tooling-metrics-dashboard-v0-1-2012a9ed961f",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/filecoin-data-measuring-graph.jpg",
+                  "title": "Announcing the Quality Phase for Filecoin Plus",
+                  "description": "The Filecoin Plus program has been in operation for over 2 years now, and has recently crossed over 700PiB of data onboarded through verified deals, constituting approximately 5% of total network capacity!",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://medium.com/filecoin-plus/announcing-the-quality-phase-for-filecoin-plus-2890a9797456",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/multi-colored-3d-iridescent-shapes-on-a-grid-background.png",
+                  "title": "Retrieval Bot is Live!",
+                  "description": "We are thrilled to announce the launch of our Retrieval Bot on DataCap applications which provides insight into historic retrievability of datasets stored by Fil+ clients.",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://medium.com/filecoin-plus/retrieval-bot-is-live-ea577b61f7d3",
+                      "theme": "strong"
+                    }
+                  ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/pixelated-image-of-a-face.png",
+                  "title": "Implementation of a Third Party KYC (ID Check) for Fil+ Applicants",
+                  "description": "In the Fil+ application process, all application information is public in a GitHub issue in the Fil+ repo. Because all information is public, applicants are only required to use GitHub IDs as a personal identifier in an effort to keep personal information (name, email) from public view (and from potential abuse from scammers who scrape for ID info).",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://medium.com/filecoin-plus/implementation-of-a-third-party-kyc-id-check-for-fil-applicants-e5e825b1484e",
+                      "theme": "strong"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "section_people": {
+      "id": "section-people",
+      "grid": ["center"],
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-11",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "heading": "WORKING GROUP",
+        "theme": "section-heading"
+      },
+      "col_2": {
+        "type": "card_list_block",
+      "grid": ["center"],
+        "cols": {
+          "num": "col-11",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "card_grid": ["noGutter", "equalHeight"],
+        "card_columns": "col-4_md-6",
+        "cards": [
+          {
+            "type": "person",
+            "title": "DEEP",
+            "description": "TEAM LEAD",
+            "img": "/images/deep-kapur-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "PETER",
+            "description": "SPADE, MANY OTHERS",
+            "img": "/images/peter-illustrated-portrait-of-eye.jpg"
+          },
+          {
+            "type": "person",
+            "title": "CATALIN",
+            "description": "DMOB",
+            "img": "/images/catalin-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "RG",
+            "description": "FIL PLUS, T & T",
+            "img": "/images/rg-illustrated-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "CARO",
+            "description": "SLINGSHOT, REPUTATION DAO, CID METADATA",
+            "img": "/images/caro-illustrated-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "RARES",
+            "description": "DMOB",
+            "img": "/images/rares-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "XINAN",
+            "description": "SINGULARITY, VALIDATIONBOT, CID CHECKER",
+            "img": "/images/xinan-xu-illustrated-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "SIMON",
+            "description": "FIL PLUS CLIENT PATH TO DATACAP",
+            "img": "/images/simon-kim-illustrated-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "FABRIZIO",
+            "description": "KEYKO",
+            "img": "/images/fabrizio-photographed-portrait-with-green-tint.jpg"
+          },
+          {
+            "type": "person",
+            "title": "PHIL",
+            "description": "FIL PLUS NOTARY TOOLING AND INCENTIVES",
+            "img": "/images/phil-pangestu-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "KEVIN",
+            "description": "FIL PLUS SUPPORT FOR PRIVATE AND ENTERPRISE DATA",
+            "img": "/images/kevin-zakorchemny-illustrated-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "HÜSEYIN",
+            "description": "KEYKO",
+            "img": "/images/huseyin-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "DIANA",
+            "description": "UNDONE VENTURES - FOUNDER, CXO",
+            "img": "/images/diana-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "ORUN",
+            "description": "UNDONE VENTURES - FOUNDING ENGINEER",
+            "img": "/images/orun-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "ESRAA",
+            "description": "KEYKO",
+            "img": "/images/esraa-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "NAURAS",
+            "description": "UNDONE VENTURES - PARTNER, ENGINEER",
+            "img": "/images/nauras-photographed-portrait-in-a-pig-costume.jpg"
+          },
+          {
+            "type": "person",
+            "title": "EMILY",
+            "description": "UNDONE VENTURES - ART DIRECTOR",
+            "img": "/images/emily-artistic-multicolored-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "JOSEPH",
+            "description": "UNDONE VENTURES - UX PRODUCTION",
+            "img": "/images/joseph-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "BEN",
+            "description": "UNDONE VENTURES - ENGINEER",
+            "img": "/images/ben-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "THOMSON",
+            "description": "UNDONE VENTURES - PROJECT MANAGER",
+            "img": "/images/thomson-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "JO",
+            "description": "UNDONE VENTURES - ENGINEER",
+            "img": "/images/jo-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "KRITIKA",
+            "description": "UNDONE VENTURES - ENGINEER",
+            "img": "/images/kritika-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "JAC",
+            "description": "UNDONE VENTURES - QUALITY ASSURANCE",
+            "img": "/images/jac-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "SARA",
+            "description": "UNDONE VENTURES - ENGINEER",
+            "img": "/images/sara-photographed-portrait.jpg"
+          }
+        ],
+        "alphabetize": true,
+        "sort_key": "title"
+      }
+    },
+    "section_collaborators": {
+      "id": "section-collaborators",
+      "grid": ["center"],
+      "col_1": {
+        "type": "text_block",
+        "cols": {
+          "num": "col-11",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "heading": "COLLABORATORS",
+        "theme": "section-heading"
+      },
+      "col_2": {
+        "type": "custom",
+        "cols": {
+          "num": "col-11",
+          "push_left": "off-0",
+          "push_right": "off-0"
+        },
+        "customizations": [
+          {
+            "name": "SectionCollaborators",
+            "props": {
+              "logos": [
+                "/images/digital-mob-logo.svg",
+                "/images/keyko-logo.svg",
+                "/images/filecoin-foundation-logo.svg",
+                "/images/daghouse-logo.svg",
+                "/images/undone-ventures-logo.svg",
+                "/images/elementus-logo.svg",
+                "/images/starboard-logo.svg",
+                "/images/togggle-logo.svg",
+                "/images/eqtylab-logo.svg",
+                "/images/laudspeaker-logo.svg"
+              ],
+              "ctablock": {
+                "marquee_text": "WORK WITH US WORK WITH US WORK WITH US WORK WITH US",
+                "text": "Check out the latest project progress here.",
+                "url": "https://github.com/data-preservation-programs"
+              },
+              "imageblock": {
+                "src": "/images/warped-cube.svg"
+              }
+            }
+          }
+        ]
       }
     }
   }

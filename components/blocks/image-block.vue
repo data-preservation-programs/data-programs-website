@@ -3,7 +3,8 @@
 
     <img
       :src="block.src"
-      :alt="block.alt ? block.alt : $GetPrettyNameFromUrl(block.src)" />
+      :alt="block.alt ? block.alt : $GetPrettyNameFromUrl(block.src)"
+      :loading="lazyLoad ? 'lazy' : 'eager'" />
 
     <caption v-if="block.caption">
       {{ block.caption }}
@@ -26,6 +27,12 @@ export default {
        */
       type: Object,
       required: true
+    }
+  },
+
+  computed: {
+    lazyLoad () {
+      return this.block.lazy_load || true
     }
   }
 }

@@ -10,9 +10,12 @@ $gutterMobile: calc(100vw * 0.07);
 $singleColumn: math.div($containerWidth, 12);
 
 // --------------------------------------------------------------------- Colours
-$color_Primary: #222222;
-$color_Secondary: #0043FA;
-$color_Accent: #FF3100;
+$color_Primary: #EEEEEE;
+$color_Secondary: #1A1A1A;
+$color_Accent: #000000;
+$gallery: #F0F0F0;
+$mercury: #E5E5E5;
+$grenadier: #e22900;
 
 // ----------------------------------------------------------------- Transitions
 $bounce: cubic-bezier(0.8, 0.5, 0.2, 1.3);
@@ -78,6 +81,31 @@ $borderRadius_ExtraLarge: 0.875rem;
 @mixin borderRadius_Medium { border-radius: $borderRadius_Medium; }
 @mixin borderRadius_Large { border-radius: $borderRadius_Large; }
 @mixin borderRadius_ExtraLarge { border-radius: $borderRadius_ExtraLarge; }
+
+@mixin sectionDivider {
+  border-bottom: solid 0.625rem $color_Secondary;
+  @include mini {
+    border-bottom: solid 0.3125rem $color_Secondary;
+  }
+}
+
+@mixin itemDivider {
+  border-bottom: solid 0.125rem $color_Secondary;
+}
+
+@mixin textOutlineLight {
+  color: $mercury;
+  -webkit-text-fill-color: $color_Secondary; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $mercury;
+}
+
+@mixin textOutlineDark {
+  color: $color_Accent;
+  -webkit-text-fill-color: $mercury; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $color_Accent;
+}
 
 // --------------------------------------------------------------------- General
 @mixin optional-at-root($sel) {
@@ -149,6 +177,10 @@ $borderRadius_ExtraLarge: 0.875rem;
 @function toRem($value) {
   $remValue: math.div($value, 16) + rem;
   @return $remValue;
+}
+
+@function vw($px-vw, $base-vw: 1440px) {
+  @return math.div($px-vw * 100vw, $base-vw);
 }
 
 // ------------------------------------------------------------------- Animation
