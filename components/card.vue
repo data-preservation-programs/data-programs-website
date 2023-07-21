@@ -245,6 +245,7 @@ export default {
         position: absolute;
         bottom: 0;
         pointer-events: none;
+        padding: 0.875rem 0;
         animation: sidebarTextScroll 40s linear infinite paused;
         display: block;
       }
