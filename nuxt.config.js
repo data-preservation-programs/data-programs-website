@@ -10,7 +10,7 @@ export default {
     serverEnv: process.env.SERVER_ENV,
     seo: {
       siteName: 'Data Programs',
-      siteUrl: 'https://data-programs.org'
+      siteUrl: 'https://dataprograms.org'
     },
     redirects: []
   },
