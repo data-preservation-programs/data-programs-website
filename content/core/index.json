@@ -5,9 +5,9 @@
   },
   "og": {
     "site_name": "Data Programs",
-    "url": "https://data-programs.org",
+    "url": "https://dataprograms.org",
     "type": "website",
-    "image": "/images/data-programs-open-graph.png"
+    "image": "/images/dataprograms-open-graph.png"
   },
   "page_content": {
     "section-hero-header": {
@@ -106,6 +106,12 @@
                   "text": "LEARN MORE",
                   "url": "https://spreputation.super.site/",
                   "theme": "dark"
+                },
+                {
+                  "type": "project-cta",
+                  "text": "DASHBOARD",
+                  "url": "https://retrievalbot-dashboard.vercel.app/?clients=f01074655",
+                  "theme": "light"
                 }
               ]
             },
@@ -290,7 +296,7 @@
           {
             "type": "text-only",
             "text": "All articles",
-            "url": "https://medium.com/data-programs",
+            "url": "https://medium.com/filecoin-data-programs",
             "theme": "regular"
           }
         ]
@@ -469,7 +475,7 @@
           },
           {
             "type": "person",
-            "title": "KEVIN",
+            "title": "KZ",
             "description": "FIL PLUS SUPPORT FOR PRIVATE AND ENTERPRISE DATA",
             "img": "/images/kevin-zakorchemny-illustrated-portrait.jpg"
           },
@@ -550,6 +556,18 @@
             "title": "SARA",
             "description": "UNDONE VENTURES - ENGINEER",
             "img": "/images/sara-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "GALEN",
+            "description": "FILECOIN FOUNDATION",
+            "img": "/images/galen-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "KWRAY",
+            "description": "FILECOIN FOUNDATION",
+            "img": "/images/kwray-black-and-white-photographed-portrait.jpg"
           }
         ],
         "alphabetize": true,
