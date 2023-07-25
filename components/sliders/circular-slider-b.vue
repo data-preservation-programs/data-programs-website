@@ -136,8 +136,10 @@ export default {
   data () {
     const len = this.collection.length
     const num = this.stacked ? 1 : this.displayOptions.default
+    const pos = [...Array(len).keys()]
+    for (let i = 0; i < 2; i++) { pos.unshift(pos.pop()) }
     return {
-      positions: [...Array(len).keys()],
+      positions: pos,
       animateSlots: new Array(num + 2).fill(null).map((e, i) => i + 1),
       display: num,
       columnWidth: 0,
