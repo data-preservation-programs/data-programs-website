@@ -138,7 +138,7 @@ export default {
   computed: {
     collaborators () {
       const array = []
-      for (let i = 0; i < 3; i++) { array.push(this.logos) }
+      for (let i = 0; i < 2; i++) { array.push(this.logos) }
       return array.flat()
     }
   }
