@@ -568,6 +568,36 @@
             "title": "KWRAY",
             "description": "FILECOIN FOUNDATION",
             "img": "/images/kwray-black-and-white-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "ANJOR",
+            "description": "ENG MANAGER",
+            "img": "/images/anjor-illustrated-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "JSON",
+            "description": "SPADE - SOFTWARE ENGINEER",
+            "img": "/images/json-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "LODGE",
+            "description": "SOFTWARE ENGINEER",
+            "img": "/images/lodge-photographed-portrait.jpg"
+          },
+          {
+            "type": "person",
+            "title": "STEPHEN",
+            "description": "SOFTWARE ENGINEER",
+            "img": "/images/data-programs-logo.svg"
+          },
+          {
+            "type": "person",
+            "title": "XILIN",
+            "description": "SINGULARITY PRODUCT MANAGER",
+            "img": "/images/xilin-illustrated-portrait.jpg"
           }
         ],
         "alphabetize": true,
