@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/data-preservation-programs/data-programs-website/compare/v1.0.0...v1.0.1) (2023-09-19)
+
+
+### Bug Fixes
+
+* sync order of logos in json content to initial slider slide positions ([78f3306](https://github.com/data-preservation-programs/data-programs-website/commit/78f330627f5e168580383dac72415a1a5e99e0bf))
+
 ## 1.0.0 (2023-07-24)
 
 
