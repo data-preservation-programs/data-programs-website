@@ -214,18 +214,19 @@ export default {
 :deep(#section-people) {
   margin-bottom: 1.875rem;
   .card-list-block {
-    .col-4_md-6 {
-      &:nth-last-child(1),
-      &:nth-last-child(2) {
-      // &:nth-last-child(3) {
-        .card {
-          border-bottom: none;
-        }
+    .col-4_md-6:nth-child(3n+1):nth-last-child(-n+3),
+    .col-4_md-6:nth-child(3n+1):nth-last-child(-n+3) ~ .col-4_md-6 {
+      .card {
+        border-bottom: none;
       }
-      &:nth-last-child(3) {
+      @include medium {
         .card {
-          @include medium {
-            border-bottom: solid 0.125rem $color_Secondary;
+          @include itemDivider;
+        }
+        &:nth-child(2n+1):nth-last-child(-n+2),
+        &:nth-child(2n+1):nth-last-child(-n+2) ~ .col-4_md-6 {
+          .card {
+            border-bottom: none;
           }
         }
       }
