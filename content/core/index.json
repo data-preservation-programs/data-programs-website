@@ -382,6 +382,20 @@
                       "theme": "strong"
                     }
                   ]
+                },
+                {
+                  "type": "slider",
+                  "img": "/images/triangular-hallway-illuminated-purple.png",
+                  "title": "Filecoin’s Growth Trajectory: The Role of Fil+ and Compliance",
+                  "description": "When the Filecoin network began to grow, Filecoin Plus (Fil+) was introduced as an optional layer distinct from the core protocol, providing community members an alternative pathway for data onboarding, while incentivizing storage providers who help onboard client’s data into the network. Today the program offers different pathways and tools to help onboard data to the network. As data continues to be onboarded through Fil+, the program focuses on ensuring deal distribution and retrievability compliance in the deal-making process to enhance the network’s integrity and efficacy.",
+                  "ctas": [
+                    {
+                      "type": "text-only",
+                      "text": "READ MORE",
+                      "url": "https://filecoin.io/blog/posts/filecoins-growth-trajectory-the-role-of-fil-and-compliance/",
+                      "theme": "strong"
+                    }
+                  ]
                 }
               ]
             }
