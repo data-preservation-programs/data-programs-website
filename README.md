@@ -4,6 +4,7 @@
 
 ![Data Programs graph image](static/images/data-programs-open-graph.png)
 
+
 ## Overview
 
 This is the repo for the Data Programs static microsite (available at [dataprograms.org](https://dataprograms.org))
