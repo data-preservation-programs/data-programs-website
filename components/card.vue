@@ -341,6 +341,9 @@ export default {
     &.moonlanding {
       padding: 1.25rem 0;
     }
+    &.singularity {
+      padding: 0.625rem 0;
+    }
   }
   .title {
     @include h3;
